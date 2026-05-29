@@ -7,9 +7,10 @@ Wikipedia (no API key or backend required).
 
 ## What it is
 
-Twelve great civilizations — Mesopotamia, Egypt, Greece, Persia, Rome, Imperial
-China, Ancient India, the Maya, the Aztec, the Inca, the Mongols and the
-Ottomans — each presented as a multi-section, interactive learning journey:
+Fourteen great civilizations — Mesopotamia, Egypt, Greece, Persia, Rome, Imperial
+China, Ancient India, the Maya, the Aztec, the Inca, the Mongols, the Ottomans,
+the Kingdom of France and the British Empire — each presented as a multi-section,
+interactive learning journey:
 
 - **Narrative sections** on origins, society & government, daily life, decline and
   legacy, with key-term flip-cards and "what made them different" callouts.
