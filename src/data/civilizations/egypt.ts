@@ -1,0 +1,226 @@
+import type { Civilization } from "../types";
+
+export const egypt: Civilization = {
+  id: "egypt",
+  name: "Ancient Egypt",
+  shortName: "Egypt",
+  emblem: "🔺",
+  region: "The Nile Valley (Egypt, Sudan)",
+  modernCountries: ["Egypt", "Sudan"],
+  timespan: "c. 3100 – 30 BCE",
+  startYear: -3100,
+  endYear: -30,
+  color: "#0d9488",
+  tagline:
+    "The gift of the Nile — three thousand years of pharaohs, pyramids and a civilization obsessed with the eternal.",
+  summary:
+    "Sustained by the Nile's yearly flood, Ancient Egypt was one of the longest-lasting civilizations in history, enduring for over three millennia. Ruled by god-kings called pharaohs, it produced monuments of staggering scale and a culture centred on order, the afterlife and a remarkable artistic and religious continuity.",
+  hero: {
+    wikiTitle: "Giza pyramid complex",
+    alt: "The pyramids of Giza",
+    caption: "The pyramids of Giza, built c. 2600–2500 BCE as pharaohs' tombs.",
+  },
+  facts: [
+    { label: "Lifeline", value: "The River Nile" },
+    { label: "Ruler", value: "Pharaoh (a living god)" },
+    { label: "Writing", value: "Hieroglyphs" },
+    { label: "Duration", value: "~3,000 years" },
+    { label: "Belief", value: "Elaborate afterlife" },
+  ],
+  sections: [
+    {
+      id: "nile",
+      type: "narrative",
+      title: "The Gift of the Nile",
+      icon: "🌊",
+      image: {
+        wikiTitle: "Narmer Palette",
+        alt: "The Narmer Palette",
+        caption: "The Narmer Palette commemorates Egypt's unification, c. 3100 BCE.",
+      },
+      paragraphs: [
+        "The Greek historian Herodotus called Egypt 'the gift of the Nile', and he was right. Every year the river flooded predictably, leaving behind rich black silt that made the desert bloom. This dependable abundance — unlike Mesopotamia's chaotic floods — gave Egyptian civilization its sense of stability and cosmic order.",
+        "Around 3100 BCE a king traditionally called Narmer (or Menes) united the two lands of Upper and Lower Egypt into a single kingdom, beginning a line of pharaohs that would last three thousand years through some thirty dynasties.",
+        "Egyptians saw their world as governed by ma'at — truth, balance and cosmic order — which the pharaoh was duty-bound to uphold. This deep belief in order and continuity is why Egyptian art, religion and writing changed so remarkably little over millennia.",
+      ],
+      terms: [
+        { term: "Pharaoh", definition: "The king of Egypt, regarded as a living god and the guarantor of cosmic order." },
+        { term: "Ma'at", definition: "The Egyptian concept of truth, balance and order that the pharaoh had to maintain." },
+        { term: "Dynasty", definition: "A sequence of rulers from the same family; historians group Egypt's history into ~30 of them." },
+      ],
+      callout: {
+        title: "What made Egypt different",
+        body: "Where most ancient states rose and fell within centuries, Egypt's geography — protected by deserts and fed by a reliable river — let a single culture endure, recognisably itself, for three thousand years. Cleopatra lived closer in time to us than to the building of the Great Pyramid.",
+      },
+    },
+    {
+      id: "afterlife",
+      type: "narrative",
+      title: "Gods, Pharaohs & the Afterlife",
+      icon: "⚰️",
+      image: {
+        wikiTitle: "Book of the Dead",
+        alt: "A scene from the Egyptian Book of the Dead",
+        caption: "The 'weighing of the heart' from the Book of the Dead.",
+      },
+      paragraphs: [
+        "Egyptian religion was vast, with hundreds of gods — sun-god Ra, Osiris lord of the dead, Isis the great mother, jackal-headed Anubis. The pharaoh stood between gods and people, and on death was thought to join the gods himself.",
+        "No people were more preoccupied with the afterlife. Egyptians believed the soul lived on if the body was preserved, so they perfected mummification, drying and wrapping the dead over 70 days. The wealthy were buried with food, treasure and spells from the Book of the Dead to guide them past the 'weighing of the heart', where one's deeds were judged against a feather of truth.",
+        "The pyramids and the later rock-cut tombs of the Valley of the Kings were giant machines for the journey to eternity — which is why so much of what survives of Egypt comes from its cemeteries and temples rather than its towns.",
+      ],
+      terms: [
+        { term: "Mummification", definition: "The Egyptian art of preserving the dead body so the soul could live on in the afterlife." },
+        { term: "Book of the Dead", definition: "A collection of spells buried with the dead to guide and protect them in the afterlife." },
+        { term: "Valley of the Kings", definition: "The hidden desert valley where New Kingdom pharaohs, including Tutankhamun, were buried." },
+      ],
+    },
+    {
+      id: "figures",
+      type: "figures",
+      title: "Famous Pharaohs",
+      icon: "👤",
+      intro: "From pyramid-builders to a female king and the last queen of Egypt.",
+      figures: [
+        {
+          name: "Khufu",
+          role: "Pharaoh (Old Kingdom)",
+          lived: "reigned c. 2589–2566 BCE",
+          bio: "Builder of the Great Pyramid of Giza, the largest of the pyramids and the only surviving Wonder of the Ancient World.",
+          image: { wikiTitle: "Khufu", alt: "Statuette of Khufu" },
+        },
+        {
+          name: "Hatshepsut",
+          role: "Female pharaoh",
+          lived: "reigned c. 1479–1458 BCE",
+          bio: "One of the few women to rule as pharaoh in her own right, she presided over a prosperous era of trade and built a magnificent terraced temple at Deir el-Bahari.",
+          image: { wikiTitle: "Hatshepsut", alt: "Statue of Hatshepsut" },
+        },
+        {
+          name: "Ramesses II",
+          role: "Pharaoh ('the Great')",
+          lived: "reigned 1279–1213 BCE",
+          bio: "Egypt's most celebrated warrior-pharaoh, who fought the Hittites at Kadesh, signed history's first known peace treaty, and built monuments like Abu Simbel.",
+          image: { wikiTitle: "Ramesses II", alt: "Statue of Ramesses II" },
+        },
+        {
+          name: "Cleopatra VII",
+          role: "Last pharaoh",
+          lived: "69–30 BCE",
+          bio: "The brilliant final ruler of Egypt, who allied with Julius Caesar and Mark Antony to preserve her kingdom. Her defeat by Rome ended 3,000 years of pharaonic Egypt.",
+          image: { wikiTitle: "Cleopatra", alt: "Bust of Cleopatra VII" },
+        },
+      ],
+    },
+    {
+      id: "achievements",
+      type: "achievements",
+      title: "Monuments & Mastery",
+      icon: "💡",
+      intro: "Egypt's achievements in engineering, writing and medicine were millennia ahead of their time.",
+      achievements: [
+        {
+          name: "The pyramids",
+          field: "Engineering",
+          description: "The Great Pyramid used some 2.3 million stone blocks and stood as the tallest structure on Earth for nearly 4,000 years.",
+          legacy: "The oldest and only surviving of the Seven Wonders of the Ancient World.",
+        },
+        {
+          name: "Hieroglyphic writing",
+          field: "Communication",
+          description: "A beautiful script of pictures used for monuments and sacred texts, alongside a cursive 'hieratic' script for daily use.",
+          legacy: "Deciphered via the Rosetta Stone in 1822, reopening Egypt's history.",
+        },
+        {
+          name: "Papyrus",
+          field: "Technology",
+          description: "A paper-like writing material made from reeds, light and portable, that Egypt exported across the ancient world.",
+          legacy: "The word 'paper' comes from papyrus.",
+        },
+        {
+          name: "Medicine",
+          field: "Science",
+          description: "Egyptian physicians documented diagnoses, surgery and hundreds of remedies; the Edwin Smith Papyrus is a rational surgical text.",
+          legacy: "Among the earliest evidence of systematic medical practice.",
+        },
+        {
+          name: "The 365-day calendar",
+          field: "Science",
+          description: "Egyptians tracked the year by the star Sirius and the Nile flood, creating a 365-day solar calendar.",
+          legacy: "A direct ancestor of the calendar we use today.",
+        },
+      ],
+    },
+    {
+      id: "decline",
+      type: "narrative",
+      title: "Conquest & Rediscovery",
+      icon: "🏛️",
+      image: {
+        wikiTitle: "Rosetta Stone",
+        alt: "The Rosetta Stone",
+        caption: "The Rosetta Stone, the key that unlocked hieroglyphs in 1822.",
+      },
+      paragraphs: [
+        "After its New Kingdom golden age, Egypt was repeatedly conquered — by Nubians, Assyrians and Persians. In 332 BCE Alexander the Great took Egypt and his general Ptolemy founded a Greek-speaking dynasty that ruled from Alexandria for three centuries.",
+        "The last Ptolemy was Cleopatra VII. When she and Mark Antony were defeated by Octavian (Augustus) at the Battle of Actium in 31 BCE, Egypt became a province of Rome — and the age of the pharaohs was over.",
+        "For 1,400 years no one could read hieroglyphs. Then in 1799 French soldiers found the Rosetta Stone, which carried the same decree in hieroglyphs, Egyptian demotic and Greek. Using it, the scholar Champollion cracked the code in 1822 — and the silent monuments of Egypt began to speak again.",
+      ],
+      terms: [
+        { term: "Ptolemaic dynasty", definition: "The Greek dynasty, founded by Alexander's general Ptolemy, that ruled Egypt from Alexandria until Cleopatra." },
+        { term: "Rosetta Stone", definition: "A stone bearing the same text in three scripts, which allowed scholars to finally decipher hieroglyphs." },
+      ],
+    },
+    {
+      id: "checkpoint",
+      type: "quiz",
+      title: "Test Your Knowledge",
+      icon: "🎯",
+      checkpoint: true,
+      intro: "Seven questions on the land of the pharaohs.",
+      questions: [
+        {
+          q: "Which river made Egyptian civilization possible?",
+          options: ["The Tigris", "The Nile", "The Euphrates", "The Jordan"],
+          correct: 1,
+          fb: "Herodotus called Egypt 'the gift of the Nile' for its life-giving annual flood.",
+        },
+        {
+          q: "What was the Egyptian concept of cosmic truth and order called?",
+          options: ["Ma'at", "Karma", "Logos", "Dharma"],
+          correct: 0,
+          fb: "Ma'at was the balance the pharaoh was sworn to uphold.",
+        },
+        {
+          q: "Why did Egyptians practise mummification?",
+          options: ["For medicine", "To preserve the body for the afterlife", "As punishment", "To save space"],
+          correct: 1,
+          fb: "They believed the soul needed a preserved body to live on.",
+        },
+        {
+          q: "Who built the Great Pyramid of Giza?",
+          options: ["Ramesses II", "Cleopatra", "Khufu", "Hatshepsut"],
+          correct: 2,
+          fb: "Khufu's Great Pyramid was the tallest structure on Earth for ~4,000 years.",
+        },
+        {
+          q: "Hatshepsut was notable as…",
+          options: ["A foreign conqueror", "One of the few women to rule as pharaoh", "A high priest", "A Greek queen"],
+          correct: 1,
+          fb: "She ruled in her own right and built a famous terraced temple.",
+        },
+        {
+          q: "Who was the last pharaoh of Egypt?",
+          options: ["Cleopatra VII", "Nefertiti", "Tutankhamun", "Ramesses II"],
+          correct: 0,
+          fb: "Cleopatra's defeat by Rome in 30 BCE ended pharaonic Egypt.",
+        },
+        {
+          q: "What object allowed scholars to finally read hieroglyphs?",
+          options: ["The Book of the Dead", "The Narmer Palette", "The Rosetta Stone", "The Ishtar Gate"],
+          correct: 2,
+          fb: "The Rosetta Stone's three scripts let Champollion crack the code in 1822.",
+        },
+      ],
+    },
+  ],
+};

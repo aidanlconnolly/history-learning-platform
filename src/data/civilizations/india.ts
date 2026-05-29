@@ -1,0 +1,206 @@
+import type { Civilization } from "../types";
+
+export const india: Civilization = {
+  id: "india",
+  name: "Ancient India",
+  shortName: "India",
+  emblem: "🕉️",
+  region: "The Indian Subcontinent",
+  modernCountries: ["India", "Pakistan", "Bangladesh", "Nepal", "Afghanistan"],
+  timespan: "c. 2600 BCE – 550 CE",
+  startYear: -2600,
+  endYear: 550,
+  color: "#ea580c",
+  tagline:
+    "From the planned cities of the Indus to the Mauryan and Gupta empires — birthplace of zero, of chess, and of two world religions.",
+  summary:
+    "The Indian subcontinent hosted one of the world's earliest urban cultures (the Indus Valley) and later the great Mauryan and Gupta empires. It gave the world the concept of zero and the decimal numerals we all use, pioneering work in mathematics, astronomy and medicine, and two of its major religions: Hinduism and Buddhism.",
+  hero: {
+    wikiTitle: "Sanchi",
+    alt: "The Great Stupa at Sanchi",
+    caption: "The Great Stupa at Sanchi, commissioned by the emperor Ashoka.",
+  },
+  facts: [
+    { label: "Earliest culture", value: "Indus Valley Civilisation" },
+    { label: "Great empires", value: "Maurya, Gupta" },
+    { label: "Religions born here", value: "Hinduism, Buddhism, Jainism" },
+    { label: "Gift to maths", value: "Zero & decimal numerals" },
+    { label: "Golden age", value: "Gupta Empire (~320–550 CE)" },
+  ],
+  sections: [
+    {
+      id: "indus",
+      type: "narrative",
+      title: "The Indus Valley & the Vedas",
+      icon: "🏺",
+      image: {
+        wikiTitle: "Mohenjo-daro",
+        alt: "Ruins of Mohenjo-daro",
+        caption: "Mohenjo-daro — a meticulously planned city of the Indus Valley.",
+      },
+      paragraphs: [
+        "Around 2600 BCE, along the Indus River, arose one of the world's first great urban civilizations. Cities like Mohenjo-daro and Harappa housed tens of thousands of people in astonishingly modern grids, with brick houses, public baths, granaries and the world's earliest known city-wide sewage and drainage systems.",
+        "Remarkably, the Indus people left no palaces, no obvious temples, and little sign of kings or war — a prosperous, orderly society whose writing we still cannot read. Around 1900 BCE, perhaps due to climate change and shifting rivers, their cities were gradually abandoned.",
+        "In the centuries that followed, a culture centred on Sanskrit-speaking peoples and the sacred hymns called the Vedas took shape across northern India. From this 'Vedic' world grew Hinduism, its gods and epics (the Mahabharata and Ramayana), and the hierarchical caste system that would shape Indian society for millennia.",
+      ],
+      terms: [
+        { term: "Indus Valley Civilisation", definition: "An early Bronze Age urban culture famous for planned cities and advanced sanitation." },
+        { term: "Vedas", definition: "The ancient sacred hymns in Sanskrit that form the foundation of Hinduism." },
+        { term: "Caste system", definition: "The hereditary social hierarchy that developed in ancient Indian society." },
+      ],
+      callout: {
+        title: "Cities ahead of their time",
+        body: "Mohenjo-daro had covered drains and private bathrooms over 4,000 years ago — sanitation that much of the world would not match until the modern era. Yet its rulers, religion and even its script remain a mystery.",
+      },
+    },
+    {
+      id: "empires",
+      type: "narrative",
+      title: "The Maurya & Gupta Empires",
+      icon: "👑",
+      image: {
+        wikiTitle: "Ashoka",
+        alt: "Depiction of the emperor Ashoka",
+        caption: "Ashoka, who turned from conquest to a rule of compassion.",
+      },
+      paragraphs: [
+        "In 321 BCE Chandragupta Maurya founded the first empire to unite most of the subcontinent. Aided by his shrewd adviser Kautilya (author of the Arthashastra, a frank manual of statecraft), the Mauryan Empire built a vast, centralised state.",
+        "Its greatest ruler was Ashoka (c. 268–232 BCE). After a war of conquest in Kalinga so bloody that it horrified him, Ashoka renounced violence, embraced Buddhism, and devoted his reign to dharma — moral rule. He carved edicts of tolerance and compassion onto pillars across his empire and sent Buddhist missionaries as far as Sri Lanka and Greece. The lion capital of his pillars is today the emblem of the Republic of India.",
+        "After the Mauryas declined, the Gupta Empire (c. 320–550 CE) presided over a golden age of peace, prosperity and dazzling achievement in mathematics, astronomy, literature and art — the era that gave the world the concept of zero.",
+      ],
+      terms: [
+        { term: "Mauryan Empire", definition: "The first empire to unite most of the Indian subcontinent, founded by Chandragupta Maurya." },
+        { term: "Dharma", definition: "Moral and religious duty; the principle of righteous living and rule that Ashoka championed." },
+        { term: "Gupta Empire", definition: "India's classical golden age of science, mathematics and the arts." },
+      ],
+    },
+    {
+      id: "figures",
+      type: "figures",
+      title: "Emperors, Sages & Scientists",
+      icon: "👤",
+      intro: "Rulers, a renouncer-prince, and the mathematician who reshaped science.",
+      figures: [
+        {
+          name: "Ashoka the Great",
+          role: "Mauryan emperor",
+          lived: "c. 304–232 BCE",
+          bio: "After the carnage of the Kalinga War he embraced Buddhism and nonviolence, ruling by compassion and spreading the faith across Asia.",
+          image: { wikiTitle: "Ashoka", alt: "Statue of Ashoka" },
+        },
+        {
+          name: "Gautama Buddha",
+          role: "Founder of Buddhism",
+          lived: "c. 563–483 BCE",
+          bio: "A prince who renounced his palace to seek the end of suffering, founding Buddhism — a faith that spread across Asia and beyond.",
+          image: { wikiTitle: "Gautama Buddha", alt: "Statue of the Buddha" },
+        },
+        {
+          name: "Chandragupta Maurya",
+          role: "Empire-founder",
+          lived: "c. 350–295 BCE",
+          bio: "Rose from obscurity to overthrow the Nanda dynasty and found the Mauryan Empire, uniting most of the subcontinent for the first time.",
+          image: { wikiTitle: "Chandragupta Maurya", alt: "Depiction of Chandragupta Maurya" },
+        },
+        {
+          name: "Aryabhata",
+          role: "Mathematician & astronomer",
+          lived: "476–550 CE",
+          bio: "Gupta-era genius who calculated π with precision, proposed that the Earth rotates on its axis, and advanced the place-value number system.",
+          image: { wikiTitle: "Aryabhata", alt: "Statue of Aryabhata" },
+        },
+      ],
+    },
+    {
+      id: "achievements",
+      type: "achievements",
+      title: "Ideas, Numbers & Faiths",
+      icon: "💡",
+      intro: "India's contributions to mathematics and religion are woven into daily life worldwide.",
+      achievements: [
+        {
+          name: "Zero & decimal numerals",
+          field: "Mathematics",
+          description: "Indian mathematicians developed zero as a number and the place-value decimal system we all use.",
+          legacy: "Passed via the Arabs to the world as 'Arabic numerals' — the foundation of modern maths.",
+        },
+        {
+          name: "Astronomy",
+          field: "Science",
+          description: "Aryabhata and others accurately measured the year, explained eclipses, and proposed Earth's rotation.",
+          legacy: "Influenced Islamic and later European astronomy.",
+        },
+        {
+          name: "Buddhism & Hinduism",
+          field: "Religion",
+          description: "India gave rise to Hinduism, Buddhism and Jainism — with Buddhism spreading across East and Southeast Asia.",
+          legacy: "Faiths followed by well over a billion people today.",
+        },
+        {
+          name: "Medicine (Ayurveda)",
+          field: "Science",
+          description: "Physicians like Sushruta described surgery — including early plastic surgery — and a holistic system of medicine.",
+          legacy: "Ayurvedic medicine is still practised across South Asia.",
+        },
+        {
+          name: "Chess & games",
+          field: "Culture",
+          description: "The ancestor of chess, chaturanga, was invented in India, along with games using dice and 'snakes and ladders'.",
+          legacy: "Chess spread via Persia to the entire world.",
+        },
+      ],
+    },
+    {
+      id: "checkpoint",
+      type: "quiz",
+      title: "Test Your Knowledge",
+      icon: "🎯",
+      checkpoint: true,
+      intro: "Seven questions on the civilizations of ancient India.",
+      questions: [
+        {
+          q: "What was remarkable about Indus Valley cities like Mohenjo-daro?",
+          options: ["Their giant pyramids", "Their advanced planning and sanitation", "Their iron weapons", "Their gold temples"],
+          correct: 1,
+          fb: "They had grid layouts and city-wide drainage over 4,000 years ago.",
+        },
+        {
+          q: "What are the Vedas?",
+          options: ["Ancient law codes", "Sacred Hindu hymns", "Mauryan coins", "Buddhist monasteries"],
+          correct: 1,
+          fb: "The Vedas are the foundational sacred texts of Hinduism.",
+        },
+        {
+          q: "Which emperor embraced Buddhism after the bloody Kalinga War?",
+          options: ["Chandragupta", "Ashoka", "Aryabhata", "Kanishka"],
+          correct: 1,
+          fb: "Horrified by the slaughter, Ashoka turned to nonviolence and dharma.",
+        },
+        {
+          q: "Which world-changing mathematical concept did India give us?",
+          options: ["Negative numbers only", "Zero and the decimal system", "Roman numerals", "The abacus"],
+          correct: 1,
+          fb: "Zero and place-value decimals reached the world as 'Arabic numerals'.",
+        },
+        {
+          q: "Which religions originated in India?",
+          options: ["Islam and Christianity", "Hinduism, Buddhism and Jainism", "Zoroastrianism", "Shinto"],
+          correct: 1,
+          fb: "All three arose in India; Buddhism spread across much of Asia.",
+        },
+        {
+          q: "India's classical golden age occurred under which empire?",
+          options: ["The Maurya", "The Gupta", "The Mughal", "The Chola"],
+          correct: 1,
+          fb: "The Gupta era saw great advances in science, maths and the arts.",
+        },
+        {
+          q: "The game of chess descends from which Indian game?",
+          options: ["Pachisi", "Chaturanga", "Go", "Senet"],
+          correct: 1,
+          fb: "Chaturanga spread via Persia to become chess worldwide.",
+        },
+      ],
+    },
+  ],
+};

@@ -2,9 +2,8 @@ import { Route, Routes } from "react-router-dom";
 import { ProgressProvider } from "./hooks/ProgressContext";
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
-import TimelinePage from "./pages/TimelinePage";
+import CivilizationPage from "./pages/CivilizationPage";
 import MapPage from "./pages/MapPage";
-import QuizzesPage from "./pages/QuizzesPage";
 import ProgressPage from "./pages/ProgressPage";
 
 export default function App() {
@@ -13,9 +12,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="timeline" element={<TimelinePage />} />
-          <Route path="map" element={<MapPage />} />
-          <Route path="quizzes" element={<QuizzesPage />} />
+          <Route path="civilization/:id" element={<CivilizationPage />} />
+          <Route path="atlas" element={<MapPage />} />
           <Route path="progress" element={<ProgressPage />} />
           <Route path="*" element={<HomePage />} />
         </Route>

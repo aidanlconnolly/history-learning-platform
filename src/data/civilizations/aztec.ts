@@ -1,0 +1,221 @@
+import type { Civilization } from "../types";
+
+export const aztec: Civilization = {
+  id: "aztec",
+  name: "The Aztec Empire",
+  shortName: "Aztec",
+  emblem: "🦅",
+  region: "Central Mexico",
+  modernCountries: ["Mexico"],
+  timespan: "1345 – 1521 CE",
+  startYear: 1345,
+  endYear: 1521,
+  color: "#0891b2",
+  tagline:
+    "Builders of an island metropolis greater than any city in Europe — a warrior empire fed by tribute and sacrifice, toppled in just two years.",
+  summary:
+    "In barely two centuries the Mexica people rose from wandering newcomers to masters of central Mexico, ruling a tribute empire of millions from Tenochtitlan — an island city of canals and causeways larger than any in contemporary Europe. Their world of warriors, gods and human sacrifice was destroyed with shocking speed by Spanish conquistadors and the diseases they carried.",
+  hero: {
+    wikiTitle: "Templo Mayor",
+    alt: "The Templo Mayor in Mexico City",
+    caption: "The Templo Mayor, the great twin-temple at the heart of Tenochtitlan.",
+  },
+  facts: [
+    { label: "People", value: "The Mexica" },
+    { label: "Capital", value: "Tenochtitlan (now Mexico City)" },
+    { label: "Structure", value: "Tribute empire (Triple Alliance)" },
+    { label: "Capital's size", value: "~200,000 people" },
+    { label: "Fell", value: "1521 to Cortés" },
+  ],
+  sections: [
+    {
+      id: "rise",
+      type: "narrative",
+      title: "The Eagle on the Cactus",
+      icon: "🌵",
+      image: {
+        wikiTitle: "Tenochtitlan",
+        alt: "Model of the city of Tenochtitlan",
+        caption: "Tenochtitlan, built on an island in Lake Texcoco.",
+      },
+      paragraphs: [
+        "The Mexica (whom we call the Aztecs) arrived late in the Valley of Mexico as poor, despised newcomers. According to legend, their god Huitzilopochtli told them to settle where they saw an eagle perched on a cactus devouring a snake — an omen they found on a swampy island in Lake Texcoco. There, around 1325, they founded Tenochtitlan. (That eagle and snake still adorn the Mexican flag.)",
+        "From this unpromising marsh they built a marvel. By draining and reclaiming land, raising temples and laying out canals and broad causeways linking the island to the shore, they created a metropolis of perhaps 200,000 people — larger than London, Paris or any city in Europe at the time.",
+        "In 1428 the Mexica joined two neighbouring cities in the Triple Alliance and turned conqueror, dominating central Mexico within decades through a combination of military skill and political cunning.",
+      ],
+      terms: [
+        { term: "Mexica", definition: "The people we usually call the Aztecs, who founded Tenochtitlan and led the empire." },
+        { term: "Tenochtitlan", definition: "The island capital of canals and causeways, on whose ruins Mexico City now stands." },
+        { term: "Triple Alliance", definition: "The coalition of three cities (led by the Mexica) that formed the Aztec Empire in 1428." },
+      ],
+      callout: {
+        title: "An empire of tribute",
+        body: "Rather than directly governing conquered peoples, the Aztecs mostly left local rulers in place and demanded heavy tribute — food, cloth, gold, and captives for sacrifice. This made the empire rich but also resented, leaving many subject peoples ready to side with the Spanish.",
+      },
+    },
+    {
+      id: "religion",
+      type: "narrative",
+      title: "Gods, War & Sacrifice",
+      icon: "🔆",
+      image: {
+        wikiTitle: "Aztec sun stone",
+        alt: "The Aztec Sun Stone",
+        caption: "The Aztec Sun Stone, a monument to their cosmology of cyclical worlds.",
+      },
+      paragraphs: [
+        "Aztec religion was intensely demanding. They believed the universe had been destroyed and reborn several times, and that the present sun was kept moving only by a constant supply of human blood. Without sacrifice, they feared, the sun would stop and the world would end.",
+        "Human sacrifice — usually of war captives, atop the great pyramids — was therefore a sacred duty, performed on a scale that horrified the Spanish (and that Spanish accounts likely exaggerated). It was bound up with warfare: the Aztecs even fought ritual 'Flower Wars' partly to capture victims.",
+        "Yet this was also a highly cultured society, with poetry, schools for both nobles and commoners, vast markets, botanical gardens and a deep love of flowers, music and rhetoric. The famous Sun Stone is a monument to their elaborate vision of cosmic time.",
+      ],
+      terms: [
+        { term: "Huitzilopochtli", definition: "The Mexica god of sun and war, who demanded blood to keep the sun moving." },
+        { term: "Flower War", definition: "A ritual battle fought partly to capture enemies for sacrifice rather than to take land." },
+        { term: "Sun Stone", definition: "A great carved disc depicting the Aztec cosmos and its cycles of creation and destruction." },
+      ],
+    },
+    {
+      id: "figures",
+      type: "figures",
+      title: "Rulers & Conquerors",
+      icon: "👤",
+      intro: "The emperors who built and lost the empire — and the man who toppled it.",
+      figures: [
+        {
+          name: "Itzcoatl",
+          role: "Emperor (tlatoani)",
+          lived: "reigned 1427–1440",
+          bio: "Forged the Triple Alliance and launched the Aztec rise to empire, also rewriting history to glorify the Mexica.",
+          image: { wikiTitle: "Itzcoatl", alt: "Depiction of Itzcoatl" },
+        },
+        {
+          name: "Moctezuma II",
+          role: "Last great emperor",
+          lived: "c. 1466–1520",
+          bio: "Ruled the empire at its height and met Cortés in 1519. Taken hostage by the Spanish, he died amid the chaos of the conquest.",
+          image: { wikiTitle: "Moctezuma II", alt: "Depiction of Moctezuma II" },
+        },
+        {
+          name: "Cuauhtémoc",
+          role: "Final emperor",
+          lived: "c. 1495–1525",
+          bio: "Led the desperate last defence of Tenochtitlan against the Spanish siege, becoming a national hero of resistance in Mexico.",
+          image: { wikiTitle: "Cuauhtémoc", alt: "Statue of Cuauhtémoc" },
+        },
+        {
+          name: "Hernán Cortés",
+          role: "Spanish conquistador",
+          lived: "1485–1547",
+          bio: "Landed in 1519 with a few hundred men, allied with the Aztecs' enemies, and within two years destroyed the empire.",
+          image: { wikiTitle: "Hernán Cortés", alt: "Portrait of Hernán Cortés" },
+        },
+      ],
+    },
+    {
+      id: "achievements",
+      type: "achievements",
+      title: "Aztec Ingenuity",
+      icon: "💡",
+      intro: "Far from 'primitive', the Aztecs were skilled engineers, farmers and administrators.",
+      achievements: [
+        {
+          name: "Chinampas (floating gardens)",
+          field: "Agriculture",
+          description: "Artificial islands of mud and vegetation built in the lake created some of the most productive farmland on Earth.",
+          legacy: "Still farmed today at Xochimilco near Mexico City.",
+        },
+        {
+          name: "Causeways & aqueducts",
+          field: "Engineering",
+          description: "Broad raised roads with removable bridges linked the island city to land, while aqueducts brought fresh water.",
+          legacy: "Awed the Spanish, who compared Tenochtitlan to Venice.",
+        },
+        {
+          name: "Universal schooling",
+          field: "Society",
+          description: "Aztec children — both noble and common — were required to attend schools, an unusually broad system of education.",
+          legacy: "One of the earliest near-universal education systems.",
+        },
+        {
+          name: "Nahuatl & poetry",
+          field: "Culture",
+          description: "Their language Nahuatl was rich in poetry and rhetoric, recorded in painted books (codices).",
+          legacy: "Nahuatl gave English words like 'chocolate', 'tomato' and 'avocado'.",
+        },
+      ],
+    },
+    {
+      id: "conquest",
+      type: "narrative",
+      title: "The Fall of Tenochtitlan",
+      icon: "⚔️",
+      image: {
+        wikiTitle: "Fall of Tenochtitlan",
+        alt: "Depiction of the fall of Tenochtitlan",
+        caption: "The siege of Tenochtitlan, 1521 — the end of the Aztec Empire.",
+      },
+      paragraphs: [
+        "In 1519 Hernán Cortés landed on the Mexican coast with around 500 Spaniards, horses and cannon. He marched inland, gathering thousands of allies from peoples who hated Aztec tribute and sacrifice — above all the Tlaxcalans. The empire's own ruthlessness now turned against it.",
+        "After a tense standoff, the Spanish seized the emperor Moctezuma. The Aztecs rose up and drove them out in a bloody retreat, but Cortés returned and laid siege to Tenochtitlan in 1521. The defenders fought heroically under Cuauhtémoc, but were doomed by Spanish guns, Indigenous allies, and above all smallpox — a European disease against which the Aztecs had no immunity, killing a huge share of the population.",
+        "When Tenochtitlan fell in August 1521, the Spanish razed it and built Mexico City on its ruins. An empire of millions had been destroyed in barely two years — the start of three centuries of Spanish colonial rule over Mexico.",
+      ],
+      terms: [
+        { term: "Conquistador", definition: "A Spanish soldier-adventurer who conquered territories in the Americas." },
+        { term: "Smallpox", definition: "A European disease that devastated Indigenous populations with no immunity, crucial to the conquest." },
+        { term: "Indigenous allies", definition: "Peoples like the Tlaxcalans who, resenting Aztec rule, joined the Spanish against them." },
+      ],
+    },
+    {
+      id: "checkpoint",
+      type: "quiz",
+      title: "Test Your Knowledge",
+      icon: "🎯",
+      checkpoint: true,
+      intro: "Seven questions on the empire of the Mexica.",
+      questions: [
+        {
+          q: "What was the Aztec capital, built on an island in a lake?",
+          options: ["Cusco", "Tikal", "Tenochtitlan", "Teotihuacan"],
+          correct: 2,
+          fb: "Tenochtitlan stood where Mexico City is today.",
+        },
+        {
+          q: "What symbol, tied to the Aztec founding legend, is on the Mexican flag?",
+          options: ["A jaguar", "An eagle on a cactus eating a snake", "A sun disc", "A pyramid"],
+          correct: 1,
+          fb: "The eagle, cactus and snake marked the spot to build the city.",
+        },
+        {
+          q: "How did the Aztecs mainly control conquered peoples?",
+          options: ["Direct governors everywhere", "Demanding heavy tribute", "Religious conversion", "Mass deportation"],
+          correct: 1,
+          fb: "It was a tribute empire — profitable but widely resented.",
+        },
+        {
+          q: "Why did the Aztecs practise large-scale human sacrifice?",
+          options: ["For entertainment", "To keep the sun moving and the world alive", "As criminal punishment", "To control population"],
+          correct: 1,
+          fb: "They believed blood was needed to sustain the sun and cosmos.",
+        },
+        {
+          q: "What were chinampas?",
+          options: ["War canoes", "Floating garden farm-plots", "Temples", "Tribute records"],
+          correct: 1,
+          fb: "These artificial island gardens made the lake hugely productive.",
+        },
+        {
+          q: "Who led the Spanish conquest of the Aztecs?",
+          options: ["Pizarro", "Columbus", "Cortés", "Magellan"],
+          correct: 2,
+          fb: "Cortés landed in 1519 and destroyed the empire by 1521.",
+        },
+        {
+          q: "Besides guns and allies, what was decisive in the Aztec defeat?",
+          options: ["Famine", "Smallpox", "An earthquake", "A solar eclipse"],
+          correct: 1,
+          fb: "European smallpox devastated the Aztecs, who had no immunity.",
+        },
+      ],
+    },
+  ],
+};

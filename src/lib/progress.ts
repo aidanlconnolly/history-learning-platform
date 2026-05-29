@@ -1,31 +1,29 @@
-// Pure progress math — no React, no storage. Imported by useProgress and components.
+// Pure progress math — no React, no storage. Imported by useProgress + UI.
+// Progress is tracked per civilization journey: which sections are completed
+// and the best checkpoint-quiz score.
 
-export type QuizAttempt = {
-  eraId: string;
-  score: number; // number correct
-  total: number; // number of questions
-  at: number; // epoch ms
+export type CivProgress = {
+  sectionsDone: string[];
+  checkpointBest: number | null; // best fraction 0–1, null if never taken
 };
 
 export type ProgressState = {
-  viewedEventIds: string[];
-  attempts: QuizAttempt[];
+  civs: Record<string, CivProgress>;
   currentStreak: number;
   longestStreak: number;
-  lastActiveDay: string | null; // YYYY-MM-DD of last activity
+  lastActiveDay: string | null; // YYYY-MM-DD
 };
 
 export function defaultProgress(): ProgressState {
-  return {
-    viewedEventIds: [],
-    attempts: [],
-    currentStreak: 0,
-    longestStreak: 0,
-    lastActiveDay: null,
-  };
+  return { civs: {}, currentStreak: 0, longestStreak: 0, lastActiveDay: null };
 }
 
-/** Local-time day key, e.g. "2026-05-29". */
+export function civProgress(state: ProgressState, civId: string): CivProgress {
+  return state.civs[civId] ?? { sectionsDone: [], checkpointBest: null };
+}
+
+// --- Streaks ---------------------------------------------------------------
+
 export function dayKey(d: Date = new Date()): string {
   const y = d.getFullYear();
   const m = String(d.getMonth() + 1).padStart(2, "0");
@@ -33,18 +31,16 @@ export function dayKey(d: Date = new Date()): string {
   return `${y}-${m}-${day}`;
 }
 
-/** Whole-day difference between two YYYY-MM-DD keys (b - a). */
 export function dayDiff(a: string, b: string): number {
   const da = new Date(`${a}T00:00:00`);
   const db = new Date(`${b}T00:00:00`);
   return Math.round((db.getTime() - da.getTime()) / 86_400_000);
 }
 
-/**
- * Recompute streak fields given the last active day and "today".
- * Same day -> unchanged; consecutive day -> +1; gap -> reset to 1.
- */
-export function bumpStreak(state: ProgressState, today: string): Pick<ProgressState, "currentStreak" | "longestStreak" | "lastActiveDay"> {
+export function bumpStreak(
+  state: ProgressState,
+  today: string
+): Pick<ProgressState, "currentStreak" | "longestStreak" | "lastActiveDay"> {
   if (state.lastActiveDay === today) {
     return {
       currentStreak: state.currentStreak,
@@ -61,27 +57,42 @@ export function bumpStreak(state: ProgressState, today: string): Pick<ProgressSt
   };
 }
 
-/** Percentage (0–100) of all events the user has viewed. */
-export function explorationPct(viewedCount: number, total: number): number {
-  if (total === 0) return 0;
-  return Math.round((viewedCount / total) * 100);
+// --- Derived stats ---------------------------------------------------------
+
+export function civCompletionPct(
+  state: ProgressState,
+  civId: string,
+  totalSections: number
+): number {
+  if (totalSections === 0) return 0;
+  const done = civProgress(state, civId).sectionsDone.length;
+  return Math.round((Math.min(done, totalSections) / totalSections) * 100);
 }
 
-/** Best score (correct/total as a fraction 0–1) for an era, or null if untaken. */
-export function bestScoreForEra(attempts: QuizAttempt[], eraId: string): number | null {
-  const forEra = attempts.filter((a) => a.eraId === eraId && a.total > 0);
-  if (forEra.length === 0) return null;
-  return Math.max(...forEra.map((a) => a.score / a.total));
+export function startedCivCount(state: ProgressState): number {
+  return Object.values(state.civs).filter((c) => c.sectionsDone.length > 0).length;
 }
 
-export function totalQuizzesTaken(attempts: QuizAttempt[]): number {
-  return attempts.length;
+/** Civilizations whose every section is complete (needs the section counts). */
+export function completedCivCount(
+  state: ProgressState,
+  sectionCounts: Record<string, number>
+): number {
+  return Object.entries(state.civs).filter(([id, c]) => {
+    const total = sectionCounts[id] ?? Infinity;
+    return total > 0 && c.sectionsDone.length >= total;
+  }).length;
 }
 
-/** Average score across all attempts as a fraction 0–1, or null if none. */
-export function averageScore(attempts: QuizAttempt[]): number | null {
-  const scored = attempts.filter((a) => a.total > 0);
-  if (scored.length === 0) return null;
-  const sum = scored.reduce((acc, a) => acc + a.score / a.total, 0);
-  return sum / scored.length;
+export function totalSectionsDone(state: ProgressState): number {
+  return Object.values(state.civs).reduce((sum, c) => sum + c.sectionsDone.length, 0);
+}
+
+/** Average best checkpoint score across civs that have a recorded score. */
+export function averageCheckpoint(state: ProgressState): number | null {
+  const scores = Object.values(state.civs)
+    .map((c) => c.checkpointBest)
+    .filter((s): s is number => s !== null);
+  if (scores.length === 0) return null;
+  return scores.reduce((a, b) => a + b, 0) / scores.length;
 }

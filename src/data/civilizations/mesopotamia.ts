@@ -1,0 +1,225 @@
+import type { Civilization } from "../types";
+
+export const mesopotamia: Civilization = {
+  id: "mesopotamia",
+  name: "Mesopotamia",
+  shortName: "Mesopotamia",
+  emblem: "𒀭",
+  region: "The Fertile Crescent (Iraq, Syria)",
+  modernCountries: ["Iraq", "Syria", "Turkey", "Iran"],
+  timespan: "c. 3500 – 539 BCE",
+  startYear: -3500,
+  endYear: -539,
+  color: "#ca8a04",
+  tagline:
+    "The 'land between the rivers' — birthplace of cities, writing, law and the wheel, where history itself begins.",
+  summary:
+    "Mesopotamia, the fertile plain between the Tigris and Euphrates, was the world's first urban civilization. Here humans first built cities, invented writing, wrote down laws, divided the day into hours and the circle into degrees. A succession of peoples — Sumerians, Akkadians, Babylonians and Assyrians — rose and fell across three thousand years, each building on the last.",
+  hero: {
+    wikiTitle: "Ziggurat of Ur",
+    alt: "The reconstructed Ziggurat of Ur",
+    caption: "The Ziggurat of Ur — a temple-mountain to the moon god Nanna.",
+  },
+  facts: [
+    { label: "Meaning", value: "Greek for 'between rivers'" },
+    { label: "Rivers", value: "Tigris & Euphrates" },
+    { label: "Key peoples", value: "Sumerians, Akkadians, Babylonians, Assyrians" },
+    { label: "First cities", value: "Uruk, Ur, Lagash, Babylon" },
+    { label: "Writing", value: "Cuneiform (c. 3200 BCE)" },
+  ],
+  sections: [
+    {
+      id: "origins",
+      type: "narrative",
+      title: "The First Cities",
+      icon: "🏙️",
+      image: {
+        wikiTitle: "Uruk",
+        alt: "Ruins of the ancient city of Uruk",
+        caption: "Uruk — one of the world's first true cities.",
+      },
+      paragraphs: [
+        "Around 5,000 years ago, in the flat, hot plain of southern Iraq, people learned to control the unpredictable flooding of the Tigris and Euphrates with canals and dikes. Reliable irrigation produced food surpluses, and surpluses produced something new in human history: the city.",
+        "The Sumerians built the first of them — Uruk, Ur, Eridu, Lagash — walled cities of tens of thousands of people, dominated by towering mud-brick temples called ziggurats. Each city was its own state, ruled by a king who governed on behalf of the city's patron god.",
+        "To manage the grain, taxes and trade of these crowded cities, Sumerian scribes pressed wedge-shaped marks into clay tablets — cuneiform, the earliest known writing system. With it, humans could for the first time record not just numbers but laws, stories and history. Everything before writing is 'prehistory'; with Mesopotamia, history begins.",
+      ],
+      terms: [
+        { term: "Ziggurat", definition: "A massive stepped temple-tower of mud brick, the centre of a Mesopotamian city's religious life." },
+        { term: "City-state", definition: "An independent city and its surrounding farmland, with its own king and god — the basic Sumerian political unit." },
+        { term: "Cuneiform", definition: "'Wedge-shaped' writing pressed into clay, the world's first writing system." },
+      ],
+      callout: {
+        title: "Why it mattered",
+        body: "Almost every later civilization inherited Mesopotamian inventions — the city, the written word, the law code, the 60-minute hour — usually without knowing it. This was the laboratory in which 'civilization' was first assembled.",
+      },
+    },
+    {
+      id: "empires",
+      type: "narrative",
+      title: "From City-States to Empires",
+      icon: "👑",
+      image: {
+        wikiTitle: "Akkadian Empire",
+        alt: "Map and artefacts of the Akkadian Empire",
+        caption: "Sargon of Akkad built the world's first empire around 2334 BCE.",
+      },
+      paragraphs: [
+        "For centuries the Sumerian city-states warred among themselves. Then, around 2334 BCE, a ruler named Sargon of Akkad conquered them all and forged the world's first empire — a single state ruling many cities and peoples under one king.",
+        "Power passed down the centuries through a series of great states. Babylon rose under King Hammurabi (c. 1750 BCE), famous for carving nearly 300 laws onto a stone pillar for all to see. Later the Assyrians built a terrifying military empire stretching from Egypt to the Persian Gulf, ruling through professional armies, siege engines and deliberate terror.",
+        "Finally Babylon rose again under Nebuchadnezzar II (the Neo-Babylonian Empire), who rebuilt the city with the legendary Ishtar Gate and, by tradition, the Hanging Gardens. In 539 BCE the Persian king Cyrus the Great captured Babylon, ending three millennia of independent Mesopotamian rule.",
+      ],
+      terms: [
+        { term: "Empire", definition: "A single state ruling many different cities and peoples — pioneered by Sargon of Akkad." },
+        { term: "Stele", definition: "An upright stone monument, like the one bearing Hammurabi's law code." },
+      ],
+    },
+    {
+      id: "figures",
+      type: "figures",
+      title: "Kings & Lawgivers",
+      icon: "👤",
+      intro: "A few names survive from the dawn of recorded history.",
+      figures: [
+        {
+          name: "Sargon of Akkad",
+          role: "Empire-builder",
+          lived: "reigned c. 2334–2279 BCE",
+          bio: "Rose from humble origins to conquer all of Sumer and beyond, founding the Akkadian Empire — the first multi-ethnic empire in history.",
+          image: { wikiTitle: "Sargon of Akkad", alt: "Bronze head thought to depict Sargon" },
+        },
+        {
+          name: "Hammurabi",
+          role: "King of Babylon",
+          lived: "reigned c. 1792–1750 BCE",
+          bio: "United Mesopotamia under Babylon and issued the famous Code of Hammurabi, one of the earliest and most complete written legal codes.",
+          image: { wikiTitle: "Hammurabi", alt: "Relief of Hammurabi" },
+        },
+        {
+          name: "Ashurbanipal",
+          role: "Assyrian king & scholar",
+          lived: "reigned 669–631 BCE",
+          bio: "Ruled the Assyrian Empire at its height and assembled the great Library of Nineveh, whose tablets preserved much of what we know of Mesopotamian literature.",
+          image: { wikiTitle: "Ashurbanipal", alt: "Relief of Ashurbanipal" },
+        },
+        {
+          name: "Nebuchadnezzar II",
+          role: "King of Babylon",
+          lived: "reigned 605–562 BCE",
+          bio: "Rebuilt Babylon into the wonder of the ancient world, with the blue-tiled Ishtar Gate and the fabled Hanging Gardens, and conquered Jerusalem.",
+          image: { wikiTitle: "Nebuchadnezzar II", alt: "Depiction of Nebuchadnezzar II" },
+        },
+      ],
+    },
+    {
+      id: "achievements",
+      type: "achievements",
+      title: "Inventions & First Ideas",
+      icon: "💡",
+      intro: "The sheer number of 'firsts' from Mesopotamia is staggering.",
+      achievements: [
+        {
+          name: "Writing (cuneiform)",
+          field: "Communication",
+          description: "The first writing system, evolving from accounting marks into a full script able to record any idea.",
+          legacy: "The ancestor of recorded literature, law and history itself.",
+        },
+        {
+          name: "The wheel & the plough",
+          field: "Technology",
+          description: "Mesopotamians were among the first to use the wheel for transport and pottery, and the seed plough for farming.",
+          legacy: "Foundations of transport and agriculture used worldwide ever since.",
+        },
+        {
+          name: "Written law",
+          field: "Law",
+          description: "Hammurabi's Code set out public, fixed punishments — the principle that law should be written down and apply to all.",
+          legacy: "An ancestor of every later legal code.",
+        },
+        {
+          name: "Base-60 mathematics",
+          field: "Science",
+          description: "Babylonians counted in base 60, dividing the hour into 60 minutes and the circle into 360 degrees.",
+          legacy: "We still tell time and measure angles their way.",
+        },
+        {
+          name: "Astronomy",
+          field: "Science",
+          description: "Priest-astronomers tracked the planets and stars with remarkable accuracy, predicting eclipses and creating the zodiac.",
+          legacy: "The basis of the calendar and of later Greek astronomy.",
+        },
+      ],
+    },
+    {
+      id: "legacy",
+      type: "narrative",
+      title: "Legacy of the Land Between the Rivers",
+      icon: "📜",
+      image: {
+        wikiTitle: "Epic of Gilgamesh",
+        alt: "Tablet of the Epic of Gilgamesh",
+        caption: "The Epic of Gilgamesh — the world's oldest great work of literature.",
+      },
+      paragraphs: [
+        "Mesopotamia gave the world its first work of great literature, the Epic of Gilgamesh, a poem about a king's search for immortality that includes a flood story strikingly similar to Noah's. Its themes of friendship, loss and mortality still move readers four thousand years later.",
+        "Though its cities crumbled into the famous 'tells' (mounds) of the Iraqi desert, Mesopotamia's inventions never died. They flowed into the Bible, into Greek science and into the everyday fabric of modern life — every time we read, sign a contract, check the time, or measure a circle.",
+        "Buried and forgotten for millennia, this lost world was only rediscovered in the 19th century when scholars learned to read cuneiform again — reopening, quite literally, the first chapter of the human story.",
+      ],
+      terms: [
+        { term: "Epic of Gilgamesh", definition: "The oldest surviving great work of literature, a Mesopotamian poem about a king and the meaning of mortality." },
+        { term: "Tell", definition: "An artificial mound formed by the accumulated ruins of an ancient settlement built and rebuilt over centuries." },
+      ],
+    },
+    {
+      id: "checkpoint",
+      type: "quiz",
+      title: "Test Your Knowledge",
+      icon: "🎯",
+      checkpoint: true,
+      intro: "Seven questions on the cradle of civilization.",
+      questions: [
+        {
+          q: "What does 'Mesopotamia' mean?",
+          options: ["Land of the pharaohs", "Between the rivers", "City of gods", "Land of gold"],
+          correct: 1,
+          fb: "It's Greek for 'between rivers' — the Tigris and the Euphrates.",
+        },
+        {
+          q: "What was the world's first writing system, developed by the Sumerians?",
+          options: ["Hieroglyphics", "The alphabet", "Cuneiform", "Linear B"],
+          correct: 2,
+          fb: "Cuneiform was pressed into clay tablets with a reed stylus from around 3200 BCE.",
+        },
+        {
+          q: "Who founded the world's first empire around 2334 BCE?",
+          options: ["Hammurabi", "Sargon of Akkad", "Nebuchadnezzar", "Gilgamesh"],
+          correct: 1,
+          fb: "Sargon of Akkad conquered the Sumerian city-states into a single empire.",
+        },
+        {
+          q: "What is the Code of Hammurabi famous as?",
+          options: ["A map of Babylon", "An early written law code", "A religious hymn", "A trade treaty"],
+          correct: 1,
+          fb: "Its ~300 laws were carved on a stele for all to see.",
+        },
+        {
+          q: "A towering Mesopotamian temple was called a…",
+          options: ["Pyramid", "Ziggurat", "Pagoda", "Forum"],
+          correct: 1,
+          fb: "Ziggurats were massive stepped mud-brick temple-towers.",
+        },
+        {
+          q: "Why do we have 60 minutes in an hour and 360 degrees in a circle?",
+          options: ["The Romans decided it", "From Babylonian base-60 mathematics", "It's based on the Moon", "From the Greeks"],
+          correct: 1,
+          fb: "The Babylonians counted in base 60 — and we still keep time their way.",
+        },
+        {
+          q: "The Epic of Gilgamesh is notable as…",
+          options: ["The first map", "The world's oldest great work of literature", "A law code", "A king list"],
+          correct: 1,
+          fb: "This Mesopotamian poem even contains a flood story like Noah's.",
+        },
+      ],
+    },
+  ],
+};

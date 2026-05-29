@@ -1,10 +1,12 @@
-import { eras } from "../data/eras";
-import { totalEventCount } from "../lib/history";
+import { Link } from "react-router-dom";
+import { civsByChronology, totalSectionCount } from "../lib/civ";
 import {
-  averageScore,
-  bestScoreForEra,
-  explorationPct,
-  totalQuizzesTaken,
+  averageCheckpoint,
+  civCompletionPct,
+  civProgress,
+  completedCivCount,
+  startedCivCount,
+  totalSectionsDone,
 } from "../lib/progress";
 import { useProgressStore } from "../hooks/ProgressContext";
 import ProgressBar from "../components/ProgressBar";
@@ -20,11 +22,14 @@ function Stat({ label, value }: { label: string; value: string }) {
 
 export default function ProgressPage() {
   const { state, resetProgress } = useProgressStore();
+  const civs = civsByChronology();
 
-  const explored = state.viewedEventIds.length;
-  const total = totalEventCount();
-  const pct = explorationPct(explored, total);
-  const avg = averageScore(state.attempts);
+  const sectionCounts = Object.fromEntries(civs.map((c) => [c.id, c.sections.length]));
+  const totalSections = totalSectionCount();
+  const doneSections = totalSectionsDone(state);
+  const overallPct = totalSections > 0 ? Math.round((doneSections / totalSections) * 100) : 0;
+  const avg = averageCheckpoint(state);
+  const hasProgress = doneSections > 0;
 
   return (
     <div className="space-y-8">
@@ -33,7 +38,7 @@ export default function ProgressPage() {
           <h1 className="font-serif text-3xl font-bold text-white">Your Progress</h1>
           <p className="mt-1 text-slate-400">Saved locally on this device.</p>
         </div>
-        {(explored > 0 || state.attempts.length > 0) && (
+        {hasProgress && (
           <button
             onClick={() => {
               if (confirm("Reset all progress? This cannot be undone.")) resetProgress();
@@ -47,35 +52,44 @@ export default function ProgressPage() {
 
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
         <Stat label="Current streak" value={`${state.currentStreak} 🔥`} />
-        <Stat label="Longest streak" value={`${state.longestStreak}`} />
-        <Stat label="Quizzes taken" value={`${totalQuizzesTaken(state.attempts)}`} />
-        <Stat label="Avg. quiz score" value={avg === null ? "—" : `${Math.round(avg * 100)}%`} />
+        <Stat label="Journeys started" value={`${startedCivCount(state)}`} />
+        <Stat label="Journeys completed" value={`${completedCivCount(state, sectionCounts)}`} />
+        <Stat label="Avg. checkpoint" value={avg === null ? "—" : `${Math.round(avg * 100)}%`} />
       </div>
 
       <div>
         <div className="mb-1.5 flex items-center justify-between text-sm text-slate-300">
-          <span>Events explored</span>
+          <span>Sections explored</span>
           <span>
-            {explored} / {total} ({pct}%)
+            {doneSections} / {totalSections} ({overallPct}%)
           </span>
         </div>
-        <ProgressBar value={pct} />
+        <ProgressBar value={overallPct} />
       </div>
 
       <div>
-        <h2 className="font-serif text-xl font-semibold text-white">Mastery by era</h2>
+        <h2 className="font-serif text-xl font-semibold text-white">By civilization</h2>
         <div className="mt-4 space-y-3">
-          {eras.map((era) => {
-            const best = bestScoreForEra(state.attempts, era.id);
-            const value = best === null ? 0 : best * 100;
+          {civs.map((civ) => {
+            const pct = civCompletionPct(state, civ.id, civ.sections.length);
+            const best = civProgress(state, civ.id).checkpointBest;
             return (
-              <div key={era.id}>
+              <Link
+                key={civ.id}
+                to={`/civilization/${civ.id}`}
+                className="block rounded-lg border border-slate-800 p-3 transition-colors hover:border-slate-600 hover:bg-slate-800/40"
+              >
                 <div className="mb-1 flex items-center justify-between text-sm">
-                  <span className="text-slate-200">{era.name}</span>
-                  <span className="text-slate-400">{best === null ? "Not attempted" : `${Math.round(value)}%`}</span>
+                  <span className="flex items-center gap-2 text-slate-200">
+                    <span>{civ.emblem}</span>
+                    {civ.name}
+                  </span>
+                  <span className="text-slate-400">
+                    {pct}%{best !== null && ` · best quiz ${Math.round(best * 100)}%`}
+                  </span>
                 </div>
-                <ProgressBar value={value} color={era.color} />
-              </div>
+                <ProgressBar value={pct} color={civ.color} />
+              </Link>
             );
           })}
         </div>

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 
 const GEO_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
@@ -6,64 +7,51 @@ const BASE_FILL = "#334155"; // slate-700
 const BASE_STROKE = "#1e293b";
 
 type Props = {
-  eraColor: string;
-  countryToRegion: Map<string, string>; // lowercased country name -> region id
-  selectedRegionId: string | null;
-  onSelectRegion: (regionId: string | null) => void;
+  // lowercased country name -> { civId, color }
+  countryCiv: Map<string, { civId: string; color: string }>;
+  onSelectCiv: (civId: string) => void;
+  onHoverCiv?: (civId: string | null) => void;
 };
 
-export default function WorldMap({
-  eraColor,
-  countryToRegion,
-  selectedRegionId,
-  onSelectRegion,
-}: Props) {
+export default function WorldMap({ countryCiv, onSelectCiv, onHoverCiv }: Props) {
+  const [hovered, setHovered] = useState<string | null>(null);
+
   return (
     <div className="overflow-hidden rounded-xl border border-slate-700 bg-slate-900">
-      <ComposableMap
-        projectionConfig={{ scale: 145 }}
-        width={900}
-        height={420}
-        style={{ width: "100%", height: "auto" }}
-      >
+      <ComposableMap projectionConfig={{ scale: 150 }} width={900} height={440} style={{ width: "100%", height: "auto" }}>
         <ZoomableGroup center={[10, 25]} zoom={1} maxZoom={5}>
           <Geographies geography={GEO_URL}>
             {({ geographies }) =>
               geographies.map((geo) => {
                 const name: string = geo.properties.name ?? "";
-                const regionId = countryToRegion.get(name.toLowerCase());
-                const isActive = Boolean(regionId);
-                const isSelected = regionId != null && regionId === selectedRegionId;
-
-                const fill = isSelected
-                  ? eraColor
-                  : isActive
-                  ? `${eraColor}99` // ~60% opacity tint
-                  : BASE_FILL;
+                const entry = countryCiv.get(name.toLowerCase());
+                const isCiv = Boolean(entry);
+                const isHovered = entry != null && entry.civId === hovered;
+                const fill = !entry
+                  ? BASE_FILL
+                  : isHovered
+                  ? entry.color
+                  : `${entry.color}aa`;
 
                 return (
                   <Geography
                     key={geo.rsmKey}
                     geography={geo}
-                    onClick={() =>
-                      regionId && onSelectRegion(isSelected ? null : regionId)
-                    }
+                    onClick={() => entry && onSelectCiv(entry.civId)}
+                    onMouseEnter={() => {
+                      if (entry) {
+                        setHovered(entry.civId);
+                        onHoverCiv?.(entry.civId);
+                      }
+                    }}
+                    onMouseLeave={() => {
+                      setHovered(null);
+                      onHoverCiv?.(null);
+                    }}
                     style={{
-                      default: {
-                        fill,
-                        stroke: BASE_STROKE,
-                        strokeWidth: 0.4,
-                        outline: "none",
-                        cursor: isActive ? "pointer" : "default",
-                      },
-                      hover: {
-                        fill: isActive ? eraColor : "#475569",
-                        stroke: BASE_STROKE,
-                        strokeWidth: 0.4,
-                        outline: "none",
-                        cursor: isActive ? "pointer" : "default",
-                      },
-                      pressed: { fill: eraColor, outline: "none" },
+                      default: { fill, stroke: BASE_STROKE, strokeWidth: 0.4, outline: "none", cursor: isCiv ? "pointer" : "default" },
+                      hover: { fill: entry ? entry.color : "#475569", stroke: BASE_STROKE, strokeWidth: 0.4, outline: "none", cursor: isCiv ? "pointer" : "default" },
+                      pressed: { fill: entry?.color ?? "#475569", outline: "none" },
                     }}
                   />
                 );

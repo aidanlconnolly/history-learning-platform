@@ -1,10 +1,8 @@
 import { NavLink, Outlet } from "react-router-dom";
 
 const navItems = [
-  { to: "/", label: "Home", end: true },
-  { to: "/timeline", label: "Timeline" },
-  { to: "/map", label: "Map" },
-  { to: "/quizzes", label: "Quizzes" },
+  { to: "/", label: "Civilizations", end: true },
+  { to: "/atlas", label: "Atlas" },
   { to: "/progress", label: "Progress" },
 ];
 

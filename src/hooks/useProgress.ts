@@ -1,32 +1,32 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
   bumpStreak,
+  civProgress,
   dayKey,
   defaultProgress,
   type ProgressState,
 } from "../lib/progress";
 
-const STORAGE_KEY = "history-platform.progress.v1";
+const STORAGE_KEY = "history-platform.progress.v2";
 
 function load(): ProgressState {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return defaultProgress();
     const parsed = JSON.parse(raw) as Partial<ProgressState>;
-    return { ...defaultProgress(), ...parsed };
+    return { ...defaultProgress(), ...parsed, civs: parsed.civs ?? {} };
   } catch {
     return defaultProgress();
   }
 }
 
 /**
- * Single owning hook for all learning progress. Mirrors the workspace
- * localStorage + custom-hook pattern: loads on mount, exposes granular
- * updaters, and persists on every change. Pure math lives in lib/progress.ts.
+ * Single owning hook for all learning progress (per-civilization journeys).
+ * Loads on mount, exposes granular updaters, persists on every change.
+ * Pure math lives in lib/progress.ts.
  */
 export function useProgress() {
   const [state, setState] = useState<ProgressState>(load);
-  // Skip the very first save so we don't immediately rewrite what we just loaded.
   const hydrated = useRef(false);
 
   useEffect(() => {
@@ -37,39 +37,41 @@ export function useProgress() {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
     } catch {
-      /* storage full or unavailable — ignore */
+      /* storage unavailable — ignore */
     }
   }, [state]);
 
-  const markEventViewed = useCallback((eventId: string) => {
+  const markSectionComplete = useCallback((civId: string, sectionId: string) => {
     setState((prev) => {
-      if (prev.viewedEventIds.includes(eventId)) return prev;
+      const cur = civProgress(prev, civId);
+      if (cur.sectionsDone.includes(sectionId)) return prev;
       const today = dayKey();
       return {
         ...prev,
-        viewedEventIds: [...prev.viewedEventIds, eventId],
+        civs: {
+          ...prev.civs,
+          [civId]: { ...cur, sectionsDone: [...cur.sectionsDone, sectionId] },
+        },
         ...bumpStreak(prev, today),
       };
     });
   }, []);
 
-  const recordQuizAttempt = useCallback(
-    (eraId: string, score: number, total: number) => {
-      setState((prev) => {
-        const today = dayKey();
-        return {
-          ...prev,
-          attempts: [...prev.attempts, { eraId, score, total, at: Date.now() }],
-          ...bumpStreak(prev, today),
-        };
-      });
-    },
-    []
-  );
-
-  const resetProgress = useCallback(() => {
-    setState(defaultProgress());
+  const recordCheckpoint = useCallback((civId: string, score: number, total: number) => {
+    setState((prev) => {
+      const cur = civProgress(prev, civId);
+      const fraction = total > 0 ? score / total : 0;
+      const checkpointBest = Math.max(cur.checkpointBest ?? 0, fraction);
+      const today = dayKey();
+      return {
+        ...prev,
+        civs: { ...prev.civs, [civId]: { ...cur, checkpointBest } },
+        ...bumpStreak(prev, today),
+      };
+    });
   }, []);
 
-  return { state, markEventViewed, recordQuizAttempt, resetProgress };
+  const resetProgress = useCallback(() => setState(defaultProgress()), []);
+
+  return { state, markSectionComplete, recordCheckpoint, resetProgress };
 }

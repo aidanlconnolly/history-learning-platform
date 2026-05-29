@@ -1,0 +1,226 @@
+import type { Civilization } from "../types";
+
+export const inca: Civilization = {
+  id: "inca",
+  name: "The Inca Empire",
+  shortName: "Inca",
+  emblem: "🏔️",
+  region: "The Andes (South America)",
+  modernCountries: ["Peru", "Bolivia", "Ecuador", "Chile", "Argentina", "Colombia"],
+  timespan: "1438 – 1533 CE",
+  startYear: 1438,
+  endYear: 1533,
+  color: "#d97706",
+  tagline:
+    "The largest empire in the pre-Columbian Americas — a marvel of roads, stonework and organisation that ran without money, markets, or writing.",
+  summary:
+    "The Inca built the largest empire in the Americas, stretching 4,000 km along the Andes and ruling perhaps 12 million people — all in under a century. Without writing, money or the wheel, they bound this vast mountain realm together with a stunning road network, ingenious record-keeping on knotted cords, and a powerful command economy. Then a few hundred Spaniards toppled it.",
+  hero: {
+    wikiTitle: "Machu Picchu",
+    alt: "The ruins of Machu Picchu",
+    caption: "Machu Picchu, a royal Inca estate high in the Andes.",
+  },
+  facts: [
+    { label: "Heartland", value: "Cusco, Peru" },
+    { label: "Ruler", value: "The Sapa Inca (a god-king)" },
+    { label: "Extent", value: "~4,000 km along the Andes" },
+    { label: "No…", value: "writing, money, markets or wheel" },
+    { label: "Fell", value: "1533 to Pizarro" },
+  ],
+  sections: [
+    {
+      id: "rise",
+      type: "narrative",
+      title: "Lords of the Andes",
+      icon: "🏔️",
+      image: {
+        wikiTitle: "Cusco",
+        alt: "The Inca city of Cusco",
+        caption: "Cusco, the sacred capital and 'navel' of the Inca world.",
+      },
+      paragraphs: [
+        "The Inca began as one small kingdom among many around Cusco in the Peruvian Andes. Then, from 1438, an extraordinary ruler named Pachacuti ('Earth-shaker') launched a campaign of conquest and reform that, within three generations, created an empire spanning the length of the Andes — from Colombia to Chile.",
+        "They called it Tawantinsuyu, 'the Four Regions Together'. At its centre sat the Sapa Inca, an absolute god-king believed descended from the sun. Conquest was often achieved by diplomacy and overwhelming display as much as by force — and conquered peoples were absorbed, resettled and bound into the imperial system.",
+        "Holding together a realm of soaring mountains, deserts and jungle, with dozens of languages, was a staggering feat of organisation — all the more so because the Inca did it without any of the tools we usually consider essential to a great empire.",
+      ],
+      terms: [
+        { term: "Tawantinsuyu", definition: "The Inca name for their empire: 'the Four Regions Together'." },
+        { term: "Sapa Inca", definition: "The supreme Inca emperor, regarded as a living descendant of the sun god." },
+        { term: "Pachacuti", definition: "The visionary ruler who transformed a small kingdom into a vast empire from 1438." },
+      ],
+      callout: {
+        title: "What made the Inca different",
+        body: "The Inca ran a continent-spanning empire with no writing, no money and no markets. Instead they used a command economy: the state directed labour and stored vast surpluses to redistribute. It may be the most successful large-scale planned economy of the ancient world.",
+      },
+    },
+    {
+      id: "organisation",
+      type: "narrative",
+      title: "Roads, Knots & the Command Economy",
+      icon: "🪢",
+      image: {
+        wikiTitle: "Inca road system",
+        alt: "An Inca road in the Andes",
+        caption: "The Qhapaq Ñan — over 40,000 km of Inca roads across the Andes.",
+      },
+      paragraphs: [
+        "The skeleton of the empire was the Qhapaq Ñan, a road network of over 40,000 km with rope suspension bridges over gorges and storehouses and rest-houses along the way. Relay runners called chasquis could carry messages (and even fresh fish from the coast) hundreds of kilometres a day.",
+        "Instead of taxing money or goods, the Inca taxed labour through the mit'a system: every household owed the state a set amount of work — farming, building, soldiering, weaving. In return the state stored huge surpluses and fed the people in times of famine. There was no starvation and no homelessness, but also little personal freedom.",
+        "Lacking writing, the Inca recorded everything — census figures, tribute, accounts, perhaps even histories — on the quipu, an ingenious device of knotted, coloured strings. Specialist 'knot-keepers' could read off astonishing detail from them.",
+      ],
+      terms: [
+        { term: "Qhapaq Ñan", definition: "The vast Inca road network that knit the mountain empire together." },
+        { term: "Mit'a", definition: "A labour tax: each household owed the state work rather than money or goods." },
+        { term: "Quipu", definition: "Knotted, coloured strings used to record numbers and information without writing." },
+      ],
+    },
+    {
+      id: "figures",
+      type: "figures",
+      title: "Emperors & the Conqueror",
+      icon: "👤",
+      intro: "The rulers who built the empire — and the civil war and invader who ended it.",
+      figures: [
+        {
+          name: "Pachacuti",
+          role: "Empire-builder",
+          lived: "reigned 1438–1471",
+          bio: "The 'Earth-shaker' who transformed Cusco into an empire, reorganised the state, and is traditionally credited with building Machu Picchu.",
+          image: { wikiTitle: "Pachacuti", alt: "Depiction of Pachacuti" },
+        },
+        {
+          name: "Huayna Capac",
+          role: "Emperor at the peak",
+          lived: "reigned c. 1493–1525",
+          bio: "Ruled the empire at its greatest extent. His death (probably from smallpox spreading ahead of the Spanish) triggered a ruinous succession war.",
+          image: { wikiTitle: "Huayna Capac", alt: "Depiction of Huayna Capac" },
+        },
+        {
+          name: "Atahualpa",
+          role: "Last emperor",
+          lived: "c. 1502–1533",
+          bio: "Won the civil war only to be ambushed and captured by Pizarro at Cajamarca. Despite paying a vast ransom in gold, he was executed by the Spanish.",
+          image: { wikiTitle: "Atahualpa", alt: "Depiction of Atahualpa" },
+        },
+        {
+          name: "Francisco Pizarro",
+          role: "Spanish conquistador",
+          lived: "c. 1478–1541",
+          bio: "Led fewer than 200 men to seize the Inca Empire by capturing Atahualpa, exploiting the civil war and Spanish steel, horses and disease.",
+          image: { wikiTitle: "Francisco Pizarro", alt: "Portrait of Francisco Pizarro" },
+        },
+      ],
+    },
+    {
+      id: "achievements",
+      type: "achievements",
+      title: "Andean Mastery",
+      icon: "💡",
+      intro: "Inca engineering and organisation were extraordinary feats of human ingenuity.",
+      achievements: [
+        {
+          name: "Mortarless masonry",
+          field: "Engineering",
+          description: "Inca stonemasons cut giant blocks to fit so precisely that a knife blade cannot slip between them — and they withstand earthquakes.",
+          legacy: "Walls at Cusco and Sacsayhuamán still stand perfectly after 500 years and many quakes.",
+        },
+        {
+          name: "The road network",
+          field: "Infrastructure",
+          description: "Over 40,000 km of roads, with suspension bridges and relay runners, tied the mountain empire together.",
+          legacy: "A UNESCO World Heritage Site spanning six modern countries.",
+        },
+        {
+          name: "Terrace farming",
+          field: "Agriculture",
+          description: "Stepped terraces turned steep slopes into farmland and grew thousands of varieties of potatoes and maize at altitude.",
+          legacy: "Andean terraces are still farmed today.",
+        },
+        {
+          name: "Freeze-drying food",
+          field: "Technology",
+          description: "Using the cold nights and strong sun of the high Andes, the Inca freeze-dried potatoes into chuño that kept for years.",
+          legacy: "An early form of the freeze-drying used for modern preserved foods.",
+        },
+        {
+          name: "The quipu",
+          field: "Information",
+          description: "Knotted strings recorded the data of an entire empire without any written language.",
+          legacy: "A unique record-keeping system still not fully decoded.",
+        },
+      ],
+    },
+    {
+      id: "conquest",
+      type: "narrative",
+      title: "Capture & Conquest",
+      icon: "⚔️",
+      image: {
+        wikiTitle: "Battle of Cajamarca",
+        alt: "Depiction of the capture of Atahualpa at Cajamarca",
+        caption: "The ambush at Cajamarca, 1532, where Pizarro seized the emperor.",
+      },
+      paragraphs: [
+        "Disaster struck before the Spanish even arrived in force: smallpox, spreading south from Central America, killed the emperor Huayna Capac and his heir around 1525, plunging the empire into a brutal civil war between his sons Atahualpa and Huáscar.",
+        "Atahualpa had just won this war when Francisco Pizarro appeared in 1532 with fewer than 200 men. At Cajamarca the Spanish ambushed and captured the emperor amid his huge but unsuspecting army. Atahualpa filled a room with gold and silver as ransom — then was executed anyway.",
+        "With the god-king gone and the empire weakened by plague and civil war, resistance crumbled, though rebel Incas held out in the mountains until 1572. The Spanish looted the empire's gold, and the Andes entered three centuries of colonial rule. Yet millions of Quechua- and Aymara-speaking descendants of the Inca live in the Andes to this day.",
+      ],
+      terms: [
+        { term: "Battle of Cajamarca", definition: "The 1532 ambush where Pizarro captured the Sapa Inca Atahualpa." },
+        { term: "Inca civil war", definition: "The succession war between Atahualpa and Huáscar that fatally weakened the empire before the conquest." },
+      ],
+    },
+    {
+      id: "checkpoint",
+      type: "quiz",
+      title: "Test Your Knowledge",
+      icon: "🎯",
+      checkpoint: true,
+      intro: "Seven questions on the empire of the Andes.",
+      questions: [
+        {
+          q: "What did the Inca call their empire?",
+          options: ["Tawantinsuyu", "Tenochtitlan", "Tahuantin", "Anahuac"],
+          correct: 0,
+          fb: "It means 'the Four Regions Together'.",
+        },
+        {
+          q: "Which essential tools did the Inca empire run WITHOUT?",
+          options: ["Roads and farms", "Writing, money and markets", "Soldiers and kings", "Stone and rope"],
+          correct: 1,
+          fb: "No writing, money or markets — they used a planned command economy instead.",
+        },
+        {
+          q: "What was the quipu used for?",
+          options: ["Weaving cloth", "Recording numbers and data with knots", "Building bridges", "Religious ritual only"],
+          correct: 1,
+          fb: "Knotted, coloured strings recorded the empire's records without writing.",
+        },
+        {
+          q: "The mit'a was a tax paid in…",
+          options: ["Gold", "Labour", "Cloth", "Livestock"],
+          correct: 1,
+          fb: "Households owed the state work, and the state fed them in hard times.",
+        },
+        {
+          q: "What is remarkable about Inca stonework?",
+          options: ["It used iron rebar", "Blocks fit so tightly a knife can't slip between them", "It was made of mud brick", "It glows in the dark"],
+          correct: 1,
+          fb: "The mortarless masonry survives earthquakes that topple modern buildings.",
+        },
+        {
+          q: "What weakened the empire just before the Spanish arrived?",
+          options: ["A famine", "Smallpox and a civil war", "A foreign invasion", "An earthquake"],
+          correct: 1,
+          fb: "Smallpox killed the emperor and triggered the Atahualpa–Huáscar civil war.",
+        },
+        {
+          q: "Who led the Spanish conquest of the Inca?",
+          options: ["Cortés", "Pizarro", "Columbus", "De Soto"],
+          correct: 1,
+          fb: "Pizarro captured Atahualpa at Cajamarca in 1532 with under 200 men.",
+        },
+      ],
+    },
+  ],
+};
