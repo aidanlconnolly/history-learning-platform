@@ -6,7 +6,7 @@ export const greece: Civilization = {
   shortName: "Greece",
   emblem: "🏛️",
   region: "Aegean, Greece & the Eastern Mediterranean",
-  modernCountries: ["Greece", "Turkey", "Cyprus", "Italy"],
+  modernCountries: ["Greece", "Cyprus"],
   timespan: "c. 800 – 146 BCE",
   startYear: -800,
   endYear: -146,
