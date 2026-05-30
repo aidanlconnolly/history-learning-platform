@@ -13,6 +13,7 @@ import { mongol } from "./mongol";
 import { ottoman } from "./ottoman";
 import { france } from "./france";
 import { british } from "./british";
+import { american } from "./american";
 
 // The full roster of civilization journeys. Order here is the default
 // presentation order; the UI sorts by start year via civsByChronology().
@@ -31,4 +32,5 @@ export const civilizations: Civilization[] = [
   ottoman,
   france,
   british,
+  american,
 ];

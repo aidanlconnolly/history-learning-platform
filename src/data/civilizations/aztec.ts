@@ -16,9 +16,9 @@ export const aztec: Civilization = {
   summary:
     "In barely two centuries the Mexica people rose from wandering newcomers to masters of central Mexico, ruling a tribute empire of millions from Tenochtitlan — an island city of canals and causeways larger than any in contemporary Europe. Their world of warriors, gods and human sacrifice was destroyed with shocking speed by Spanish conquistadors and the diseases they carried.",
   hero: {
-    wikiTitle: "Templo Mayor",
-    alt: "The Templo Mayor in Mexico City",
-    caption: "The Templo Mayor, the great twin-temple at the heart of Tenochtitlan.",
+    wikiTitle: "Pyramid of the Sun",
+    alt: "The Pyramid of the Sun at Teotihuacan",
+    caption: "The Pyramid of the Sun at Teotihuacan — the sacred city the Aztecs believed was where the gods created the world.",
   },
   facts: [
     { label: "People", value: "The Mexica" },
@@ -27,7 +27,35 @@ export const aztec: Civilization = {
     { label: "Capital's size", value: "~200,000 people" },
     { label: "Fell", value: "1521 to Cortés" },
   ],
+  majorCities: [
+    { name: "Tenochtitlan",  lat: 19.43, lon:  -99.13 },
+    { name: "Teotihuacan",   lat: 19.69, lon:  -98.84 },
+    { name: "Tlaxcala",      lat: 19.31, lon:  -98.24 },
+    { name: "Tula",          lat: 20.06, lon:  -99.34 },
+  ],
   sections: [
+    {
+      id: "key-moments",
+      type: "milestones",
+      title: "Key Moments of the Aztec Empire",
+      icon: "⭐",
+      intro: "From wandering outcasts to masters of a continent — and a catastrophic fall in just two years. The pivotal events of the Aztec world.",
+      milestones: [
+        { year: "c. 1100 CE", title: "The Mexica Begin Their Migration", description: "According to Aztec tradition, the Mexica people leave their legendary homeland of Aztlan and begin a long, wandering migration south.", icon: "🚶", type: "rise" },
+        { year: "1325 CE",    title: "Tenochtitlan is Founded", description: "The Mexica see the omen their god promised — an eagle on a cactus — and build their city on a marshy lake island in the Valley of Mexico.", icon: "🦅", type: "rise" },
+        { year: "1376 CE",    title: "First Great Speaker Chosen", description: "Acamapichtli becomes the first Huey Tlatoani (Great Speaker), establishing the royal line that will rule until the Spanish conquest.", icon: "👑", type: "rise" },
+        { year: "1428 CE",    title: "Triple Alliance Formed", description: "Tenochtitlan forges an alliance with Texcoco and Tlacopan, crushing the dominant Tepanecs and launching an era of rapid imperial expansion.", icon: "🤝", type: "rise" },
+        { year: "c. 1440 CE", title: "Moctezuma I Builds the Empire", description: "The great ruler Moctezuma I (Ilhuicamina) conquers dozens of peoples and dramatically expands Aztec territory and tribute collection.", icon: "⚔️", type: "conquest" },
+        { year: "1450 CE",    title: "The Great Famine", description: "Four years of failed harvests devastate Mexico; the Aztecs resort to mass sacrifice and slave sales to survive.", icon: "☁️", type: "fall" },
+        { year: "1487 CE",    title: "Templo Mayor Consecrated", description: "The Great Temple is rededicated with a ceremony said to involve thousands of sacrifices — a display of Aztec power at its most terrifying.", icon: "🔺", type: "cultural" },
+        { year: "1502 CE",    title: "Moctezuma II Takes Power", description: "The brilliant but ill-fated Moctezuma II becomes ruler, presiding over the empire at its greatest territorial extent.", icon: "👑", type: "rise" },
+        { year: "1519 CE",    title: "Hernán Cortés Arrives", description: "The Spanish conquistador lands in Mexico, gathers thousands of indigenous allies who resent Aztec tribute demands and marches on Tenochtitlan.", icon: "⛵", type: "war" },
+        { year: "1519 CE",    title: "Cortés Meets Moctezuma", description: "Moctezuma receives Cortés in the capital — within weeks, Cortés seizes him as a hostage, paralyzing the empire's leadership.", icon: "🤺", type: "war" },
+        { year: "1520 CE",    title: "La Noche Triste", description: "The Aztecs rise up and drive the Spanish out of Tenochtitlan with enormous casualties — 'the Night of Sorrow' for Cortés's forces.", icon: "🌧️", type: "war" },
+        { year: "1520 CE",    title: "Smallpox Strikes", description: "A smallpox epidemic sweeps Tenochtitlan, killing Moctezuma's successor and tens of thousands of defenders before the final siege.", icon: "💀", type: "fall" },
+        { year: "1521 CE",    title: "Tenochtitlan Falls", description: "After a 75-day siege, the last Aztec emperor Cuauhtémoc is captured; Tenochtitlan is demolished and Mexico City built on its ruins.", icon: "💥", type: "fall" },
+      ],
+    },
     {
       id: "rise",
       type: "narrative",

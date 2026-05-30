@@ -16,9 +16,9 @@ export const inca: Civilization = {
   summary:
     "The Inca built the largest empire in the Americas, stretching 4,000 km along the Andes and ruling perhaps 12 million people — all in under a century. Without writing, money or the wheel, they bound this vast mountain realm together with a stunning road network, ingenious record-keeping on knotted cords, and a powerful command economy. Then a few hundred Spaniards toppled it.",
   hero: {
-    wikiTitle: "Machu Picchu",
-    alt: "The ruins of Machu Picchu",
-    caption: "Machu Picchu, a royal Inca estate high in the Andes.",
+    wikiTitle: "Sacsayhuamán",
+    alt: "The Inca fortress of Sacsayhuamán near Cusco",
+    caption: "Sacsayhuamán — the great Inca fortress above Cusco, built with stones weighing up to 300 tonnes.",
   },
   facts: [
     { label: "Heartland", value: "Cusco, Peru" },
@@ -27,7 +27,36 @@ export const inca: Civilization = {
     { label: "No…", value: "writing, money, markets or wheel" },
     { label: "Fell", value: "1533 to Pizarro" },
   ],
+  majorCities: [
+    { name: "Cusco",        lat: -13.53, lon: -71.97 },
+    { name: "Machu Picchu", lat: -13.16, lon: -72.54 },
+    { name: "Chan Chan",    lat:  -8.09, lon: -79.07 },
+    { name: "Tiwanaku",     lat: -16.56, lon: -68.68 },
+  ],
   sections: [
+    {
+      id: "key-moments",
+      type: "milestones",
+      title: "Key Moments of the Inca Empire",
+      icon: "⭐",
+      intro: "From a small Andean kingdom to the largest empire in the Americas — built without writing, money or the wheel, then toppled in a single year.",
+      milestones: [
+        { year: "c. 1200 CE", title: "The Inca Kingdom of Cusco", description: "The Inca begin as one small kingdom among many around Cusco in the Peruvian highlands, ruled by legendary Sapa Incas.", icon: "🏔️", type: "rise" },
+        { year: "c. 1400 CE", title: "Viracocha Inca Expands", description: "The eighth Sapa Inca Viracocha begins modest territorial expansion, setting the stage for his son's revolution.", icon: "⚡", type: "rise" },
+        { year: "1438 CE",    title: "Pachacuti Defeats the Chanka", description: "The prince who will become Pachacuti repels a massive Chanka invasion, then seizes power and launches the most dramatic expansion in Andean history.", icon: "🦁", type: "rise" },
+        { year: "c. 1450 CE", title: "Machu Picchu is Built", description: "Pachacuti builds a royal estate high in the mountains above Cusco — the architectural masterpiece now known as Machu Picchu.", icon: "🏔️", type: "cultural" },
+        { year: "c. 1460 CE", title: "The Qhapaq Ñan Road Network", description: "The Inca systematise over 40,000 km of roads across the Andes, with suspension bridges, relay runners and thousands of storehouses.", icon: "🛤️", type: "innovation" },
+        { year: "1471 CE",    title: "Topa Inca Continues the Conquest", description: "Pachacuti's son Topa Inca pushes the empire north into Ecuador, south into Chile and east into the Amazon fringes.", icon: "⚔️", type: "conquest" },
+        { year: "c. 1476 CE", title: "Chimú Kingdom Conquered", description: "The Inca defeat the wealthy Chimú Kingdom, absorbing their gold-working traditions and skilled craftspeople into the empire.", icon: "🏆", type: "conquest" },
+        { year: "1493 CE",    title: "Huayna Capac's Long Reign", description: "Huayna Capac extends the empire to its northernmost limit in Colombia — ruling over perhaps 12 million people.", icon: "👑", type: "rise" },
+        { year: "c. 1524 CE", title: "Smallpox Arrives Ahead of the Spanish", description: "A devastating smallpox epidemic spreads south from Central America, killing perhaps a third of the population — including the emperor.", icon: "💀", type: "fall" },
+        { year: "1525 CE",    title: "Huayna Capac Dies, Civil War Erupts", description: "The emperor dies of disease without a clear heir; his sons Atahualpa and Huáscar plunge the empire into a brutal civil war.", icon: "⚔️", type: "war" },
+        { year: "1532 CE",    title: "Atahualpa Wins the Civil War", description: "Atahualpa defeats and captures Huáscar — but he has barely consolidated power when Pizarro arrives with fewer than 200 men.", icon: "🏹", type: "war" },
+        { year: "1532 CE",    title: "The Ambush at Cajamarca", description: "Pizarro's men ambush Atahualpa and his unarmed court, killing thousands of attendants and capturing the Sapa Inca in minutes.", icon: "💥", type: "fall" },
+        { year: "1533 CE",    title: "Atahualpa Executed", description: "Despite paying a room full of gold as ransom, Atahualpa is executed by the Spanish — the Inca Empire's leadership is decapitated.", icon: "💔", type: "fall" },
+        { year: "1572 CE",    title: "Last Inca Resistance Crushed", description: "The Spanish capture and execute the last rebel Inca ruler Túpac Amaru at Vilcabamba, ending 40 years of indigenous resistance.", icon: "🌙", type: "fall" },
+      ],
+    },
     {
       id: "rise",
       type: "narrative",
@@ -117,6 +146,11 @@ export const inca: Civilization = {
       title: "Andean Mastery",
       icon: "💡",
       intro: "Inca engineering and organisation were extraordinary feats of human ingenuity.",
+      image: {
+        wikiTitle: "Machu Picchu",
+        alt: "The ruins of Machu Picchu high in the Andes",
+        caption: "Machu Picchu — the royal estate of Pachacuti, rediscovered in 1911.",
+      },
       achievements: [
         {
           name: "Mortarless masonry",

@@ -22,10 +22,38 @@ There is no test suite. `npm run build` is the real correctness gate — it runs
 The whole app is driven by typed content in `src/data/`. Understanding `types.ts` is the key to everything else.
 
 - A `Civilization` (header metadata + an ordered `sections[]`) is the unit of content. Each lives in its own file under `src/data/civilizations/` and **must be registered in `src/data/civilizations/index.ts`** (import + add to the `civilizations` array) to appear anywhere.
-- `JourneySection` is a **discriminated union** on `type`: `narrative | figures | conflicts | achievements | quiz`. `JourneyPlayer.tsx` switches on `section.type` to pick a renderer from `src/components/sections/`. Adding a new section kind means: add a variant to the union, add a renderer, and add a case to that switch.
+- `JourneySection` is a **discriminated union** on `type`: `milestones | narrative | figures | conflicts | achievements | quiz`. `JourneyPlayer.tsx` switches on `section.type` to pick a renderer from `src/components/sections/`. Adding a new section kind means: add a variant to the union, add a renderer, and add a case to that switch.
 - The journey's final quiz is the **checkpoint**: `checkpointOf()` (`lib/civ.ts`) returns the quiz flagged `checkpoint: true`, else the last quiz. Only the checkpoint's score is recorded as mastery.
+- Every civilization's `sections[]` begins with a `milestones` section (id `"key-moments"`) — a timeline of 14–16 pivotal events shown via `MilestonesView`. This is the first screen users see when opening a journey.
 
-To add a civilization: copy an existing file (e.g. `rome.ts`), give every section a unique `id`, set `modernCountries` to country names that match the world-atlas TopoJSON (see Atlas gotcha), and register it in `index.ts`.
+### Adding a civilization
+
+Copy an existing file (e.g. `rome.ts`), give every section a unique `id`, set `modernCountries` to country names that match the world-atlas TopoJSON (see Atlas gotcha), add `majorCities` pins, prepend a `key-moments` milestones section, and register in `index.ts`.
+
+### Section types quick reference
+
+| type | renderer | notes |
+|---|---|---|
+| `milestones` | `MilestonesView` | Timeline; each milestone has `year`, `title`, `description`, optional `icon` and `type` (`rise \| conquest \| war \| cultural \| innovation \| fall`) |
+| `narrative` | `NarrativeView` | Paragraphs, optional `image`, `terms` flip-cards, `callout` aside |
+| `figures` | `FiguresView` | Array of `Figure` objects, each with optional `image` |
+| `conflicts` | `ConflictsView` | Array of `Conflict` objects, each with optional `image` |
+| `achievements` | `AchievementsView` | Grid of `Achievement` cards; section has optional `image` banner |
+| `quiz` | `QuizView` | MC questions; flag `checkpoint: true` on the final quiz |
+
+## Civilization data fields
+
+```ts
+Civilization {
+  // ...metadata...
+  majorCities?: CityPin[];   // rendered as dots on the Atlas map
+  sections: JourneySection[];
+}
+
+CityPin { name: string; lat: number; lon: number }
+```
+
+`majorCities` coordinates are `[lat, lon]` in decimal degrees (positive = N/E). They are passed from `MapPage` → `WorldMap` and rendered via `react-simple-maps` `Marker` components, highlighted when the civilization is hovered.
 
 ## Progress: one shared localStorage store
 
@@ -36,14 +64,36 @@ To add a civilization: copy an existing file (e.g. `rome.ts`), give every sectio
 
 ## Images: runtime Wikipedia fetch, never bundled
 
-`ImageRef` stores only a `wikiTitle`. `WikiImage.tsx` resolves the article's lead image at runtime from the Wikipedia REST summary API (`/api/rest_v1/page/summary/<title>`, CORS-enabled), with a module-level promise cache so each title is fetched once per session and a themed gradient placeholder on failure/offline. So image quality depends on choosing a `wikiTitle` whose article has a good lead image — there are no local image assets to manage.
+`ImageRef` stores only a `wikiTitle`. `WikiImage.tsx` resolves the article's lead image at runtime from the Wikipedia REST summary API (`/api/rest_v1/page/summary/<title>`, CORS-enabled), with a module-level promise cache so each title is fetched once per session and a themed gradient placeholder on failure/offline.
 
-## Atlas map gotcha: matching is by country name, and order matters
+**Image reliability gotcha**: not all Wikipedia article titles return an `originalimage` or `thumbnail` via the summary API. Broad topic articles (e.g. `"Persepolis"`, `"Machu Picchu"`) often fail; specific monument/site articles (e.g. `"Apadana"`, `"Sacsayhuamán"`, `"Colosseum"`, `"Parthenon"`) reliably return photos. When an image isn't loading, switch to a more specific article title. The homepage loads all 15 hero images simultaneously — titles that work individually may fail under concurrent load; test with a hard reload.
 
-`MapPage` renders `WorldMap` (`react-simple-maps` + the `world-atlas` countries-110m TopoJSON from a CDN). Geographies are matched to civilizations **by country name** (`geo.properties.name`, lowercased) — *not* ISO codes — against `countryCivMap()` in `lib/civ.ts`. Two consequences:
+## Atlas map
 
+`MapPage` → `WorldMap` (`react-simple-maps` + `world-atlas` countries-110m TopoJSON from CDN).
+
+**`WorldMap` props**: `countryCiv` (country→civ map), `civs` (full array for hover tooltip data), `onSelectCiv`, `onHoverCiv`. Hovering a country shows a floating snippet card with the civilization's emblem, name, timespan, tagline and a "click to explore" prompt. City pins from `civ.majorCities` are rendered as `<Marker>` elements and grow/label on hover.
+
+**Country matching gotcha**: geographies are matched **by country name** (`geo.properties.name`, lowercased) — *not* ISO codes — against `countryCivMap()` in `lib/civ.ts`.
 - `modernCountries` entries must exactly match Natural Earth names (e.g. `"United States of America"`, not `"USA"`).
-- When several civilizations list the same country, **the first one in the `civilizations` array wins** the tint. This is why, e.g., `rome.ts` deliberately omits `United Kingdom`/`France` (so Britain and France claim their homelands) and Greece omits Italy. Edit `modernCountries` / array order together when tuning the map.
+- When several civilizations list the same country, **the first one in the `civilizations` array wins** the tint. Edit `modernCountries` / array order together when tuning the map.
+
+## Homepage: era-grouped roadmap
+
+`HomePage.tsx` groups civilizations into four eras by `startYear`:
+
+| Era | Filter |
+|---|---|
+| Ancient World | `startYear < -800` |
+| Classical Era | `-800 ≤ startYear < 0` |
+| Medieval & Imperial Age | `0 ≤ startYear < 1500` |
+| Modern Empires | `startYear ≥ 1500` |
+
+Each civilization renders as a `CivCard` with a full hero photo (`WikiImage`, `aspect-[16/7]`), gradient overlay, name/timespan overlaid on the image, progress badge, and a footer with tagline + progress bar. The timeline spine and date-stamped nodes are positioned using `pl-12` padding on the list + `absolute -left-8` on each node.
+
+## Journey player: roadmap sidebar
+
+`JourneyPlayer.tsx` renders a sticky left sidebar (`lg:grid-cols-[240px_1fr]`) showing all sections as a vertical roadmap: numbered circles connected by lines. Completed sections show a filled circle in the civilization's accent color with ✓; the active section is an outlined circle in accent color; future sections are grey outlines. Section type is shown as a sub-label below each title.
 
 ## Routing & deployment
 

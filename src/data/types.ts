@@ -6,6 +6,26 @@
 // and gate progress uniformly (inspired by the lesson-page model in the
 // italian-tutor project, adapted for long-form history content).
 
+/** A single pivotal moment in a civilization's history. */
+export type Milestone = {
+  year: string;
+  title: string;
+  description: string;
+  icon?: string;
+  /** Visual weight / colour coding. */
+  type?: "rise" | "conquest" | "war" | "cultural" | "innovation" | "fall";
+};
+
+/** An ordered timeline of key moments — the opening overview for each journey. */
+export type MilestonesSection = {
+  id: string;
+  type: "milestones";
+  title: string;
+  icon?: string;
+  intro?: string;
+  milestones: Milestone[];
+};
+
 /** A reference to an image, resolved at runtime from a Wikipedia article's lead image. */
 export type ImageRef = {
   /** Wikipedia article title whose lead image best illustrates this moment. */
@@ -79,6 +99,7 @@ export type AchievementsSection = {
   title: string;
   icon?: string;
   intro?: string;
+  image?: ImageRef;
   achievements: Achievement[];
 };
 
@@ -103,6 +124,7 @@ export type QuizSection = {
 };
 
 export type JourneySection =
+  | MilestonesSection
   | NarrativeSection
   | FiguresSection
   | ConflictsSection
@@ -110,6 +132,14 @@ export type JourneySection =
   | QuizSection;
 
 export type Fact = { label: string; value: string };
+
+export type CityPin = {
+  name: string;
+  /** Latitude (positive = N) */
+  lat: number;
+  /** Longitude (positive = E) */
+  lon: number;
+};
 
 export type Civilization = {
   id: string; // kebab-case, e.g. "rome"
@@ -127,5 +157,7 @@ export type Civilization = {
   summary: string; // 2–3 sentence overview
   hero: ImageRef;
   facts: Fact[]; // quick-reference facts in the header
+  /** Major historical cities shown as pins on the Atlas map. */
+  majorCities?: CityPin[];
   sections: JourneySection[]; // the ordered learning journey
 };

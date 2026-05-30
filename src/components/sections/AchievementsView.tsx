@@ -1,10 +1,20 @@
 import type { AchievementsSection } from "../../data/types";
+import WikiImage from "../WikiImage";
 
-type Props = { section: AchievementsSection; accent: string };
+type Props = { section: AchievementsSection; accent: string; emblem?: string };
 
-export default function AchievementsView({ section, accent }: Props) {
+export default function AchievementsView({ section, accent, emblem }: Props) {
   return (
     <div className="space-y-5">
+      {section.image && (
+        <WikiImage
+          image={section.image}
+          accent={accent}
+          emblem={emblem}
+          ratioClassName="aspect-[16/7]"
+          rounded
+        />
+      )}
       {section.intro && <p className="leading-relaxed text-slate-200">{section.intro}</p>}
       <div className="grid gap-4 sm:grid-cols-2">
         {section.achievements.map((a) => (

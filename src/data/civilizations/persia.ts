@@ -16,9 +16,9 @@ export const persia: Civilization = {
   summary:
     "The Achaemenid Persian Empire was the largest the world had yet seen, stretching from the Indus to the Aegean and ruling perhaps 40% of humanity. Founded by Cyrus the Great, it pioneered a new model of empire: diverse peoples allowed to keep their own customs and religions, knit together by superb roads, a postal system and a tolerant central administration.",
   hero: {
-    wikiTitle: "Persepolis",
-    alt: "The ruins of Persepolis",
-    caption: "Persepolis, the ceremonial capital, built by Darius the Great.",
+    wikiTitle: "Apadana",
+    alt: "The Apadana audience hall at Persepolis",
+    caption: "The Apadana at Persepolis — where delegations from across the empire brought tribute to the King of Kings.",
   },
   facts: [
     { label: "Founder", value: "Cyrus the Great" },
@@ -27,7 +27,37 @@ export const persia: Civilization = {
     { label: "Religion", value: "Zoroastrianism" },
     { label: "Ended by", value: "Alexander the Great (330 BCE)" },
   ],
+  majorCities: [
+    { name: "Persepolis",  lat: 29.93, lon: 52.89 },
+    { name: "Susa",        lat: 32.19, lon: 48.25 },
+    { name: "Pasargadae",  lat: 30.19, lon: 53.18 },
+    { name: "Ecbatana",    lat: 34.80, lon: 48.52 },
+  ],
   sections: [
+    {
+      id: "key-moments",
+      type: "milestones",
+      title: "Key Moments in the Persian Empire",
+      icon: "⭐",
+      intro: "From Cyrus the Great's astonishing rise to Alexander's conquest — the pivotal events of history's first true superpower.",
+      milestones: [
+        { year: "550 BCE", title: "Cyrus Overthrows the Medes", description: "The Persian king Cyrus rebels against his Median overlords and wins, founding the Achaemenid dynasty and setting off one of history's great conquests.", icon: "🦁", type: "rise" },
+        { year: "547 BCE", title: "Lydia Falls — King Croesus Captured", description: "Cyrus defeats the legendarily rich King Croesus of Lydia, seizing western Anatolia and access to the Aegean world.", icon: "💰", type: "conquest" },
+        { year: "539 BCE", title: "Babylon Falls Without a Fight", description: "Cyrus enters Babylon as a liberator, frees the Jewish exiles and lets all peoples keep their gods — establishing Persia's tolerant model of empire.", icon: "🕊️", type: "rise" },
+        { year: "530 BCE", title: "Cyrus Dies in Battle", description: "Cyrus is killed campaigning against the Massagetae — his legacy is the largest empire the world had ever seen.", icon: "⚔️", type: "fall" },
+        { year: "525 BCE", title: "Egypt Conquered", description: "Cambyses II, son of Cyrus, defeats the last independent pharaoh and adds Egypt to the empire, stretching it from the Nile to the Indus.", icon: "🔺", type: "conquest" },
+        { year: "522 BCE", title: "Darius Seizes Power", description: "After a period of chaos, Darius I seizes power and records his triumph on a cliff face at Behistun in three languages.", icon: "👑", type: "rise" },
+        { year: "c. 518 BCE", title: "Persepolis Construction Begins", description: "Darius begins building Persepolis as the ceremonial capital, where nations of the empire will bring tribute to the King of Kings.", icon: "🏛️", type: "cultural" },
+        { year: "513 BCE", title: "Darius Campaigns into Europe", description: "Darius crosses the Bosphorus with a huge army, bridging the Danube — the largest military expedition into Europe yet.", icon: "🌊", type: "conquest" },
+        { year: "490 BCE", title: "Marathon — First Greek Defeat of Persia", description: "A Persian expeditionary force is routed by the Athenians at Marathon — a shocking loss that plants seeds of future catastrophe.", icon: "🏃", type: "war" },
+        { year: "480 BCE", title: "Xerxes Invades Greece", description: "Xerxes leads perhaps 100,000 men into Greece, burns Athens — but his fleet is destroyed at Salamis and his army crushed at Plataea.", icon: "🔥", type: "war" },
+        { year: "465 BCE", title: "Xerxes Assassinated", description: "Xerxes is murdered by his own courtiers, beginning a slow decline of royal authority and increasing court intrigues.", icon: "🗡️", type: "fall" },
+        { year: "449 BCE", title: "Peace of Callias", description: "Persia and Athens agree a formal peace, acknowledging Persian withdrawal from the Aegean — ending the Greco-Persian Wars.", icon: "🤝", type: "cultural" },
+        { year: "404 BCE", title: "Egypt Breaks Free", description: "Egypt rebels and regains independence for 60 years — a sign of Persia's weakening grip on its most valuable province.", icon: "📉", type: "fall" },
+        { year: "334 BCE", title: "Alexander Invades", description: "Alexander the Great crosses into Asia; within three years he defeats Darius III at Gaugamela, the last great battle of the Persian Empire.", icon: "⚔️", type: "war" },
+        { year: "330 BCE", title: "Persepolis Burns, Empire Ends", description: "Alexander burns the great palace of Persepolis and Darius III is murdered by his own men — ending 220 years of Achaemenid rule.", icon: "💥", type: "fall" },
+      ],
+    },
     {
       id: "rise",
       type: "narrative",
@@ -145,6 +175,11 @@ export const persia: Civilization = {
       title: "Persian Innovations",
       icon: "💡",
       intro: "Persia's genius was less in invention than in organisation — but it left lasting marks.",
+      image: {
+        wikiTitle: "Naqsh-e Rostam",
+        alt: "The carved royal tombs at Naqsh-e Rostam near Persepolis",
+        caption: "Naqsh-e Rostam — the cliff-face tombs of Achaemenid kings near Persepolis.",
+      },
       achievements: [
         {
           name: "Imperial administration",
