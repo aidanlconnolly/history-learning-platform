@@ -71,6 +71,49 @@ export const aztec: Civilization = {
         "From this unpromising marsh they built a marvel. By draining and reclaiming land, raising temples and laying out canals and broad causeways linking the island to the shore, they created a metropolis of perhaps 200,000 people — larger than London, Paris or any city in Europe at the time.",
         "In 1428 the Mexica joined two neighbouring cities in the Triple Alliance and turned conqueror, dominating central Mexico within decades through a combination of military skill and political cunning.",
       ],
+      subLessons: [
+        {
+          title: "Outcasts in the Valley of Mexico",
+          paragraphs: [
+            "When the Mexica arrived in the Valley of Mexico in the 13th century, the best land was long since taken by older, prouder peoples like the Tepanecs and the Culhua. The newcomers were seen as crude barbarians from the northern deserts, and were pushed from place to place, surviving as hired soldiers and squatters on land nobody else wanted.",
+            "Their reputation for ferocity made them useful but feared. According to one grim tradition, the Mexica so offended the Culhua — by sacrificing a princess they had been given as an honour — that they were driven out entirely, forced once more onto the move with nowhere to call home.",
+            "This experience of humiliation shaped the Aztec character. A people who had been despised and landless built an identity around discipline, warfare and divine destiny — the conviction that their god had chosen them for greatness, however unlikely it seemed at the time.",
+          ],
+          terms: [
+            { term: "Valley of Mexico", definition: "The high, lake-filled basin in central Mexico that was the heartland of the Aztec world." },
+            { term: "Tepanecs", definition: "A dominant people of the valley whom the Mexica first served as vassals and later overthrew." },
+          ],
+        },
+        {
+          title: "Building a city on the water",
+          image: {
+            wikiTitle: "Chinampa",
+            alt: "Chinampa floating gardens",
+            caption: "Chinampas turned the lake itself into farmland.",
+          },
+          paragraphs: [
+            "The island the Mexica settled in 1325 was a swampy, snake-ridden patch in Lake Texcoco — but it was defensible, and it was theirs. Over generations they transformed it, driving piles into the lakebed, reclaiming land, and laying out a grid of canals that earned Tenochtitlan its later nickname, the 'Venice of the New World'.",
+            "To feed a growing population they perfected the chinampa: a raised garden plot built up from lake mud and rooted in place by willow trees. These astonishingly fertile beds, watered constantly by the lake, could yield several harvests a year and supported a city that swelled toward 200,000 people.",
+            "Three great causeways linked the island to the mainland, pierced by wooden bridges that could be removed in war, while an aqueduct carried fresh spring water from Chapultepec. The result was both an engineering marvel and a fortress — a capital that could feed and defend itself.",
+          ],
+          terms: [
+            { term: "Chinampa", definition: "A highly fertile artificial garden plot built up from lake mud — the 'floating gardens' that fed Tenochtitlan." },
+            { term: "Causeway", definition: "A raised road across the water linking the island capital to the lakeshore, removable for defence." },
+          ],
+        },
+        {
+          title: "The Triple Alliance and the tribute machine",
+          paragraphs: [
+            "In 1428 the Mexica turned on their former overlords the Tepanecs and, with the cities of Texcoco and Tlacopan, formed the Triple Alliance. This partnership — with Tenochtitlan increasingly dominant — is what we call the Aztec Empire, and it launched a century of relentless expansion.",
+            "The Aztecs rarely occupied the lands they beat. Instead they left local rulers in place and demanded tribute: maize, beans, cotton cloth, cacao, feathers, gold and, above all, captives for sacrifice. Specialised officials and tribute lists tracked exactly what each province owed, turning conquest into a steady stream of wealth flowing to the capital.",
+            "This system made the empire rich but brittle. Subject peoples paid under threat of brutal reprisal rather than loyalty, and many seethed with resentment — a weakness that would prove fatal when a small band of Spaniards arrived offering the chance to throw off Aztec rule.",
+          ],
+          terms: [
+            { term: "Tribute", definition: "Goods and captives that conquered peoples were forced to pay to their Aztec overlords." },
+            { term: "Texcoco & Tlacopan", definition: "The two allied cities that joined Tenochtitlan in the 1428 Triple Alliance." },
+          ],
+        },
+      ],
       terms: [
         { term: "Mexica", definition: "The people we usually call the Aztecs, who founded Tenochtitlan and led the empire." },
         { term: "Tenochtitlan", definition: "The island capital of canals and causeways, on whose ruins Mexico City now stands." },
@@ -95,6 +138,49 @@ export const aztec: Civilization = {
         "Aztec religion was intensely demanding. They believed the universe had been destroyed and reborn several times, and that the present sun was kept moving only by a constant supply of human blood. Without sacrifice, they feared, the sun would stop and the world would end.",
         "Human sacrifice — usually of war captives, atop the great pyramids — was therefore a sacred duty, performed on a scale that horrified the Spanish (and that Spanish accounts likely exaggerated). It was bound up with warfare: the Aztecs even fought ritual 'Flower Wars' partly to capture victims.",
         "Yet this was also a highly cultured society, with poetry, schools for both nobles and commoners, vast markets, botanical gardens and a deep love of flowers, music and rhetoric. The famous Sun Stone is a monument to their elaborate vision of cosmic time.",
+      ],
+      subLessons: [
+        {
+          title: "A universe that could end",
+          paragraphs: [
+            "The Aztecs believed they lived in the age of the Fifth Sun — and that four previous worlds had already been destroyed by catastrophe. The current sun, like the others, was doomed to collapse; the only question was whether human beings could postpone the end by sustaining the gods with offerings.",
+            "Central to this was the idea of a cosmic debt. The gods had sacrificed themselves to set the sun in motion at the beginning of this age, and humans owed that sacrifice back. Blood — the most precious substance, the fluid of life itself — was the repayment that kept the machinery of the cosmos turning.",
+            "This was not cruelty for its own sake but a terrifying responsibility. To the Aztec mind, every sunrise was uncertain, and the survival of the entire world rested on rituals performed correctly and on time. Religion was, quite literally, a matter of life and death for everyone.",
+          ],
+          terms: [
+            { term: "Fifth Sun", definition: "The current cosmic age, which the Aztecs believed had been preceded by four destroyed worlds." },
+            { term: "Cosmic debt", definition: "The belief that humans owed blood to the gods who had sacrificed themselves to create the sun." },
+          ],
+        },
+        {
+          title: "Sacrifice and the Flower Wars",
+          image: {
+            wikiTitle: "Templo Mayor",
+            alt: "The Templo Mayor of Tenochtitlan",
+            caption: "Captives were offered atop the Templo Mayor's twin shrines.",
+          },
+          paragraphs: [
+            "Human sacrifice took place across the empire but reached its height at the Templo Mayor, the great twin pyramid of Tenochtitlan. Captives were led up the steep steps, where priests offered their hearts to the gods. At the rededication of the temple in 1487, Spanish and native sources claim thousands were sacrificed over several days.",
+            "Because the gods demanded a steady supply of victims, warfare became sacred. The Aztecs prized capturing enemies alive over killing them, and a warrior's status rose with the number of captives he took. Elite fighters joined the orders of the Eagle and Jaguar warriors, the most honoured ranks in Aztec society.",
+            "Most striking were the 'Flower Wars' — pre-arranged battles fought with neighbouring states not to seize land but specifically to take prisoners for sacrifice. To outsiders this seemed bizarre; to the Aztecs it was the orderly harvesting of the offerings the universe required.",
+          ],
+          terms: [
+            { term: "Templo Mayor", definition: "The great twin pyramid at the heart of Tenochtitlan where sacrifices were performed." },
+            { term: "Eagle & Jaguar warriors", definition: "The most honoured Aztec military orders, entered by taking captives in battle." },
+          ],
+        },
+        {
+          title: "Two calendars and the fear of the end",
+          paragraphs: [
+            "The Aztecs ran two calendars at once. The xiuhpohualli was a 365-day solar calendar governing farming and festivals; the tonalpohualli was a 260-day sacred almanac used for divination, naming children and choosing lucky days. Every Aztec carried a day-name from this sacred count that helped define their fate.",
+            "The two calendars meshed like gears, and a given combination of dates recurred only once every 52 years — a span called the 'Calendar Round'. The end of each cycle was a moment of cosmic dread, when the Aztecs feared the sun might fail to return and the world would end.",
+            "To prevent catastrophe they held the New Fire Ceremony. All fires across the empire were extinguished, pottery was smashed and homes swept clean. At midnight, priests on a sacred hill watched the stars; when the sky moved on schedule, a new fire was kindled on a sacrificed victim's chest and carried out to relight the world for another 52 years.",
+          ],
+          terms: [
+            { term: "Calendar Round", definition: "The 52-year cycle formed by the meshing of the Aztec solar and sacred calendars." },
+            { term: "New Fire Ceremony", definition: "The ritual held every 52 years to ensure the sun would rise and the world continue." },
+          ],
+        },
       ],
       terms: [
         { term: "Huitzilopochtli", definition: "The Mexica god of sun and war, who demanded blood to keep the sun moving." },
@@ -186,6 +272,44 @@ export const aztec: Civilization = {
         "In 1519 Hernán Cortés landed on the Mexican coast with around 500 Spaniards, horses and cannon. He marched inland, gathering thousands of allies from peoples who hated Aztec tribute and sacrifice — above all the Tlaxcalans. The empire's own ruthlessness now turned against it.",
         "After a tense standoff, the Spanish seized the emperor Moctezuma. The Aztecs rose up and drove them out in a bloody retreat, but Cortés returned and laid siege to Tenochtitlan in 1521. The defenders fought heroically under Cuauhtémoc, but were doomed by Spanish guns, Indigenous allies, and above all smallpox — a European disease against which the Aztecs had no immunity, killing a huge share of the population.",
         "When Tenochtitlan fell in August 1521, the Spanish razed it and built Mexico City on its ruins. An empire of millions had been destroyed in barely two years — the start of three centuries of Spanish colonial rule over Mexico.",
+      ],
+      subLessons: [
+        {
+          title: "Cortés arrives and the emperor hesitates",
+          paragraphs: [
+            "In 1519 Hernán Cortés landed near modern Veracruz with around 500 men, 16 horses and a handful of cannon. In a famous act of commitment, he scuttled his own ships so his men could not turn back, then began the long march inland toward the fabled island capital.",
+            "Moctezuma II faced an agonising choice. Reports spoke of bearded strangers on great 'water-houses', riding unknown beasts and wielding thunder. Some accounts say the timing fed a prophecy about the return of the god Quetzalcoatl; whatever the cause, the emperor wavered, sending gifts that only sharpened Spanish greed instead of confronting the intruders.",
+            "Rather than crush the tiny force in the open, Moctezuma allowed the Spanish into Tenochtitlan as guests in November 1519. Within days Cortés seized the emperor in his own palace, ruling through him as a hostage — a stunning gamble that briefly handed a few hundred foreigners control of an empire of millions.",
+          ],
+          terms: [
+            { term: "Quetzalcoatl", definition: "The feathered-serpent god whose prophesied return may have made Moctezuma hesitate." },
+            { term: "Conquistador", definition: "A Spanish soldier-adventurer who sought conquest and gold in the Americas." },
+          ],
+        },
+        {
+          title: "Allies and an invisible enemy",
+          paragraphs: [
+            "Cortés's true strength was not his handful of men but the enemies the Aztecs had made. Tens of thousands of warriors from Tlaxcala — a fiercely independent state the Aztecs had never conquered — and from other resentful tribute-payers joined the Spanish, eager to overthrow their overlords. The conquest was as much a native revolt as a foreign invasion.",
+            "An even deadlier ally was disease. Smallpox, carried unknowingly by the Europeans, tore through a population with no immunity. It killed perhaps half the inhabitants of the valley, including the new emperor Cuitláhuac, gutting Aztec leadership and morale at the worst possible moment.",
+            "Together these forces tilted everything. Steel weapons, horses and cannon mattered, but it was the combination of mass native alliances and biological catastrophe that turned a daring raid into the fall of an empire.",
+          ],
+          terms: [
+            { term: "Tlaxcala", definition: "An independent state, long an enemy of the Aztecs, that allied with the Spanish in huge numbers." },
+            { term: "Smallpox", definition: "The European disease that devastated the Aztec population during the conquest." },
+          ],
+        },
+        {
+          title: "The siege and fall of Tenochtitlan",
+          paragraphs: [
+            "The Aztecs did fight back. After Spanish soldiers massacred celebrants at a festival, the city rose in fury and drove the invaders out on the night of 30 June 1520 — 'La Noche Triste', when many Spaniards drowned in the canals, weighed down by looted gold.",
+            "But Cortés regrouped among his Tlaxcalan allies and returned the next year with a new weapon: thirteen small ships, built in pieces and carried overland, that gave him command of the lake. He cut the causeways, severed the aqueduct and blockaded the island, starving the great city.",
+            "Through the summer of 1521 the Aztecs, led by the young emperor Cuauhtémoc, resisted street by street amid famine and disease. When the city finally fell in August, much of it lay in ruins. On those ruins the Spanish founded Mexico City — and three thousand years of independent indigenous civilisation in the valley came to an end.",
+          ],
+          terms: [
+            { term: "La Noche Triste", definition: "'The Night of Sorrows' (1520) when the Aztecs drove the Spanish from the city." },
+            { term: "Cuauhtémoc", definition: "The last Aztec emperor, who led the final defence of Tenochtitlan during the siege." },
+          ],
+        },
       ],
       terms: [
         { term: "Conquistador", definition: "A Spanish soldier-adventurer who conquered territories in the Americas." },

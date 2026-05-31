@@ -73,6 +73,44 @@ export const persia: Civilization = {
         "What made Cyrus extraordinary was how he ruled. Rather than enslaving or deporting conquered peoples, he let them keep their languages, customs and gods. Famously, he freed the Jews from their Babylonian exile and let them return to rebuild Jerusalem — for which the Hebrew Bible calls him 'the anointed of the Lord'.",
         "The Cyrus Cylinder, recording his capture of Babylon and his policy of restoring temples and peoples, has been hailed (perhaps generously) as one of the first declarations of human rights. Tolerance, for Cyrus, was not just virtue but strategy: contented subjects rarely rebel.",
       ],
+      subLessons: [
+        {
+          title: "From vassal to world-conqueror",
+          paragraphs: [
+            "Persia began as a minor kingdom in the southwest of modern Iran, a subject of the more powerful Medes to the north. Around 550 BCE its young king, Cyrus II of the Achaemenid family, rose in revolt, overthrew the Median king and seized his throne — turning the tables on his overlords in a single bold stroke.",
+            "What followed was one of the fastest expansions in ancient history. Cyrus marched west and defeated the fabulously wealthy King Croesus of Lydia (in modern Turkey), absorbing the Greek cities of the Aegean coast. Then in 539 BCE he took Babylon, the greatest city of the age, reportedly entering it almost without a fight.",
+            "In roughly twenty years Cyrus had forged the largest empire the world had yet seen, stretching from the Aegean to Central Asia. Unlike the brutal conquerors before him, he presented himself not as a destroyer but as a liberator and restorer — a reputation that helped his vast, hastily-assembled realm hold together.",
+          ],
+          terms: [
+            { term: "Achaemenid", definition: "The royal dynasty, named after an ancestor Achaemenes, that founded and ruled the Persian Empire." },
+            { term: "Medes", definition: "The Iranian people and kingdom that ruled Persia until Cyrus overthrew them around 550 BCE." },
+          ],
+        },
+        {
+          title: "Rule by tolerance, not terror",
+          paragraphs: [
+            "The empires before Persia — above all Assyria — had held power through fear: massacring rebels, looting temples and deporting whole populations. Cyrus pioneered the opposite strategy. He let conquered peoples keep their own languages, laws, customs and gods, and presented himself as the legitimate restorer of each land's traditions rather than a foreign tyrant.",
+            "The most famous example is recorded in the Hebrew Bible: Cyrus freed the Jews, whom the Babylonians had carried into exile, and funded their return to Jerusalem to rebuild their Temple. For this the Bible hails him as 'the anointed of the Lord' — extraordinary praise for a foreign, non-Jewish king.",
+            "This was enlightened self-interest as much as kindness. Subjects allowed to keep their identity and worship had far less reason to revolt, and the empire could tap their loyalty, taxes and soldiers. Persia thus invented a durable answer to the central problem of empire: how to rule many different peoples without crushing them.",
+          ],
+          terms: [
+            { term: "Cyrus Cylinder", definition: "A clay cylinder recording Cyrus's tolerant policies, sometimes called an early charter of rights." },
+            { term: "Babylonian exile", definition: "The deportation of the Jews to Babylon, ended when Cyrus let them return to Jerusalem." },
+          ],
+        },
+        {
+          title: "Zoroaster and the religion of light",
+          paragraphs: [
+            "The Persians' faith was Zoroastrianism, founded by the prophet Zarathustra (Zoroaster) centuries earlier. It taught something strikingly new: that the universe is the battleground of a single good creator god, Ahura Mazda ('the Wise Lord'), against a hostile spirit of evil and lies, and that each person must choose sides through 'good thoughts, good words, good deeds'.",
+            "This was one of the world's first religions centred on a cosmic struggle between good and evil, on individual moral choice, and on a coming final judgement. Fire, kept burning in temples, served as the sacred symbol of Ahura Mazda's purity and light.",
+            "Zoroastrian ideas — a supreme good God, an evil adversary, angels and demons, heaven and hell, a final judgement and resurrection — would echo powerfully through Judaism, Christianity and Islam, especially after the Jews' close contact with Persia. It may be the most influential religion most people have never heard of.",
+          ],
+          terms: [
+            { term: "Zoroastrianism", definition: "Persia's monotheistic-leaning religion, founded by Zoroaster, centred on the struggle of good against evil." },
+            { term: "Ahura Mazda", definition: "'The Wise Lord', the supreme good creator god of Zoroastrianism, symbolised by sacred fire." },
+          ],
+        },
+      ],
       terms: [
         { term: "Achaemenid", definition: "The royal dynasty, named after an ancestor Achaemenes, that founded and ruled the Persian Empire." },
         { term: "Cyrus Cylinder", definition: "A clay cylinder recording Cyrus's tolerant policies, sometimes called an early charter of rights." },
@@ -96,6 +134,44 @@ export const persia: Civilization = {
         "Cyrus's successor Darius the Great organised the vast empire into about 20 provinces called satrapies, each run by a governor (satrap) but checked by royal inspectors known as 'the king's eyes and ears'. He standardised coinage, weights and taxes across three continents.",
         "To bind it all together, the Persians built the Royal Road — some 2,500 km from Sardis to Susa — with relay stations of fresh horses. Royal couriers could carry a message across the empire in a week. Herodotus's description of these riders ('neither snow, nor rain, nor heat, nor gloom of night…') became the unofficial motto of the U.S. Postal Service.",
         "The empire's wealth and the brilliance of its administration were displayed at Persepolis, a ceremonial capital where, each new year, delegations from every subject nation are carved bringing tribute — gold, horses, textiles — to the King of Kings.",
+      ],
+      subLessons: [
+        {
+          title: "The satrapy system: governing from a distance",
+          paragraphs: [
+            "An empire spanning three continents could not be ruled from one throne directly, so Darius the Great divided it into roughly twenty provinces called satrapies. Each was run by a satrap — usually a Persian nobleman — who collected taxes, administered justice, raised troops and kept order in the king's name, almost like a viceroy.",
+            "The obvious danger was that a powerful satrap, far from the capital, might rebel or carve out his own kingdom. Darius guarded against this with a clever separation of powers: the satrap governed, but the fortress garrison and the tax officials in his province often reported directly to the king, so no single man held all the levers.",
+            "On top of this, travelling royal inspectors known as 'the king's eyes and ears' toured the provinces unannounced to check on the satraps and report back. The result was a flexible system that respected local diversity while keeping ultimate control firmly at the centre — a template later empires would study and copy.",
+          ],
+          terms: [
+            { term: "Satrap", definition: "The governor of a Persian province, ruling on the king's behalf with wide but checked powers." },
+            { term: "King's eyes and ears", definition: "Royal inspectors who toured the empire to monitor satraps and report directly to the king." },
+          ],
+        },
+        {
+          title: "Roads, coins and the machinery of empire",
+          paragraphs: [
+            "To hold a sprawling empire together, the Persians became master organisers. Darius standardised the systems that made commerce and control possible: a common coinage (the gold daric), uniform weights and measures, and a regular, predictable tax assessment for each satrapy based on what it could afford.",
+            "The crown jewel of Persian infrastructure was the Royal Road, running some 2,500 kilometres from Sardis near the Aegean to the capital at Susa. Way-stations stocked with fresh horses let royal couriers relay messages across the whole empire in about a week — a journey that took ordinary travellers three months. Herodotus's praise of these riders ('neither snow, nor rain, nor heat, nor gloom of night stays these couriers') survives today as the unofficial motto of the U.S. Postal Service.",
+            "Good roads served armies and tax collectors as much as merchants, but they also knit the empire's many peoples into a single trading world. For the first time, goods and ideas could flow safely from the Aegean to the Indus along protected highways under one law.",
+          ],
+          terms: [
+            { term: "Royal Road", definition: "The great highway with horse-relay stations that allowed rapid communication across the empire." },
+            { term: "Daric", definition: "The standardised gold coin introduced by Darius, easing trade and tax across the empire." },
+          ],
+        },
+        {
+          title: "Persepolis: the empire carved in stone",
+          paragraphs: [
+            "Darius built a magnificent new ceremonial capital, Persepolis, as a stage for the empire's power and unity. Set on a vast terraced platform, its halls bristled with towering columns and grand staircases, blending artistic styles borrowed from every corner of the realm — Egyptian, Babylonian, Greek and Median — into a deliberately imperial whole.",
+            "Persepolis came alive each spring at the New Year (Nowruz) festival, when delegations from every subject nation streamed in to honour the King of Kings. The famous reliefs lining the Apadana staircase show them in procession — Nubians with ivory, Armenians with horses, Indians with gold — each in their own dress, bringing tribute. It is a portrait of an empire proud of its diversity.",
+            "The grandeur had a violent end. In 330 BCE Alexander the Great captured Persepolis and burned the palaces to the ground — whether by drunken accident or as calculated revenge for Persia's earlier invasions of Greece. The scorched ruins still stand, a monument to the empire's lost splendour.",
+          ],
+          terms: [
+            { term: "Persepolis", definition: "The grand ceremonial capital built by Darius, showcasing the wealth and diversity of the empire." },
+            { term: "Apadana", definition: "The great audience hall at Persepolis, whose reliefs depict subject peoples bringing tribute." },
+          ],
+        },
       ],
       terms: [
         { term: "Satrapy", definition: "A province of the Persian Empire, governed by a satrap on the king's behalf." },

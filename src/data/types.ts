@@ -36,14 +36,30 @@ export type ImageRef = {
 
 export type KeyTerm = { term: string; definition: string };
 
+/**
+ * A focused deep-dive that expands one facet of a narrative lesson. Rendered
+ * inline as a titled sub-section beneath the lesson's intro paragraphs, so a
+ * single lesson (e.g. "The First Cities") can break into 3–4 detailed parts.
+ */
+export type SubLesson = {
+  title: string;
+  /** Each string is one paragraph. */
+  paragraphs: string[];
+  image?: ImageRef;
+  /** Glossary terms specific to this sub-lesson, surfaced as flip-cards. */
+  terms?: KeyTerm[];
+};
+
 /** Long-form narrative: the core "read" section. */
 export type NarrativeSection = {
   id: string;
   type: "narrative";
   title: string;
   icon?: string;
-  /** Each string is one paragraph. */
+  /** Each string is one paragraph — the lesson's overview / intro. */
   paragraphs: string[];
+  /** Detailed sub-lessons that expand the lesson into 3–4 focused parts. */
+  subLessons?: SubLesson[];
   image?: ImageRef;
   /** Glossary terms surfaced as interactive flip-cards. */
   terms?: KeyTerm[];

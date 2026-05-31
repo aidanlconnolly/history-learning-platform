@@ -73,6 +73,54 @@ export const china: Civilization = {
         "He ruled by the harsh philosophy of Legalism — strict laws and severe punishments — conscripting vast armies of labourers to link existing walls into an early Great Wall against northern nomads, and building canals and roads. To guard him in death, he was buried with an army of some 8,000 life-sized terracotta soldiers, each with an individual face.",
         "The Qin dynasty was brutal and brief, collapsing within a few years of his death. But it had created something permanent: the idea of a single, unified China ruled by one emperor — an idea that would endure for over two thousand years.",
       ],
+      subLessons: [
+        {
+          title: "The Warring States and the rise of Qin",
+          paragraphs: [
+            "For over two centuries before unification, China was torn apart in the aptly named Warring States period. Seven great kingdoms fought one another with mass conscript armies, iron weapons and ruthless strategy — it was the age that produced Sun Tzu's 'Art of War'. Amid the bloodshed, the question of how best to rule was fiercely debated.",
+            "The western state of Qin rose above the rest by embracing Legalism, a hard-edged doctrine holding that people are selfish and must be controlled by strict laws, harsh punishments and rich rewards. Qin reorganised itself into a disciplined war-machine, rewarding soldiers for battlefield success regardless of birth.",
+            "One by one, between 230 and 221 BCE, Qin swallowed its rivals. Its king, Ying Zheng, stood at last as master of all China — and took a new and unprecedented title to match his unprecedented achievement.",
+          ],
+          terms: [
+            { term: "Warring States", definition: "The era of seven rival kingdoms fighting for supremacy before China's unification." },
+            { term: "Legalism", definition: "The strict philosophy of rule by harsh law and punishment favoured by the Qin." },
+          ],
+        },
+        {
+          title: "One emperor, one standard",
+          image: {
+            wikiTitle: "Great Wall of China",
+            alt: "The Great Wall of China",
+            caption: "Qin linked earlier walls into an early Great Wall.",
+          },
+          paragraphs: [
+            "Declaring himself Qin Shi Huang — 'First Emperor' — he set about welding his conquests into a single state. He abolished the old feudal lords and divided the realm into centrally governed commanderies run by appointed officials answerable to him alone.",
+            "Most far-reaching was his programme of standardisation. He imposed a single script, a single currency, uniform weights and measures, and even standard axle-widths so carts could run in the same ruts across the empire. He built a vast network of roads and canals, and linked existing frontier walls into an early Great Wall against northern nomads.",
+            "Of all these, the shared writing system mattered most. Even when spoken dialects were mutually unintelligible, educated Chinese everywhere could read the same characters — a unifying thread that would hold the civilisation together for more than two thousand years.",
+          ],
+          terms: [
+            { term: "Qin Shi Huang", definition: "The 'First Emperor', who unified China in 221 BCE and standardised script, coinage and measures." },
+            { term: "Standardisation", definition: "Qin's unifying of script, currency, weights and measures across China." },
+          ],
+        },
+        {
+          title: "Tyranny, the tomb, and a swift fall",
+          image: {
+            wikiTitle: "Terracotta Army",
+            alt: "The Terracotta Army",
+            caption: "Thousands of clay soldiers guard the First Emperor's tomb.",
+          },
+          paragraphs: [
+            "The First Emperor's rule was as harsh as it was effective. He conscripted hundreds of thousands for his building projects, where many died, and crushed dissent without mercy — tradition holds that he burned books and buried scholars alive to silence criticism, especially from followers of Confucius.",
+            "Obsessed with immortality, he sent expeditions to find an elixir of eternal life and may have hastened his own death by swallowing mercury 'medicines'. He prepared for the afterlife on a colossal scale, building a vast tomb near Xi'an guarded by the Terracotta Army — thousands of individually sculpted clay warriors.",
+            "Yet for all its power, the Qin dynasty barely outlived its founder. Crushing taxes and forced labour bred rebellion, and within a few years of his death in 210 BCE the dynasty collapsed. Out of the chaos rose the Han — but the unified empire the First Emperor had forged endured.",
+          ],
+          terms: [
+            { term: "Terracotta Army", definition: "Thousands of life-sized clay soldiers buried to guard the First Emperor." },
+            { term: "Mandate of Heaven", definition: "The belief that Heaven grants rulers the right to rule — and withdraws it from the unjust, justifying rebellion." },
+          ],
+        },
+      ],
       terms: [
         { term: "Qin Shi Huang", definition: "The 'First Emperor', who unified China in 221 BCE and standardised script, coinage and measures." },
         { term: "Legalism", definition: "The strict philosophy of rule by harsh law and punishment favoured by the Qin." },
@@ -97,6 +145,54 @@ export const china: Civilization = {
         "The Han dynasty (206 BCE–220 CE) that followed the Qin lasted four centuries and became China's classical golden age — so foundational that the majority ethnic group still call themselves 'Han Chinese'. The Han kept Qin's unified state but softened its harshness with the ethics of Confucius.",
         "Confucius (551–479 BCE) had taught that society flourishes through respect, family duty, education and virtuous, benevolent rulers. Under the Han his ideas became the official philosophy of the state. Most strikingly, China began selecting government officials by competitive written examinations on the Confucian classics — in principle, advancement by merit rather than birth.",
         "This scholar-bureaucracy, refined over centuries, gave China remarkably stable and sophisticated government, run by educated 'mandarins' rather than warrior-nobles. It was perhaps the most advanced administrative system in the pre-modern world.",
+      ],
+      subLessons: [
+        {
+          title: "The Han: China's classical mould",
+          image: {
+            wikiTitle: "Han dynasty",
+            alt: "Han dynasty artefacts",
+            caption: "The Han set the lasting pattern of imperial China.",
+          },
+          paragraphs: [
+            "The Han dynasty (206 BCE–220 CE) followed the brief, brutal Qin and lasted four centuries, becoming China's classical golden age. It kept the unified state the Qin had built but softened its harshness, governing with the ethics of Confucius rather than the terror of Legalism.",
+            "So foundational was this era that the majority ethnic group of China still call themselves 'Han Chinese' to this day. Under the energetic Emperor Wu, the empire expanded dramatically and opened the Silk Road, sending Chinese silk westward as far as Rome.",
+            "The Han also pioneered inventions that would change the world, above all paper, and built an administrative machine far more advanced than anything in the contemporary West — a template every later dynasty would follow.",
+          ],
+          terms: [
+            { term: "Han dynasty", definition: "China's four-century classical golden age that set the pattern for imperial rule." },
+            { term: "Silk Road", definition: "The trade routes opened under the Han that linked China to Central Asia and Rome." },
+          ],
+        },
+        {
+          title: "Confucius and the art of good government",
+          image: {
+            wikiTitle: "Confucius",
+            alt: "A depiction of Confucius",
+            caption: "Confucius taught that virtue and duty hold society together.",
+          },
+          paragraphs: [
+            "Confucius (551–479 BCE) lived during the chaos before unification and taught that a harmonious society rests not on harsh law but on virtue, respect and the proper performance of one's role — ruler and subject, parent and child, each with duties to the other.",
+            "He stressed family loyalty, reverence for elders and ancestors, education, and above all the ideal of the benevolent ruler who governs by moral example rather than fear. Under the Han, his ideas became the official philosophy of the Chinese state.",
+            "Confucianism gave imperial China a shared moral language that endured for two thousand years and spread across East Asia — into Korea, Japan and Vietnam — shaping how whole societies thought about family, duty and government.",
+          ],
+          terms: [
+            { term: "Confucianism", definition: "The ethical system of Confucius, stressing virtue, respect, family duty and benevolent government." },
+            { term: "Filial piety", definition: "The Confucian duty of respect and care owed by children to parents and ancestors." },
+          ],
+        },
+        {
+          title: "Government by examination",
+          paragraphs: [
+            "China's most remarkable institution was its civil service, staffed not by warrior-nobles but by scholar-officials chosen, in principle, by merit. Candidates sat gruelling written examinations on the Confucian classics, and those who passed entered the bureaucracy that actually ran the empire.",
+            "These 'mandarins' collected taxes, judged disputes, managed granaries and waterworks, and advised the throne. Because advancement depended on study rather than birth, a talented commoner could, in theory, rise to high office — an idea of advancement by merit far ahead of its time.",
+            "This educated class gave China extraordinary continuity. Even when foreign conquerors like the Mongols and Manchus seized the throne, they had to rule through the Chinese bureaucracy and were largely absorbed by it. The exam system endured until 1905, near the very end of imperial China.",
+          ],
+          terms: [
+            { term: "Imperial examinations", definition: "Competitive written exams on the classics used to select officials by merit." },
+            { term: "Mandarin", definition: "A scholar-official of the Chinese bureaucracy, selected through the examinations." },
+          ],
+        },
       ],
       terms: [
         { term: "Confucianism", definition: "The ethical system of Confucius, stressing virtue, respect, family duty and benevolent government." },
@@ -200,6 +296,54 @@ export const china: Civilization = {
         "After the Han, China reunified gloriously under the Tang and Song dynasties — eras of poetry, porcelain, printing and the first paper money, when Chinese cities were the largest and richest on Earth. The Ming dynasty later sent vast treasure fleets under Admiral Zheng He as far as East Africa, decades before Columbus.",
         "China's last dynasty, the Qing, was founded by the Manchus and ruled a vast, populous empire. But in the 1800s it was battered by the Opium Wars with Britain, internal rebellions, and the pressures of industrialised foreign powers it had long dismissed as 'barbarians'.",
         "In 1912, after more than two thousand years, the last emperor — a small boy named Puyi — abdicated, and China became a republic. Yet the civilization itself endured: its language, its reverence for learning, and its sense of itself as a single enduring culture remain among the most continuous on Earth.",
+      ],
+      subLessons: [
+        {
+          title: "The Tang and Song golden ages",
+          image: {
+            wikiTitle: "Tang dynasty",
+            alt: "Tang dynasty art",
+            caption: "The Tang capital Chang'an was the world's largest city.",
+          },
+          paragraphs: [
+            "After a long period of division, China was gloriously reunified under the Tang dynasty (618–907), remembered as a cosmopolitan golden age. Its capital Chang'an was the largest city on Earth, a hub of foreign merchants, monks and music, and Tang poetry remains the most beloved in all Chinese literature.",
+            "The Song dynasty (960–1279) that followed unleashed a commercial and technological revolution. It produced the world's first paper money, printed books with movable type, gunpowder weapons and the magnetic compass, and supported bustling cities and a sophisticated market economy.",
+            "By many measures, Song China was the most advanced society on the planet — richer, more literate and more technologically inventive than anywhere in the contemporary world.",
+          ],
+          terms: [
+            { term: "Tang & Song dynasties", definition: "Medieval golden ages of Chinese poetry, technology, trade and the world's first paper money." },
+            { term: "Paper money", definition: "First issued under the Song — the earliest banknotes in world history." },
+          ],
+        },
+        {
+          title: "Treasure fleets and the Ming retreat",
+          image: {
+            wikiTitle: "Forbidden City",
+            alt: "The Forbidden City in Beijing",
+            caption: "The Ming built the Forbidden City and the final Great Wall.",
+          },
+          paragraphs: [
+            "The Ming dynasty (1368–1644), founded by a peasant rebel who expelled the Mongols, built the Forbidden City in Beijing and the magnificent stone Great Wall we know today. In the early 1400s it launched one of history's great adventures.",
+            "Admiral Zheng He commanded vast treasure fleets — hundreds of ships, some far larger than any in Europe — that sailed as far as India, Arabia and the coast of East Africa, decades before Columbus crossed the Atlantic. China had the means to dominate the seas.",
+            "Then, remarkably, it turned away. The voyages were halted, the fleets dismantled, and the Ming looked inward, a fateful choice that left the oceans — and the coming age of global exploration — to the Europeans.",
+          ],
+          terms: [
+            { term: "Zheng He", definition: "Ming admiral whose huge treasure fleets reached India, Arabia and Africa in the early 1400s." },
+            { term: "Forbidden City", definition: "The vast imperial palace complex in Beijing, built under the Ming." },
+          ],
+        },
+        {
+          title: "The Qing, the Opium Wars and the end of empire",
+          paragraphs: [
+            "China's last dynasty, the Qing (1644–1912), was founded by the Manchus from the north and ruled a vast, populous and prosperous empire at its height. But it long dismissed the industrialising European powers as 'barbarians' with little to offer.",
+            "That confidence shattered in the 19th century. In the Opium Wars, Britain used military force to compel China to open its markets and accept the opium trade, exposing the empire's military weakness and beginning what the Chinese remember as a 'century of humiliation' of unequal treaties and foreign concessions.",
+            "Battered by foreign pressure and massive internal rebellions, the dynasty finally fell. In 1912, after more than two thousand years, the last emperor — a small boy named Puyi — abdicated and China became a republic. Yet the civilisation endured: its language, learning and sense of itself remain among the most continuous on Earth.",
+          ],
+          terms: [
+            { term: "Opium Wars", definition: "19th-century wars in which Britain forced trade concessions, exposing Qing weakness." },
+            { term: "Century of humiliation", definition: "The era of foreign domination and unequal treaties that China remembers from the 1800s." },
+          ],
+        },
       ],
       terms: [
         { term: "Tang & Song dynasties", definition: "Medieval golden ages of Chinese poetry, technology, trade and the world's first paper money." },

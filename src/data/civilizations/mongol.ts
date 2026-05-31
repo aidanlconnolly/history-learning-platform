@@ -73,6 +73,49 @@ export const mongol: Civilization = {
         "He reorganised his followers into a disciplined army based on units of ten, promoted by merit rather than birth, and bound by a strict legal code, the Yassa. His warriors were mounted archers of astonishing mobility and endurance, able to ride and shoot at full gallop and to coordinate huge sweeping manoeuvres across vast distances.",
         "Turning this war machine outward, the Mongols exploded across Asia with shocking speed, smashing far larger and wealthier states — northern China, the Central Asian empire of Khwarazm — through superior tactics, intelligence, and a calculated use of terror against those who resisted.",
       ],
+      subLessons: [
+        {
+          title: "A childhood of hardship and exile",
+          paragraphs: [
+            "Temüjin was born around 1162, the son of a minor chieftain, reputedly clutching a blood clot in his fist — an omen of a life of violence. When he was about nine his father was poisoned by rival Tatars, and the boy's family was promptly abandoned by their clan, left to fend for themselves on the open steppe.",
+            "The years that followed were brutal. The family survived by foraging roots and catching fish and marmots, on the edge of starvation. As a youth Temüjin killed his own half-brother in a quarrel over food, and was later captured by a rival tribe and held as a slave in a wooden collar before making a daring escape.",
+            "These experiences forged a leader who trusted loyalty over blood and never forgot a friend or a betrayal. Out of the most precarious of beginnings came the conviction and ruthlessness that would carry him to the mastery of the steppe.",
+          ],
+          terms: [
+            { term: "Temüjin", definition: "The birth name of the man who would become Genghis Khan." },
+            { term: "Tatars", definition: "A rival steppe people who poisoned Temüjin's father, fuelling his lifelong feuds." },
+          ],
+        },
+        {
+          title: "Uniting the tribes",
+          paragraphs: [
+            "The steppe of Temüjin's youth was a chaos of feuding tribes — Tatars, Keraites, Naimans, Merkits and others — locked in endless cycles of raiding and revenge. To rise, Temüjin built alliances, won battles, and steadily absorbed defeated peoples into his own growing confederation.",
+            "His genius lay in how he organised them. He broke up the old tribal loyalties and reformed his followers into units of tens, hundreds and thousands, promoting commanders by merit and loyalty rather than noble birth. Defeated warriors were spread through his ranks and bound to him personally, dissolving the divisions that had always fractured the steppe.",
+            "In 1206 a great assembly of the peoples — a kurultai — proclaimed Temüjin 'Genghis Khan', Universal Ruler, over a single Mongol nation. For the first time the warring tribes were one, and that unity could now be aimed outward at the settled empires beyond the grasslands.",
+          ],
+          terms: [
+            { term: "Kurultai", definition: "A great assembly of Mongol chiefs that elected khans and decided major matters." },
+            { term: "Decimal army", definition: "Genghis's reorganisation of warriors into units of tens, hundreds and thousands." },
+          ],
+        },
+        {
+          title: "The Mongol war machine",
+          image: {
+            wikiTitle: "Mongol military tactics and organization",
+            alt: "Mongol horse archers",
+            caption: "Disciplined horse-archers were the heart of Mongol power.",
+          },
+          paragraphs: [
+            "The Mongol army was built around the mounted archer. Every man was a lifelong horseman, and each warrior rode with several spare mounts, allowing the army to cover astonishing distances and appear where no enemy expected. They could fight while retreating, firing the deadly composite bow backwards at a full gallop.",
+            "Discipline set them apart from ordinary raiders. Armies manoeuvred in coordinated units directed by signal flags and horns, executing feigned retreats, encirclements and ambushes with a precision their settled enemies could rarely match. The decimal organisation made commands flow cleanly from the khan down to the smallest squad.",
+            "The Mongols also learned relentlessly. From the Chinese and Persians they adopted siege engines, catapults and engineers to crack the walled cities the steppe had never needed to storm. A nomad army that began with bows ended capable of reducing the greatest fortresses in Asia.",
+          ],
+          terms: [
+            { term: "Composite bow", definition: "A powerful, compact bow that let Mongol horsemen shoot accurately at a gallop." },
+            { term: "Feigned retreat", definition: "A favourite Mongol tactic of faking flight to lure enemies into an ambush." },
+          ],
+        },
+      ],
       terms: [
         { term: "Genghis Khan", definition: "'Universal Ruler' — Temüjin, who united the Mongols in 1206 and launched their conquests." },
         { term: "Yassa", definition: "The Mongol legal code that imposed discipline and loyalty across the empire." },
@@ -97,6 +140,49 @@ export const mongol: Civilization = {
         "Genghis's sons and grandsons carried the conquests further than any empire before or since on land. They overran Persia, sacked Baghdad in 1258 (ending the Abbasid Caliphate), crushed the Russian principalities, and struck into Poland and Hungary. Only the death of the Great Khan, recalling the princes home to elect a successor, may have spared western Europe.",
         "Ruling such distances demanded organisation. The Mongols built the Yam, a relay system of post-stations with fresh horses that let messengers and officials cross the empire with remarkable speed — a network admired by the Venetian traveller Marco Polo, who served at the court of Genghis's grandson Kublai Khan.",
         "Beneath the violence, the Mongols were strikingly pragmatic: they prized skilled administrators, craftsmen and merchants of any background, granted broad religious tolerance, and adopted the best ideas of those they conquered. For a few generations a single power stretched across Eurasia.",
+      ],
+      subLessons: [
+        {
+          title: "Conquest after Genghis",
+          paragraphs: [
+            "Genghis Khan's death in 1227 did not slow the empire — it accelerated it. His son Ögedei, elected Great Khan, drove conquest in every direction: the rest of northern China fell, Persia was subdued, and a great northern campaign overran the Russian principalities, sacking Kiev in 1240.",
+            "In 1241 a Mongol army shattered a combined force of Polish and German knights at Liegnitz and crushed the Hungarians at the river Sajó, throwing all of Central Europe open to invasion. Western Christendom seemed defenceless before them.",
+            "Then, abruptly, the Mongols withdrew. Word arrived that Ögedei had died, and the princes and generals turned back east to take part in choosing a new Great Khan. It may have been this steppe custom, as much as any army, that spared Western Europe from the Mongol storm.",
+          ],
+          terms: [
+            { term: "Ögedei Khan", definition: "Genghis's son and successor, under whom the empire reached Europe and the Middle East." },
+            { term: "Great Khan", definition: "The supreme ruler of the whole Mongol Empire, elected by a kurultai." },
+          ],
+        },
+        {
+          title: "Four khanates and the house divided",
+          image: {
+            wikiTitle: "Division of the Mongol Empire",
+            alt: "Map of the four Mongol khanates",
+            caption: "The empire split into four khanates ruled by Genghis's descendants.",
+          },
+          paragraphs: [
+            "The empire eventually grew too vast and too divided by family rivalry to be governed as one. By the late 13th century it had fractured into four great khanates, each ruled by a branch of Genghis's descendants: the Yuan in China and Mongolia, the Ilkhanate in Persia, the Chagatai Khanate in Central Asia, and the Golden Horde across Russia.",
+            "The most spectacular and terrible campaign of this era was Hülegü's. In 1258 his army stormed Baghdad, the centre of the Islamic world, slaughtering its inhabitants and extinguishing the Abbasid Caliphate — a wound the region never forgot. Two years later, however, the Mamluks of Egypt halted the seemingly unstoppable Mongols at Ain Jalut.",
+            "In the east, Genghis's grandson Kublai Khan completed the conquest of southern China, overthrew the Song dynasty, and in 1271 founded the Yuan dynasty, ruling China as emperor from his great capital at Khanbaliq, modern Beijing.",
+          ],
+          terms: [
+            { term: "Golden Horde", definition: "The Mongol khanate that ruled the Russian lands for over two centuries." },
+            { term: "Battle of Ain Jalut", definition: "The 1260 defeat by Egypt's Mamluks that halted the Mongol advance into the Middle East." },
+          ],
+        },
+        {
+          title: "The Mongol Peace and a connected world",
+          paragraphs: [
+            "For all their fearsome reputation, the Mongols' greatest legacy may have been peace — the Pax Mongolica. Once the conquests were done, a single (if divided) authority stretched across Eurasia, and the trade routes of the Silk Road became safer than they had ever been. It was said a virgin carrying gold could walk the length of the empire unharmed.",
+            "Along these secure routes flowed not just silk and spices but ideas and technology. Gunpowder, printing and the compass moved west toward Europe; astronomical and medical knowledge moved between Persia and China. Merchants and missionaries such as Marco Polo crossed the continent and brought back accounts that astonished their home worlds.",
+            "The Mongols governed this exchange pragmatically, generally tolerating the many religions of their subjects and running an efficient relay-post system to bind the empire together. Their century of dominance knit East and West into a single connected world as never before — even as the disease that travelled those same roads would later help bring the Black Death to Europe.",
+          ],
+          terms: [
+            { term: "Pax Mongolica", definition: "The 'Mongol Peace' that secured trade and travel across Eurasia." },
+            { term: "Silk Road", definition: "The trans-Asian trade routes revived and protected under Mongol rule." },
+          ],
+        },
       ],
       terms: [
         { term: "Yam", definition: "The Mongol relay-station system that allowed rapid communication across the empire." },

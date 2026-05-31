@@ -73,6 +73,44 @@ export const greece: Civilization = {
         "Out of that recovery, from about 800 BCE, emerged the defining unit of Greek life: the polis, or city-state. Each polis — Athens, Sparta, Thebes, Corinth and hundreds of others — was a fiercely independent community with its own laws, government, army and patron god. Land-hungry Greeks also founded colonies from Spain to the Black Sea, spreading their culture across the Mediterranean 'like frogs around a pond'.",
         "What united these rivals was not politics but culture: a shared language, the poems of Homer, the oracle at Delphi, and pan-Hellenic festivals like the Olympic Games (traditionally dated from 776 BCE), where even warring cities competed in peace.",
       ],
+      subLessons: [
+        {
+          title: "Before the polis: Minoans, Mycenaeans and a Dark Age",
+          paragraphs: [
+            "Greek history begins not with city-states but with two brilliant Bronze Age cultures. On the island of Crete, the Minoans built sprawling palaces like Knossos — multi-storey complexes with running water, vivid frescoes and vast storerooms — and grew rich on seaborne trade. Theirs was the first advanced civilization on European soil.",
+            "On the mainland rose the Mycenaeans: warlike, gold-loving kings ruling from massive stone citadels at Mycenae and Tyrins. They adopted writing (a script called Linear B, an early form of Greek), traded across the Mediterranean, and left a memory of heroic warfare that Homer would later turn into the legend of the Trojan War.",
+            "Around 1200 BCE this whole Bronze Age world collapsed in a wave of destruction whose causes are still debated — invasion, drought, earthquake and the mysterious 'Sea Peoples' all play a part. Palaces burned, trade vanished, and writing itself was forgotten. Greece sank into a 'Dark Age' of poverty and small villages lasting roughly four centuries — the rubble from which the classical Greek world would slowly rebuild.",
+          ],
+          terms: [
+            { term: "Minoans", definition: "The Bronze Age palace civilization of Crete, Europe's first, famous for Knossos and seaborne trade." },
+            { term: "Linear B", definition: "The earliest written Greek, a syllabic script used by the Mycenaeans for palace records." },
+          ],
+        },
+        {
+          title: "The polis: a new kind of community",
+          paragraphs: [
+            "When Greece recovered after 800 BCE, it organised itself into the polis — usually translated 'city-state', but really a tight-knit community of citizens as much as a place. A typical polis was a town clustered around a fortified hill (the acropolis) and a marketplace (the agora), surrounded by the farmland its citizens worked.",
+            "What made the polis revolutionary was the idea of citizenship: the polis belonged to its citizens, who shared in its government, its army and its gods, rather than being the property of a king. Greeks felt their primary loyalty to their own polis — an Athenian and a Corinthian were both Greek, but rivals first.",
+            "There were hundreds of these statelets, fiercely independent and often at war. This permanent competition — for land, trade, prestige and survival — drove relentless political experiment: monarchy, oligarchy, rule by 'tyrants', and eventually democracy were all tried as different cities searched for the best way to govern themselves.",
+          ],
+          terms: [
+            { term: "Acropolis", definition: "The fortified high point of a Greek city, housing its chief temples and last line of defence." },
+            { term: "Agora", definition: "The central public square and marketplace, the heart of a polis's civic and commercial life." },
+          ],
+        },
+        {
+          title: "Colonies and a shared Greek identity",
+          paragraphs: [
+            "As populations grew and farmland ran short, Greek cities sent out waves of settlers to found new, independent colonies along the coasts of the Mediterranean and Black Sea — from Massalia (modern Marseille) in the west to cities on the shores of modern Turkey, Italy, Spain and Ukraine. The Greeks, said Plato, lived 'like frogs around a pond'.",
+            "These colonies spread Greek language, coinage, art and ideas across the ancient world, and brought the Greeks into rich contact with Egyptians, Phoenicians and others — from whom, crucially, they adapted the alphabet that let them write down Homer and everything after.",
+            "Scattered and quarrelsome as they were, the Greeks knew they shared something. They called themselves Hellenes and everyone else barbaroi ('barbarians', from the 'bar-bar' babble of foreign speech). Shared festivals like the Olympic Games, the common shrine and oracle at Delphi, and the universally known poems of Homer gave this fractured people a single cultural identity.",
+          ],
+          terms: [
+            { term: "Hellenes", definition: "What the Greeks called themselves; 'Greek' comes from the Roman name for them." },
+            { term: "Barbaroi", definition: "Non-Greeks, so called because their speech sounded to Greek ears like meaningless 'bar-bar'." },
+          ],
+        },
+      ],
       terms: [
         { term: "Polis", definition: "An independent Greek city-state — the political, religious and social centre of Greek life." },
         { term: "Hellenes", definition: "What the Greeks called themselves; 'Greek' comes from the Roman name for them." },
@@ -97,6 +135,44 @@ export const greece: Civilization = {
         "Two cities embodied opposite Greek ideals. Sparta was a militarised society where boys entered brutal state training at age seven and citizens were forbidden to do any work but soldiering — supported by a vast population of enslaved 'helots'. Its army was the most feared in Greece.",
         "Athens took a radically different path. Reforms by Cleisthenes in 508 BCE created the world's first democracy (demokratia, 'rule by the people'). Adult male citizens debated and voted directly in the Assembly, served on juries of hundreds, and filled most offices by lottery rather than election — to prevent the rich from monopolising power.",
         "Athenian democracy was limited: women, slaves and foreigners (the majority of the population) were excluded. Yet the principle that ordinary citizens, not kings or priests, should govern themselves was revolutionary — and under the statesman Pericles it funded a golden age of art, architecture and drama.",
+      ],
+      subLessons: [
+        {
+          title: "Sparta: a city that was an army",
+          paragraphs: [
+            "Sparta turned its whole society into a machine for producing soldiers. At birth, weak infants were reportedly left to die; at age seven, boys were taken from home into the agoge, a harsh state upbringing of discipline, endurance, hunger and combat training designed to forge fearless warriors. Adult male citizens — the Spartiates — were forbidden ordinary trades and lived in barracks, devoting their lives entirely to war.",
+            "This was possible only because of mass enslavement. The Spartans had conquered their neighbours in Messenia and reduced them to helots — state-owned serfs who farmed the land and vastly outnumbered their masters. Fear of a helot revolt haunted Sparta and justified its permanent military readiness; the state even declared war on the helots each year so they could be killed without religious pollution.",
+            "Spartan society was austere, conservative and suspicious of wealth, luxury and new ideas — the opposite of Athens. Yet it produced something unusual for the age: Spartan women, who ran estates while men trained and fought, enjoyed more freedom, education and property than women anywhere else in Greece.",
+          ],
+          terms: [
+            { term: "Agoge", definition: "Sparta's rigorous state education system that trained boys into soldiers from age seven." },
+            { term: "Spartiate", definition: "A full Spartan citizen-soldier, forbidden from work other than war and politics." },
+          ],
+        },
+        {
+          title: "Athens and the invention of democracy",
+          paragraphs: [
+            "Athens travelled a very different road. After experiments with law-givers and 'tyrants', the reformer Cleisthenes in 508 BCE reorganised the citizen body and created what he called demokratia — 'people-power'. Sovereignty lay with the Assembly, an open-air meeting any adult male citizen could attend, speak in and vote in directly on war, laws and policy.",
+            "The system was radically direct and deeply suspicious of permanent power. Most public offices were filled not by election but by lottery, on the principle that any citizen was fit to govern; juries numbered hundreds to resist bribery; and through ostracism the Assembly could vote to exile, for ten years, anyone thought to be growing dangerously powerful.",
+            "We should be clear-eyed about its limits: citizenship excluded women, enslaved people and resident foreigners, so perhaps only a minority of adults could vote. By modern standards it was narrow. Yet the underlying idea — that ordinary people, not a king or a priesthood, should rule themselves and debate their own affairs openly — was one of history's most influential inventions.",
+          ],
+          terms: [
+            { term: "Assembly (Ekklesia)", definition: "The mass meeting of Athenian citizens that debated and voted directly on the city's affairs." },
+            { term: "Sortition", definition: "Filling public offices by lottery rather than election, so any citizen might serve — a hallmark of Athenian democracy." },
+          ],
+        },
+        {
+          title: "The Golden Age of Periclean Athens",
+          paragraphs: [
+            "After helping defeat the Persian invasions, Athens led an alliance of Greek cities — and gradually turned it into an empire, moving its treasury to Athens and spending the members' tribute on itself. This wealth funded a cultural explosion under the leadership of the statesman Pericles in the mid-400s BCE.",
+            "Pericles rebuilt the war-ravaged Acropolis, crowning it with the Parthenon, a temple to Athena whose perfect proportions still define classical beauty. The same decades produced the tragedies of Aeschylus, Sophocles and Euripides, the comedies of Aristophanes, the histories of Herodotus and Thucydides, and the philosophy of Socrates — an astonishing concentration of genius in a single small city.",
+            "It could not last. Athenian power frightened Sparta, and in 431 BCE the two led Greece into the long, ruinous Peloponnesian War. Plague killed Pericles and a third of Athens; after a generation of fighting, Athens was defeated in 404 BCE. The golden age was over, though its art and ideas would outlive every empire that followed.",
+          ],
+          terms: [
+            { term: "Parthenon", definition: "The marble temple to Athena on the Acropolis, the supreme monument of Athens' golden age." },
+            { term: "Peloponnesian War", definition: "The long war (431–404 BCE) between Athens and Sparta that exhausted Greece and ended Athens' dominance." },
+          ],
+        },
       ],
       terms: [
         { term: "Demokratia", definition: "'Rule by the people' — Athens' system of direct citizen government." },
@@ -240,6 +316,44 @@ export const greece: Civilization = {
         "Alexander's sudden death in 323 BCE split his empire among his generals, creating the great Hellenistic kingdoms — Ptolemaic Egypt, the Seleucid Empire and others. For three centuries Greek became the common language of the eastern Mediterranean, and cities like Alexandria, with its famous Library and Lighthouse, became dazzling centres of science and scholarship.",
         "Politically, Greece's independence ended when Rome absorbed the mainland (146 BCE) and the last Hellenistic kingdom, Egypt, in 30 BCE. But the conquerors were themselves conquered by Greek culture: educated Romans spoke Greek, copied Greek art and studied Greek philosophy.",
         "Through Rome — and later the Renaissance, when Greek texts were rediscovered — Greek ideas became the bedrock of Western civilization. Our democracy, science, philosophy, theatre, architecture and much of our vocabulary all trace back to those quarrelsome little city-states.",
+      ],
+      subLessons: [
+        {
+          title: "Alexander and the Hellenistic kingdoms",
+          paragraphs: [
+            "In a single astonishing decade, Alexander of Macedon conquered the largest empire the world had yet seen — toppling the Persian giant and pushing as far as India before his death at just 32 in 323 BCE. He left no clear heir, and his generals (the 'Successors') fought for decades before carving the empire into great kingdoms: the Ptolemies in Egypt, the Seleucids across the Near East, the Antigonids in Macedon.",
+            "These rulers were Greek-speaking kings governing millions of non-Greeks, and they planted Greek-style cities — complete with gymnasia, theatres and agoras — from Egypt to Afghanistan. Greek (in a simplified common form called koine) became the international language of trade, administration and learning across the eastern Mediterranean for centuries; it is the language in which the New Testament would later be written.",
+            "This 'Hellenistic' age fused Greek culture with Egyptian, Persian and Indian influences. Its jewel was Alexandria in Egypt, whose famous Library and Museum gathered scholars who advanced mathematics, astronomy and medicine — the era of Euclid, Archimedes and Eratosthenes, who calculated the size of the Earth.",
+          ],
+          terms: [
+            { term: "Successors (Diadochi)", definition: "Alexander's generals who carved his empire into the great Hellenistic kingdoms after his death." },
+            { term: "Koine Greek", definition: "The common, simplified Greek that became the shared language of the Hellenistic world." },
+          ],
+        },
+        {
+          title: "How Greece conquered its Roman conquerors",
+          paragraphs: [
+            "Rome absorbed the Greek world piece by piece, finally crushing Greek resistance and sacking Corinth in 146 BCE before annexing Ptolemaic Egypt in 30 BCE. Politically, Greece was now a Roman possession. But the cultural traffic ran the other way: the Romans were dazzled by Greek achievement and set about copying it wholesale.",
+            "Educated Romans learned Greek, hired Greek tutors, and imported Greek art by the shipload (much of what we know of Greek sculpture survives only as Roman copies). Roman temples borrowed Greek columns; Roman gods merged with Greek ones (Zeus became Jupiter, Aphrodite became Venus); Roman writers reworked Greek philosophy, drama and epic. The poet Horace summed it up: 'Captive Greece took captive her rude conqueror.'",
+            "Through Rome, Greek culture was carried to the whole of Western Europe. So when the Roman Empire spread Greco-Roman civilization across the continent, it was in large part Greek ideas — in Roman dress — that it was spreading.",
+          ],
+          terms: [
+            { term: "Graecia capta", definition: "Horace's phrase 'captive Greece' — the idea that conquered Greece culturally conquered Rome." },
+            { term: "Greco-Roman", definition: "The fused classical culture of Greece and Rome that became the foundation of Western civilization." },
+          ],
+        },
+        {
+          title: "The Greek inheritance we still live in",
+          paragraphs: [
+            "Few small peoples have shaped the world so deeply. The Greeks gave us the words and the concepts of democracy, politics, philosophy, theatre, history, physics and mathematics — many of those terms are literally Greek. They were the first we know of to ask not just what the gods wanted but how the natural world actually works, seeking explanations through reason and evidence.",
+            "In philosophy, the chain of Socrates, Plato and Aristotle set the agenda for Western thought for two thousand years. In science and maths, Euclid's geometry was taught essentially unchanged into the 20th century. In the arts, Greek ideals of proportion, naturalism and the human form recur in every later 'classical revival', from the Renaissance to the architecture of modern parliaments and courthouses.",
+            "Greek learning was never wholly lost: preserved and expanded by Byzantine and Islamic scholars, it flooded back into Western Europe in the Renaissance and helped ignite the Scientific Revolution. When we vote, stage a play, study geometry or argue about justice, we are working with tools the Greeks invented.",
+          ],
+          terms: [
+            { term: "Classical revival", definition: "Any later movement (e.g. the Renaissance) that consciously revived Greek and Roman art and ideas." },
+            { term: "Socratic method", definition: "Pursuing truth through systematic questioning — a Greek legacy at the root of Western inquiry." },
+          ],
+        },
       ],
       terms: [
         { term: "Hellenistic", definition: "The era after Alexander when Greek culture spread across the Near East and blended with local traditions." },

@@ -178,7 +178,7 @@ export default function HomePage() {
               <div className="absolute left-4 top-4 bottom-4 w-0.5 bg-slate-700/80" />
 
               <ol className="space-y-6">
-                {eraCivs.map((civ, _civIdx) => {
+                {eraCivs.map((civ) => {
                   const pct = civCompletionPct(state, civ.id, civ.sections.length);
                   return (
                     <li key={civ.id} className="relative">

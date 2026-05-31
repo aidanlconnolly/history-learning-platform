@@ -84,6 +84,44 @@ export const rome: Civilization = {
         "For its first centuries Rome was ruled by kings, several of them Etruscan, the sophisticated people to the north who gave Rome much of its early engineering, religion and the alphabet. In 509 BCE the Romans expelled their last king, Tarquin the Proud, and founded a republic — a system designed so that no single man could ever again hold absolute power.",
         "Over the next 250 years the Republic slowly conquered the Italian peninsula, not only by force but by extending citizenship and alliances to defeated peoples — a flexible, inclusive approach to empire that set Rome apart from rivals who simply enslaved the conquered.",
       ],
+      subLessons: [
+        {
+          title: "Myth and reality of Rome's founding",
+          paragraphs: [
+            "Romans told a dramatic origin story: the twins Romulus and Remus, abandoned as babies and suckled by a she-wolf, grew up to found a city — until they quarrelled over the site and Romulus killed his brother, naming Rome after himself in 753 BCE. The legend wrapped Rome's identity in themes of destiny, fratricidal violence and divine favour.",
+            "The archaeological reality is humbler but no less interesting. Rome began as a scatter of farming and herding villages on a cluster of seven hills beside the river Tiber. The site was shrewdly placed: far enough upriver to be safe from sea raiders, sitting on an island-crossing that controlled north–south trade and the salt routes of central Italy.",
+            "These natural advantages meant Rome grew from a muddy frontier town into the dominant settlement of the region — not by destiny, but by geography, trade and a knack for absorbing its neighbours. The myth gave Romans pride; the location gave them power.",
+          ],
+          terms: [
+            { term: "Romulus and Remus", definition: "The legendary twin founders of Rome, raised by a she-wolf, whose quarrel ended in Rome's mythical founding in 753 BCE." },
+            { term: "The Tiber", definition: "The river whose crossing and trade routes made Rome's seven hills a natural centre of power in Italy." },
+          ],
+        },
+        {
+          title: "From kings to the Republic",
+          paragraphs: [
+            "For its first two and a half centuries Rome was ruled by kings, several of them Etruscan — the advanced people to the north who gave early Rome much of its engineering, religion, gladiatorial games and even its alphabet. The monarchy ended in legend with the tyranny of Tarquin the Proud, whose family's outrages drove the Romans to revolt.",
+            "In 509 BCE the Romans expelled their last king and founded the res publica — 'the public thing', or republic. They so feared a return to one-man rule that they built the new system around it: power was split among elected officials, no one held office for long, and the very word 'king' (rex) became a deadly insult in Roman politics for the next 500 years.",
+            "The early Republic was rocked by a long internal struggle between the patricians (the hereditary aristocracy) and the plebeians (the common citizens), who fought for political rights. Over generations the plebeians won their own officials (tribunes), written laws (the Twelve Tables) and eventually access to the highest offices — a gradual, often peaceful broadening of power.",
+          ],
+          terms: [
+            { term: "Republic (res publica)", definition: "'The public thing' — a state governed by elected officials and the Senate rather than a king." },
+            { term: "Etruscans", definition: "The advanced civilization of central Italy whose kings, engineering and alphabet deeply shaped early Rome." },
+          ],
+        },
+        {
+          title: "Conquering Italy by making citizens",
+          paragraphs: [
+            "Having freed itself from kings, the Republic spent the next 250 years fighting its way to mastery of the Italian peninsula — battling Latins, Samnites, Etruscans, Gauls and the Greek cities of the south. Rome lost battles, even saw the city itself sacked by Gauls around 390 BCE, but it had a stubborn habit of refusing to quit and simply raising new armies.",
+            "Rome's real genius, though, was political. Where other conquerors enslaved or massacred the defeated, Rome bound them in. It offered varying grades of alliance and citizenship to former enemies, letting many keep local self-rule in exchange for soldiers and loyalty. A defeated people could, over time, become Romans themselves.",
+            "This created a self-renewing reservoir of manpower that no Mediterranean rival could match: when Rome lost an army, it could field another, and another. The willingness to share citizenship — almost unique in the ancient world — was the hidden engine of Roman expansion, turning conquest into permanent strength.",
+          ],
+          terms: [
+            { term: "Patrician / Plebeian", definition: "The hereditary aristocracy (patricians) versus the common citizens (plebeians), whose long struggle reshaped Roman politics." },
+            { term: "Roman citizenship", definition: "Legal membership in the Roman state, extended to allies and freed slaves — a key tool of Roman expansion." },
+          ],
+        },
+      ],
       terms: [
         { term: "Republic (res publica)", definition: "'The public thing' — a state governed by elected officials and the Senate rather than a king." },
         { term: "Etruscans", definition: "The advanced civilization of central Italy whose kings, engineering and alphabet deeply shaped early Rome." },
@@ -108,6 +146,44 @@ export const rome: Civilization = {
         "The Republic balanced power between elected magistrates (led by two annually elected consuls), the Senate (an advisory body of ex-magistrates that controlled finance and foreign policy), and popular assemblies of citizens. Term limits and collegiality — always pairing officials — were deliberate checks against tyranny.",
         "This balance buckled under the strain of empire. Generals like Marius, Sulla, Pompey and Julius Caesar built armies loyal to themselves rather than the state. After decades of civil war, Caesar's heir Octavian emerged supreme and in 27 BCE became Augustus, the first emperor — careful to preserve republican forms while holding real power himself.",
         "Roman society was steeply hierarchical and built on slavery, which may have made up a quarter of Italy's population. Yet it was also unusually mobile: freed slaves could become citizens, and provincials could rise to the very top — by the 2nd century CE, emperors came from Spain, North Africa and the Balkans.",
+      ],
+      subLessons: [
+        {
+          title: "The Republic's balance of power",
+          paragraphs: [
+            "The Roman Republic was an ingenious machine designed to stop any one man seizing control. Executive power lay with elected magistrates, headed by two consuls who served for just one year — and crucially, each could veto the other, so neither could act alone. Below them a ladder of offices (the cursus honorum) gave ambitious men a fixed, regulated path to the top.",
+            "Steering it all was the Senate, a body of several hundred former magistrates who served for life. Technically it only 'advised', but it controlled the treasury and foreign policy and commanded immense prestige, making it the true centre of power. Popular assemblies of citizens, meanwhile, passed laws and elected the magistrates.",
+            "The whole design rested on two principles: collegiality (always sharing each office between colleagues) and annuality (short terms). Together with the tribunes — officials sworn to protect ordinary citizens, who could veto almost any state action — these checks kept Rome free of kings for nearly five centuries.",
+          ],
+          terms: [
+            { term: "Consul", definition: "One of two chief magistrates elected each year to lead the state and its armies." },
+            { term: "Cursus honorum", definition: "The fixed sequence of public offices a Roman politician climbed on the way to the consulship." },
+          ],
+        },
+        {
+          title: "How the Republic became an empire",
+          paragraphs: [
+            "The Republic's checks worked for a city-state, but cracked under the weight of a Mediterranean empire. As conquests brought vast wealth and huge slave-worked estates, the gap between rich and poor exploded, and reformers who tried to help the poor — like the Gracchi brothers — were murdered. Politics turned violent.",
+            "Worse, the army stopped belonging to the state. Generals like Marius, Sulla, Pompey and Julius Caesar recruited landless men who looked to their commander, not the Senate, for land and pay. Such armies became private weapons, and Rome slid into a century of civil wars as warlords turned their legions on the Republic itself.",
+            "The last man standing was Caesar's heir, Octavian. After defeating his rivals he took the name Augustus in 27 BCE and became Rome's first emperor — but cunningly kept the old republican titles and forms, calling himself merely princeps, 'first citizen'. The Republic's institutions survived as a hollow shell while real power passed, permanently, to one man.",
+          ],
+          terms: [
+            { term: "Princeps", definition: "'First citizen' — the title Augustus preferred, disguising one-man rule behind republican language." },
+            { term: "Civil wars", definition: "The century of conflicts between rival generals whose private armies destroyed the Republic." },
+          ],
+        },
+        {
+          title: "Slavery, social class and surprising mobility",
+          paragraphs: [
+            "Roman society was steeply stratified and utterly dependent on slavery. Enslaved people — perhaps a quarter of Italy's population — did everything from back-breaking mine and farm labour to skilled work as doctors, tutors and accountants. They had no legal rights, and the constant flow of war captives kept their numbers high.",
+            "Yet Rome was unusual in how porous these ranks could be. Masters frequently freed their slaves, and a freed slave (a 'freedman') actually became a Roman citizen, with children who were full citizens by birth. Some freedmen grew enormously rich; their descendants could rise into the elite.",
+            "This mobility extended across the whole empire. Provincials in conquered lands could gain citizenship, and remarkably, the top job was not closed to them: by the 2nd century CE emperors were being drawn from Spain, North Africa and the Balkans. Being 'Roman' was, in the end, a legal and cultural status open to almost anyone — not a matter of birth in the city.",
+          ],
+          terms: [
+            { term: "Freedman", definition: "A former slave who had been freed and thereby became a Roman citizen, his children full citizens by birth." },
+            { term: "Senate", definition: "The council of Rome's leading men; formally advisory, but the true centre of political power for centuries." },
+          ],
+        },
       ],
       terms: [
         { term: "Consul", definition: "One of two chief magistrates elected each year to lead the state and its armies." },

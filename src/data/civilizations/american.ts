@@ -74,6 +74,54 @@ export const american: Civilization = {
         "The Louisiana Purchase (1803) doubled the country's size overnight. The Mexican-American War (1846–48) stripped Mexico of California, Texas and the entire Southwest — territory containing the gold that would spark the 1849 Gold Rush and draw hundreds of thousands westward. The Homestead Act (1862) gave free land to settlers. The transcontinental railroad (1869) tied the vast country together.",
         "This expansion was a catastrophe for the people already there. Millions of Native Americans were killed, displaced and confined to reservations through war, forced marches and broken treaties. African Americans, enslaved in the South, built much of the country's agricultural wealth. The Civil War (1861–65) resolved the union's founding contradiction at the cost of 600,000 lives — but full equality for Black Americans remained a century away.",
       ],
+      subLessons: [
+        {
+          title: "Buying and seizing a continent",
+          image: {
+            wikiTitle: "Louisiana Purchase",
+            alt: "Map of the Louisiana Purchase",
+            caption: "The 1803 purchase doubled the size of the young republic.",
+          },
+          paragraphs: [
+            "The United States began as a thin strip of states along the Atlantic, hemmed in by European powers. Its first great leap came in 1803, when President Jefferson bought the vast Louisiana Territory from a cash-strapped Napoleon for $15 million — doubling the country's size overnight and opening the path to the Rocky Mountains.",
+            "Expansion then became deliberate policy. Texas was annexed in 1845, and the following year the United States provoked and won a war with Mexico, seizing California and the entire Southwest. A nation that had hugged the east coast now stretched 'from sea to shining sea'.",
+            "Behind it all lay 'Manifest Destiny' — the widely held belief that God had ordained the United States to spread across the whole continent and carry its institutions with it. It was a powerful unifying myth, and a convenient justification for taking land that others already held.",
+          ],
+          terms: [
+            { term: "Louisiana Purchase", definition: "The 1803 purchase from France that doubled the size of the United States." },
+            { term: "Mexican-American War", definition: "The 1846–48 war that won the US California and the entire Southwest." },
+          ],
+        },
+        {
+          title: "The cost to Native nations",
+          paragraphs: [
+            "The land into which Americans poured was not empty. It was home to hundreds of Native nations with their own territories, governments and cultures. As settlers pushed west, those peoples were dispossessed by a relentless combination of treaties (often broken), forced removal, and outright war.",
+            "One of the darkest episodes was the 'Trail of Tears' of the 1830s, when tens of thousands of Cherokee and other southeastern peoples were forced from their homelands to territory west of the Mississippi; thousands died on the march. Later, the Plains wars confined surviving nations to reservations.",
+            "Most devastating of all was disease. Epidemics of smallpox and other illnesses, against which Native peoples had no immunity, had already swept the continent, killing a huge share of the population before many settlers even arrived — making conquest of the 'frontier' far easier than it would otherwise have been.",
+          ],
+          terms: [
+            { term: "Trail of Tears", definition: "The deadly 1830s forced removal of southeastern Native nations to the west." },
+            { term: "Reservation", definition: "Land set aside, often poor and remote, to which Native nations were confined." },
+          ],
+        },
+        {
+          title: "Civil War and a nation remade",
+          image: {
+            wikiTitle: "American Civil War",
+            alt: "Scene from the American Civil War",
+            caption: "The Civil War settled the questions of slavery and union.",
+          },
+          paragraphs: [
+            "Every new western territory reopened an explosive question: would it permit slavery? The agrarian, slaveholding South and the industrialising, increasingly anti-slavery North grew ever more divided, until the 1860 election of Abraham Lincoln prompted Southern states to secede and form the Confederacy.",
+            "The resulting Civil War (1861–65) was the deadliest in American history, killing some 600,000 people. Industrial weapons met massed armies in a conflict that previewed the total wars of the 20th century. The Union's victory preserved the country as one nation.",
+            "It also ended slavery: the Thirteenth Amendment abolished it across the United States. Yet true equality did not follow — a system of segregation and disenfranchisement soon arose in the South, leaving the nation's 'founding contradiction' unresolved for another century.",
+          ],
+          terms: [
+            { term: "Secession", definition: "The withdrawal of Southern states from the Union that triggered the Civil War." },
+            { term: "Emancipation", definition: "The abolition of slavery, secured by Union victory and the Thirteenth Amendment." },
+          ],
+        },
+      ],
       terms: [
         { term: "Manifest Destiny", definition: "The 19th-century belief that American expansion across North America was inevitable and divinely ordained." },
         { term: "Homestead Act", definition: "1862 law giving 160 acres of federal land free to settlers who would farm it — accelerating westward expansion at the expense of indigenous peoples." },
@@ -97,6 +145,54 @@ export const american: Civilization = {
         "When the United States entered World War I in 1917, it was still an economic giant but a diplomatic newcomer. When it emerged from World War II in 1945, it was something the world had never seen before: a nation responsible for roughly half of global industrial production, possessing the only atomic bomb, with armies and navies stationed across the globe.",
         "Rather than retreat into isolation as it had after WWI, the US built a new world order in its image. The Bretton Woods agreements created a dollar-based global economy. The Marshall Plan poured $13 billion into rebuilding Western Europe — not purely from altruism but because prosperous democracies were better buffers against Soviet communism. NATO, the United Nations, the World Bank and the IMF all bear American fingerprints.",
         "The Cold War with the Soviet Union (1947–1991) was the great organising conflict of the era. The US fought hot wars in Korea and Vietnam, supported coups and dictators across Latin America and the Middle East, and spent trillions in a nuclear arms race. When the Soviet Union collapsed in 1991, the US stood alone — the first truly global superpower in history.",
+      ],
+      subLessons: [
+        {
+          title: "The arsenal of democracy",
+          image: {
+            wikiTitle: "Arsenal of Democracy",
+            alt: "American wartime factory production",
+            caption: "US industry out-produced the world in World War II.",
+          },
+          paragraphs: [
+            "The United States entered the 20th century as the world's largest industrial economy, but long preferred to stay out of European quarrels. The two world wars changed that. American intervention helped decide the First; in the Second, US factories became the 'arsenal of democracy', out-producing every other nation combined.",
+            "The war ended with two epoch-making American acts: the building of the atomic bomb and its use on Hiroshima and Nagasaki in 1945. The United States emerged from the war almost untouched at home, holding around half the world's manufacturing capacity and a monopoly, briefly, on nuclear weapons.",
+            "Rather than retreat into isolation as after 1918, Washington chose to lead. It helped design a new international order — the United Nations, the IMF and World Bank, the dollar as the world's reserve currency — and rebuilt former enemies through the Marshall Plan, binding the Western world to American leadership.",
+          ],
+          terms: [
+            { term: "Arsenal of democracy", definition: "The US's role mass-producing weapons and supplies that helped win World War II." },
+            { term: "Marshall Plan", definition: "The vast US programme to rebuild Western Europe and anchor it to American leadership." },
+          ],
+        },
+        {
+          title: "The Cold War and the Space Race",
+          image: {
+            wikiTitle: "Apollo 11",
+            alt: "The Apollo 11 Moon landing",
+            caption: "Reaching the Moon in 1969 showcased American power.",
+          },
+          paragraphs: [
+            "Victory left two superpowers facing each other: the capitalist United States and the communist Soviet Union. For 44 years they waged the Cold War — a global contest fought not directly but through an arms race, espionage, propaganda, and proxy wars from Korea and Vietnam to Afghanistan, shadowed always by the threat of nuclear annihilation.",
+            "The rivalry reached for the heavens. Stung when the Soviets launched the first satellite and first human into orbit, the United States committed to landing a man on the Moon — and in 1969 Apollo 11 did exactly that, a stunning demonstration of American technological and organisational might.",
+            "The contest ended without the dreaded war. Strained beyond endurance, the Soviet bloc collapsed: the Berlin Wall fell in 1989 and the Soviet Union dissolved in 1991. The United States was left, for a time, as the world's sole superpower in a 'unipolar moment'.",
+          ],
+          terms: [
+            { term: "Space Race", definition: "The US–Soviet competition in spaceflight, culminating in the 1969 Moon landing." },
+            { term: "Unipolar moment", definition: "The period after 1991 when the US stood as the world's sole superpower." },
+          ],
+        },
+        {
+          title: "Soft power: the American century",
+          paragraphs: [
+            "American dominance was never only about armies and economics. Its deepest reach may have been cultural. Hollywood films, jazz, rock and roll, blue jeans, Coca-Cola and fast food carried American styles and aspirations into nearly every country on Earth.",
+            "Scholars call this 'soft power' — the ability to get what you want by attraction rather than coercion. People who never feared American tanks still watched American movies, listened to American music and dreamed of American prosperity, spreading US influence in ways no military could.",
+            "In the late 20th century a new wave arrived from Silicon Valley. American companies built the personal computer, the internet and the smartphone, reshaping how the entire world works, communicates and thinks — extending the 'American century' into the digital age.",
+          ],
+          terms: [
+            { term: "Soft power", definition: "Influence exerted through culture and values rather than military force." },
+            { term: "Silicon Valley", definition: "The California tech hub whose innovations spread American influence in the digital age." },
+          ],
+        },
       ],
       terms: [
         { term: "Bretton Woods", definition: "The 1944 agreements that created the dollar as the world's reserve currency and established the IMF and World Bank." },

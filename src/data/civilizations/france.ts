@@ -73,6 +73,49 @@ export const france: Civilization = {
         "Early French kings controlled little more than the area around Paris; powerful dukes and counts ruled the rest. Slowly, through marriage, inheritance, war and cunning, the monarchy clawed territory and authority back to the centre. The Church crowned and blessed these kings at Reims, and France styled itself the 'eldest daughter of the Church'.",
         "This was the great age of Gothic cathedrals — Notre-Dame, Chartres, Reims — and of medieval learning at the University of Paris. France became Europe's most populous kingdom and the heartland of chivalry and crusading.",
       ],
+      subLessons: [
+        {
+          title: "From Charlemagne's empire to West Francia",
+          paragraphs: [
+            "When the Emperor Charlemagne died in 814, his vast realm passed to his heirs — and almost immediately began to fracture. In 843 the Treaty of Verdun split it three ways among his grandsons. The western portion, West Francia, would over the centuries become France; the eastern would grow into Germany; the strip between them was fought over for a thousand years.",
+            "Early West Francia was a fragile thing. Viking raiders sailed up its rivers and sacked its towns, and royal authority shrank until the king ruled little more than the lands around Paris. Real power lay with great regional lords — the dukes of Normandy, Burgundy and Aquitaine — who were often stronger than the king himself.",
+            "Yet the idea of a single kingdom survived, anchored by the Church and the sacred ritual of coronation at Reims. It would take patient, ruthless generations of kings to turn that idea into a real, unified France.",
+          ],
+          terms: [
+            { term: "Treaty of Verdun", definition: "The 843 division of Charlemagne's empire that created West Francia." },
+            { term: "Carolingian", definition: "The dynasty of Charlemagne, whose empire's break-up gave rise to France." },
+          ],
+        },
+        {
+          title: "The patient rise of the Capetians",
+          paragraphs: [
+            "In 987 the nobles elected Hugh Capet king, founding a dynasty that would rule France for centuries. The early Capetians were weak, but they had one priceless advantage: an unbroken line of sons, which let them entrench the principle that the crown passed by inheritance rather than election.",
+            "Generation by generation they expanded the royal domain — through marriage, inheritance, war and shrewd legal manoeuvring. A turning point came under Philip II 'Augustus', who in the early 1200s seized Normandy and other vast territories from the kings of England, roughly tripling the lands under direct royal control.",
+            "By the 13th century, kings like the saintly Louis IX commanded real authority across a kingdom that was now Europe's most populous and powerful. The Capetians had transformed a cluster of rival fiefs into the strongest monarchy in Christendom.",
+          ],
+          terms: [
+            { term: "Royal domain", definition: "The lands directly ruled by the French king, steadily expanded by the Capetians." },
+            { term: "Philip II Augustus", definition: "The Capetian king who tripled royal lands by seizing territory from England." },
+          ],
+        },
+        {
+          title: "Cathedrals, scholars and the Hundred Years' War",
+          image: {
+            wikiTitle: "Chartres Cathedral",
+            alt: "Chartres Cathedral",
+            caption: "Gothic cathedrals like Chartres soared in light and stone.",
+          },
+          paragraphs: [
+            "Medieval France was the cultural heart of Europe. Here the Gothic style was born — at Saint-Denis, Notre-Dame de Paris and Chartres — with pointed arches and flying buttresses that let walls dissolve into vast windows of stained glass, flooding the great churches with coloured light.",
+            "France also led in learning. The University of Paris, with its theology faculty at the Sorbonne, drew scholars from across the continent and became one of the intellectual centres of the medieval world, debating philosophy, law and the works of Aristotle.",
+            "But the late Middle Ages brought catastrophe: the Black Death and the Hundred Years' War with England, which ravaged France for over a century. At its darkest hour an illiterate peasant girl, Joan of Arc, claiming divine visions, rallied French forces and lifted the siege of Orléans in 1429 — helping turn the war and becoming a lasting national symbol.",
+          ],
+          terms: [
+            { term: "University of Paris", definition: "A leading centre of medieval learning, home to the Sorbonne theology faculty." },
+            { term: "Hundred Years' War", definition: "The long medieval conflict with England in which Joan of Arc became a heroine." },
+          ],
+        },
+      ],
       terms: [
         { term: "West Francia", definition: "The western part of Charlemagne's empire, split off in 843, that grew into France." },
         { term: "Capetian dynasty", definition: "The royal house founded by Hugh Capet in 987, whose lines ruled France until 1792." },
@@ -97,6 +140,49 @@ export const france: Civilization = {
         "By the 1600s the French monarchy was pushing toward absolutism — the idea that the king's authority came directly from God and was answerable to no parliament. The supreme example was Louis XIV (r. 1643–1715), who reigned for 72 years and reportedly declared 'L'état, c'est moi' — 'I am the state'.",
         "Louis tamed the nobility by drawing them to his dazzling new palace at Versailles, where they competed for his favour instead of plotting rebellion. He centralised administration, built a huge standing army, and made France the cultural arbiter of Europe — its language, fashion, art and etiquette imitated everywhere.",
         "But absolutism was expensive. Endless wars and lavish spending, combined with a tax system that exempted the nobility and clergy, drove the monarchy toward bankruptcy — sowing the seeds of revolution.",
+      ],
+      subLessons: [
+        {
+          title: "'I am the state': the Sun King",
+          paragraphs: [
+            "Louis XIV came to the throne as a child in 1643 and would rule for 72 years — the longest reign of any major European monarch. As a boy he had been terrified by the Fronde, a revolt of nobles and parlements that drove the royal family from Paris. He never forgot it, and resolved that no subject would ever again challenge the crown.",
+            "Louis built a system of royal absolutism in which all authority flowed from the king alone. He governed without summoning the Estates-General, ruled through hand-picked ministers and intendants, and styled himself the 'Sun King' around whom the whole realm revolved. The phrase attributed to him — 'L'état, c'est moi', I am the state — captured the ideal perfectly.",
+            "This power was justified by the 'divine right of kings': the claim that the monarch was appointed by God and answerable to Him alone. To resist the king was, in this view, to resist God himself.",
+          ],
+          terms: [
+            { term: "The Fronde", definition: "The mid-century noble revolt that drove young Louis XIV to crush aristocratic power." },
+            { term: "Intendant", definition: "A royal official Louis used to govern the provinces directly and centralise power." },
+          ],
+        },
+        {
+          title: "Versailles: a palace as a cage",
+          image: {
+            wikiTitle: "Palace of Versailles",
+            alt: "The Hall of Mirrors at Versailles",
+            caption: "Versailles dazzled Europe and tamed the French nobility.",
+          },
+          paragraphs: [
+            "Louis's masterstroke was the Palace of Versailles, an enormous and dazzling complex he built outside Paris and to which he moved the court in 1682. Its Hall of Mirrors, vast gardens and fountains were designed to overwhelm visitors with the glory of the king.",
+            "But Versailles was more than a showpiece — it was a trap for the nobility. Louis required the great aristocrats to live at court, where he kept them busy competing for trivial honours, like the privilege of handing him his shirt at the morning ritual. Absorbed in etiquette and gossip, they had neither the time nor the base to plot rebellion in their provinces.",
+            "Versailles also made France the cultural capital of Europe. Its art, fashion, manners and language were imitated by every court on the continent; French became the international language of diplomacy and the elite, a status it held for two centuries.",
+          ],
+          terms: [
+            { term: "Hall of Mirrors", definition: "Versailles' famous gallery, a showcase of Louis XIV's glory and wealth." },
+            { term: "Court etiquette", definition: "The elaborate rituals that kept nobles busy competing for royal favour rather than rebelling." },
+          ],
+        },
+        {
+          title: "The cracks beneath the glory",
+          paragraphs: [
+            "The splendour came at a ruinous price. Louis XIV's near-constant wars to expand France's frontiers drained the treasury, and the upkeep of Versailles and the court swallowed enormous sums. The brilliance of the reign rested on increasingly shaky financial foundations.",
+            "Worse, the burden fell on those least able to bear it. France's tax system exempted the nobility and clergy — the very richest — while crushing the peasantry and the middle classes. This deep unfairness bred resentment that festered under Louis's less capable successors.",
+            "Meanwhile a dangerous new current of thought was rising: the Enlightenment. Writers like Voltaire, Montesquieu and Rousseau questioned absolute power, championed reason, tolerance and natural rights, and imagined governments based on the consent of the governed. The combination of bankruptcy, injustice and revolutionary ideas would, within decades, prove fatal to the monarchy.",
+          ],
+          terms: [
+            { term: "Enlightenment", definition: "The 18th-century movement of reason and rights that challenged absolutism." },
+            { term: "Tax exemption", definition: "The privilege that freed France's nobility and clergy from taxes, fuelling resentment." },
+          ],
+        },
       ],
       terms: [
         { term: "Absolutism", definition: "A system in which the monarch holds unchecked power, justified by 'divine right'." },
@@ -242,6 +328,54 @@ export const france: Civilization = {
         "The Revolution of 1789 did not end neatly. France lurched through a republic, the Terror, Napoleon's empire, a restored monarchy and further revolutions in 1830 and 1848 before settling into a lasting republic. The struggle between monarchy and republic, Church and state, order and liberty defined French politics for a century.",
         "Yet the Revolution's ideas proved unstoppable. 'Liberté, égalité, fraternité', the rights of the citizen, the nation-state and the very notion that ordinary people — not kings — are sovereign spread across Europe and the world, carried first by Napoleon's armies and then by imitation.",
         "Modern France — secular, republican and proud of its revolutionary heritage — still lives in that legacy. And from medieval cathedrals to the Enlightenment to the Declaration of the Rights of Man, few nations have given the West more of its cultural and political DNA.",
+      ],
+      subLessons: [
+        {
+          title: "1789: the dam breaks",
+          image: {
+            wikiTitle: "Storming of the Bastille",
+            alt: "The storming of the Bastille",
+            caption: "The fall of the Bastille became the symbol of revolution.",
+          },
+          paragraphs: [
+            "By 1789 France was bankrupt, its harvests had failed, and its people were starving. Desperate for funds, Louis XVI summoned the Estates-General — an assembly of the three orders that had not met for 175 years. When the commoners of the Third Estate were blocked, they broke away and declared themselves the National Assembly, vowing to give France a constitution.",
+            "On 14 July a Paris crowd stormed the Bastille, a royal fortress and prison that symbolised tyranny. The event electrified the nation and is still celebrated as France's national day. Weeks later the Assembly issued the Declaration of the Rights of Man and of the Citizen, proclaiming that sovereignty belonged to the nation and that men were born free and equal in rights.",
+            "These were world-shaking claims. Power, the revolutionaries declared, came not from God or birth but from the people — an idea that struck at the foundations of every monarchy in Europe.",
+          ],
+          terms: [
+            { term: "Estates-General", definition: "France's old assembly of three orders, whose 1789 meeting sparked the Revolution." },
+            { term: "Rights of Man", definition: "The 1789 declaration proclaiming liberty, equality and popular sovereignty." },
+          ],
+        },
+        {
+          title: "Terror and the radical Republic",
+          paragraphs: [
+            "The Revolution grew more radical. In 1792 the monarchy was abolished and a Republic proclaimed; in 1793 Louis XVI was sent to the guillotine, followed by his queen, Marie Antoinette. Threatened by foreign invasion and internal revolt, the Republic turned to extreme measures.",
+            "Under Maximilien Robespierre and the Committee of Public Safety came the Reign of Terror. Tens of thousands were executed as 'enemies of the Revolution', many on the slimmest evidence, the guillotine working day after day. The Revolution had begun to devour its own.",
+            "The Terror ended only when Robespierre himself was overthrown and guillotined in 1794. But the years of upheaval left France exhausted and unstable, governed by a weak and corrupt regime — fertile ground for a strongman to seize control.",
+          ],
+          terms: [
+            { term: "Reign of Terror", definition: "The radical, violent phase of the Revolution marked by mass executions." },
+            { term: "Robespierre", definition: "The radical leader of the Terror, himself eventually guillotined in 1794." },
+          ],
+        },
+        {
+          title: "Napoleon and the revolution exported",
+          image: {
+            wikiTitle: "Napoleon",
+            alt: "Napoleon Bonaparte",
+            caption: "Napoleon spread the Revolution's reforms across Europe by conquest.",
+          },
+          paragraphs: [
+            "Out of the chaos rose Napoleon Bonaparte, a brilliant young general who seized power in 1799 and crowned himself Emperor of the French in 1804. He restored order at home while preserving many of the Revolution's gains — above all the Napoleonic Code, a unified body of law that swept away feudal privilege and enshrined equality before the law.",
+            "Through a dazzling series of campaigns Napoleon made France master of Europe, planting his reforms — legal equality, rational administration, the dismantling of feudalism — wherever his armies marched. But his ambition overreached: the disastrous invasion of Russia in 1812 destroyed his Grand Army, and he was finally crushed at Waterloo in 1815.",
+            "Though the monarchy was restored afterward, France and Europe were changed forever. The ideas of 1789 — liberty, equality, popular sovereignty, nationalism — could not be undone, and they spread across the world to become the foundation of modern politics. France had given the world not just a revolution, but the very model of revolution itself.",
+          ],
+          terms: [
+            { term: "Napoleonic Code", definition: "Napoleon's influential legal code enshrining equality before the law." },
+            { term: "Waterloo", definition: "The 1815 battle that ended Napoleon's rule and France's bid for European dominance." },
+          ],
+        },
       ],
       terms: [
         { term: "Liberté, égalité, fraternité", definition: "'Liberty, equality, fraternity' — the enduring motto of the French Republic." },

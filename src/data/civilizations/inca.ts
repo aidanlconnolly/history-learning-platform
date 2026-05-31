@@ -72,6 +72,49 @@ export const inca: Civilization = {
         "They called it Tawantinsuyu, 'the Four Regions Together'. At its centre sat the Sapa Inca, an absolute god-king believed descended from the sun. Conquest was often achieved by diplomacy and overwhelming display as much as by force — and conquered peoples were absorbed, resettled and bound into the imperial system.",
         "Holding together a realm of soaring mountains, deserts and jungle, with dozens of languages, was a staggering feat of organisation — all the more so because the Inca did it without any of the tools we usually consider essential to a great empire.",
       ],
+      subLessons: [
+        {
+          title: "Pachacuti, the Earth-Shaker",
+          paragraphs: [
+            "Around 1438 the small kingdom of Cusco faced annihilation. The powerful Chanka confederation marched on the city, and the ruling Inca and his heir fled. A younger son, Cusi Yupanqui, refused to abandon Cusco — he rallied its defenders and, against the odds, shattered the Chanka army in a battle that legend says even the stones rose up to join.",
+            "Victorious, he took the throne and a new name: Pachacuti, meaning 'Earth-Shaker' or 'he who overturns the world'. The name was fitting, for he set about remaking everything — reorganising the state, rebuilding Cusco in monumental stone, and launching the conquests that would create an empire within his own lifetime.",
+            "Pachacuti also reshaped Inca religion and history, elevating the sun god Inti and rewriting the past to place his dynasty at its centre. More than a conqueror, he was the architect of the imperial idea that his sons and grandsons would carry the length of the Andes.",
+          ],
+          terms: [
+            { term: "Chanka", definition: "The rival Andean confederation whose defeat launched Inca expansion." },
+            { term: "Inti", definition: "The Inca sun god, from whom the Sapa Inca claimed descent." },
+          ],
+        },
+        {
+          title: "Conquest by war and persuasion",
+          paragraphs: [
+            "The Inca expanded with remarkable speed, but not by force alone. Faced with a new people, the Sapa Inca would often first offer generous gifts and a deal: join the empire peacefully and share in its wealth, its irrigation, its storehouses and its protection. Many smaller groups, weighing the alternative, accepted.",
+            "Those who refused met the full weight of the Inca army — and, just as importantly, the threat of resettlement. The Inca moved whole populations across the empire through the mitma system, planting loyal communities among the conquered and scattering rebellious ones, weaving the realm together while breaking up resistance.",
+            "Conquered elites were not simply crushed. Their sons were brought to Cusco to be educated in Inca ways and the Quechua language, and local gods were honoured at the capital — partly as respect, partly as hostages. It was an empire held together as much by clever integration as by the sword.",
+          ],
+          terms: [
+            { term: "Mitma", definition: "The Inca policy of resettling populations to secure newly conquered regions." },
+            { term: "Quechua", definition: "The language the Inca spread across the Andes as the tongue of administration." },
+          ],
+        },
+        {
+          title: "Tawantinsuyu, the Four Regions",
+          image: {
+            wikiTitle: "Inca Empire",
+            alt: "Map of the Inca Empire",
+            caption: "Tawantinsuyu stretched 4,000 km along the Andes.",
+          },
+          paragraphs: [
+            "The Inca did not call their realm an 'empire'. They called it Tawantinsuyu — 'the Four Regions Together' — for the four great provinces (suyus) that radiated from Cusco, the navel of the world. The capital itself was laid out as the symbolic centre where the regions met.",
+            "At its height under Huayna Capac around 1500, Tawantinsuyu stretched roughly 4,000 km from modern Colombia to central Chile, embracing coast, highland and jungle. It ruled perhaps twelve million people who spoke dozens of languages — the largest state ever built in the pre-Columbian Americas.",
+            "Binding such diversity together was the genius of the system. A single language of rule, a single state religion centred on the sun, and a single emperor regarded as a living god gave a sprawling patchwork of peoples a shared imperial identity in just three generations.",
+          ],
+          terms: [
+            { term: "Suyu", definition: "One of the four great administrative regions that made up Tawantinsuyu." },
+            { term: "Cusco", definition: "The Inca capital, regarded as the sacred 'navel' where the four regions met." },
+          ],
+        },
+      ],
       terms: [
         { term: "Tawantinsuyu", definition: "The Inca name for their empire: 'the Four Regions Together'." },
         { term: "Sapa Inca", definition: "The supreme Inca emperor, regarded as a living descendant of the sun god." },
@@ -96,6 +139,54 @@ export const inca: Civilization = {
         "The skeleton of the empire was the Qhapaq Ñan, a road network of over 40,000 km with rope suspension bridges over gorges and storehouses and rest-houses along the way. Relay runners called chasquis could carry messages (and even fresh fish from the coast) hundreds of kilometres a day.",
         "Instead of taxing money or goods, the Inca taxed labour through the mit'a system: every household owed the state a set amount of work — farming, building, soldiering, weaving. In return the state stored huge surpluses and fed the people in times of famine. There was no starvation and no homelessness, but also little personal freedom.",
         "Lacking writing, the Inca recorded everything — census figures, tribute, accounts, perhaps even histories — on the quipu, an ingenious device of knotted, coloured strings. Specialist 'knot-keepers' could read off astonishing detail from them.",
+      ],
+      subLessons: [
+        {
+          title: "The royal road and the running messengers",
+          image: {
+            wikiTitle: "Inca rope bridge",
+            alt: "An Inca rope suspension bridge",
+            caption: "Woven-grass bridges carried the royal road across deep gorges.",
+          },
+          paragraphs: [
+            "The backbone of the empire was the Qhapaq Ñan, the royal road — some 40,000 km of paved paths, stairways, tunnels and causeways threading the most vertical landscape on Earth. Where the road met a chasm, the Inca strung suspension bridges woven from grass rope, rebuilt each year by the communities on either side.",
+            "Along the roads, at regular intervals, stood tampus: waystations and storehouses stocked with food, cloth, weapons and firewood. An army or an official travelling the empire never went hungry, and the state could move supplies wherever they were needed.",
+            "Fastest of all were the chasquis, relay runners stationed in pairs every few kilometres. A message or even fresh fish from the coast could be passed runner to runner and travel some 240 km in a single day — an information and supply network without rival in the Americas.",
+          ],
+          terms: [
+            { term: "Tampu", definition: "A roadside waystation and storehouse on the Inca royal road." },
+            { term: "Chasqui", definition: "Relay runners who sped messages and goods along the Inca roads." },
+          ],
+        },
+        {
+          title: "Counting an empire without writing",
+          image: {
+            wikiTitle: "Quipu",
+            alt: "An Inca quipu of knotted strings",
+            caption: "The quipu stored numbers — and perhaps more — in knots.",
+          },
+          paragraphs: [
+            "The Inca ran a state of millions with no written script. Their tool was the quipu: a main cord from which hung dozens or hundreds of coloured strings, each carrying clusters of knots. The position and type of knot encoded numbers in a decimal system, while colours and arrangement signalled what was being counted.",
+            "Specialists called quipucamayocs — 'keepers of the knots' — maintained these records, tracking populations, herds, harvests, tribute and the contents of every storehouse. When officials needed figures, the quipucamayoc could read them back like an accountant consulting a ledger.",
+            "Scholars still debate whether some quipus also recorded narrative — names, histories, even songs. If so, the Inca may have had a form of three-dimensional writing in string that we have only partly learned to read.",
+          ],
+          terms: [
+            { term: "Quipucamayoc", definition: "A trained Inca official who created and 'read' the knotted-string records." },
+            { term: "Decimal system", definition: "The base-ten counting the Inca used to record numbers in quipu knots." },
+          ],
+        },
+        {
+          title: "Stone, terraces and the labour tax",
+          paragraphs: [
+            "Inca masons achieved a precision that still astonishes engineers. At sites like Cusco and the fortress of Sacsayhuamán, they shaped massive irregular blocks — some weighing many tonnes — so exactly that they interlock without mortar, and not even a knife blade can be slipped between them. The joints have survived five centuries of Andean earthquakes.",
+            "Just as vital was agricultural engineering. The Inca carved staircases of terraces into steep mountainsides, each level with its own drainage and soil, creating flat farmland and microclimates at altitude. Surplus crops, including freeze-dried potatoes called chuño, were stored against famine.",
+            "All of this was built not by paid workers or slaves but through the mit'a — a rotating labour tax. Instead of paying in money, which the Inca did not use, each community owed a set period of work on roads, terraces, temples and fields. The empire was, quite literally, built by the shared labour of its people.",
+          ],
+          terms: [
+            { term: "Mit'a", definition: "A labour tax: each community owed the state work on roads, fields and monuments." },
+            { term: "Chuño", definition: "Freeze-dried potatoes the Inca stored for years against famine." },
+          ],
+        },
       ],
       terms: [
         { term: "Qhapaq Ñan", definition: "The vast Inca road network that knit the mountain empire together." },
@@ -198,6 +289,49 @@ export const inca: Civilization = {
         "Disaster struck before the Spanish even arrived in force: smallpox, spreading south from Central America, killed the emperor Huayna Capac and his heir around 1525, plunging the empire into a brutal civil war between his sons Atahualpa and Huáscar.",
         "Atahualpa had just won this war when Francisco Pizarro appeared in 1532 with fewer than 200 men. At Cajamarca the Spanish ambushed and captured the emperor amid his huge but unsuspecting army. Atahualpa filled a room with gold and silver as ransom — then was executed anyway.",
         "With the god-king gone and the empire weakened by plague and civil war, resistance crumbled, though rebel Incas held out in the mountains until 1572. The Spanish looted the empire's gold, and the Andes entered three centuries of colonial rule. Yet millions of Quechua- and Aymara-speaking descendants of the Inca live in the Andes to this day.",
+      ],
+      subLessons: [
+        {
+          title: "Disease and a war of brothers",
+          paragraphs: [
+            "The empire was crippled before a single Spaniard reached it. Smallpox, racing south from the Caribbean and Central America faster than the Europeans themselves, struck the Andes around 1525. Among its victims was the emperor Huayna Capac and his designated heir, who died within days of each other, leaving the succession in chaos.",
+            "The result was a ruinous civil war between two of Huayna Capac's sons. Huáscar, crowned in Cusco, faced his half-brother Atahualpa, who commanded the battle-hardened northern army. For several years the empire tore itself apart, its provinces ravaged and its loyalties split.",
+            "Atahualpa finally triumphed, capturing Huáscar in 1532 — but at a terrible cost. The empire he won was exhausted, divided and resentful, its institutions shaken. Into this fragile moment, with perfect and unlucky timing, stepped Francisco Pizarro.",
+          ],
+          terms: [
+            { term: "Huáscar", definition: "Atahualpa's half-brother and rival, whose defeat ended the Inca civil war." },
+            { term: "Huayna Capac", definition: "The emperor whose death from smallpox triggered the ruinous succession war." },
+          ],
+        },
+        {
+          title: "The ambush at Cajamarca",
+          image: {
+            wikiTitle: "Battle of Cajamarca",
+            alt: "The Spanish capture of Atahualpa at Cajamarca",
+            caption: "Pizarro seized the emperor in a single afternoon.",
+          },
+          paragraphs: [
+            "In 1532 Pizarro marched inland with fewer than 200 men and arranged to meet the victorious Atahualpa at the highland town of Cajamarca. The emperor, surrounded by thousands of warriors, felt no fear of so tiny a band and came to the meeting with an unarmed retinue.",
+            "It was a trap. At a signal the Spanish opened fire with cannon and charged on horseback into the packed square. The Inca, who had never seen guns or horses, were thrown into panic and slaughtered. By nightfall Pizarro held Atahualpa himself prisoner — the living god of the empire, captured in a single afternoon.",
+            "Atahualpa quickly grasped the Spanish hunger for gold and offered an extraordinary ransom: to fill a large room once with gold and twice with silver. The treasure poured in from across the empire — and once it was collected, the Spanish tried him on false charges and executed him anyway in 1533.",
+          ],
+          terms: [
+            { term: "Cajamarca", definition: "The site where Pizarro ambushed and captured Atahualpa in 1532." },
+            { term: "Atahualpa's ransom", definition: "A room filled once with gold and twice with silver, paid for the emperor — who was killed regardless." },
+          ],
+        },
+        {
+          title: "Cusco falls and the last resistance",
+          paragraphs: [
+            "With the god-emperor dead, the Inca state was paralysed. Pizarro marched on Cusco and took the capital in 1533, at first installing a puppet emperor, Manco Inca, to rule under Spanish control and lend the conquest a veneer of legitimacy.",
+            "But the conquest was not yet complete. In 1536 Manco Inca turned on the Spanish and laid a massive siege to Cusco, very nearly driving them out. When the rebellion failed, he withdrew into the remote, jungle-cloaked mountains to found a rump Inca state at Vilcabamba.",
+            "From Vilcabamba the Inca held out for nearly forty years, a defiant shadow of the empire. Only in 1572 did the Spanish storm the refuge and execute the last emperor, Túpac Amaru, finally ending independent Inca rule — though Andean memory of Tawantinsuyu never died.",
+          ],
+          terms: [
+            { term: "Manco Inca", definition: "The puppet emperor who rebelled and besieged Cusco before retreating to Vilcabamba." },
+            { term: "Vilcabamba", definition: "The remote mountain stronghold where the Inca resisted Spain until 1572." },
+          ],
+        },
       ],
       terms: [
         { term: "Battle of Cajamarca", definition: "The 1532 ambush where Pizarro captured the Sapa Inca Atahualpa." },

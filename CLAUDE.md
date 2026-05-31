@@ -35,7 +35,7 @@ Copy an existing file (e.g. `rome.ts`), give every section a unique `id`, set `m
 | type | renderer | notes |
 |---|---|---|
 | `milestones` | `MilestonesView` | Timeline; each milestone has `year`, `title`, `description`, optional `icon` and `type` (`rise \| conquest \| war \| cultural \| innovation \| fall`) |
-| `narrative` | `NarrativeView` | Paragraphs, optional `image`, `terms` flip-cards, `callout` aside |
+| `narrative` | `NarrativeView` | Intro `paragraphs`, optional `subLessons[]` (numbered deep-dive sub-sections), optional `image`, `terms` flip-cards, `callout` aside |
 | `figures` | `FiguresView` | Array of `Figure` objects, each with optional `image` |
 | `conflicts` | `ConflictsView` | Array of `Conflict` objects, each with optional `image` |
 | `achievements` | `AchievementsView` | Grid of `Achievement` cards; section has optional `image` banner |
@@ -54,6 +54,12 @@ CityPin { name: string; lat: number; lon: number }
 ```
 
 `majorCities` coordinates are `[lat, lon]` in decimal degrees (positive = N/E). They are passed from `MapPage` → `WorldMap` and rendered via `react-simple-maps` `Marker` components, highlighted when the civilization is hovered.
+
+### Sub-lessons within narrative sections
+
+`NarrativeSection` supports an optional `subLessons?: SubLesson[]` array. Each `SubLesson` has a `title`, `paragraphs[]`, optional `image: ImageRef`, and optional `terms: KeyTerm[]`. `NarrativeView` renders them after the intro paragraphs as numbered, accent-left-bordered sub-sections — each with its own image, paragraphs, and term flip-cards.
+
+Pattern used across all 15 civilizations: keep `paragraphs` as a short 1-sentence intro, then add 3 `subLessons` entries with 3 paragraphs and 2 terms each. The `subLessons` block sits immediately before the section's `terms:` array in the data file.
 
 ## Progress: one shared localStorage store
 

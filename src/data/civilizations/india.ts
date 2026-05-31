@@ -73,6 +73,49 @@ export const india: Civilization = {
         "Remarkably, the Indus people left no palaces, no obvious temples, and little sign of kings or war — a prosperous, orderly society whose writing we still cannot read. Around 1900 BCE, perhaps due to climate change and shifting rivers, their cities were gradually abandoned.",
         "In the centuries that followed, a culture centred on Sanskrit-speaking peoples and the sacred hymns called the Vedas took shape across northern India. From this 'Vedic' world grew Hinduism, its gods and epics (the Mahabharata and Ramayana), and the hierarchical caste system that would shape Indian society for millennia.",
       ],
+      subLessons: [
+        {
+          title: "The planned cities of the Indus",
+          image: {
+            wikiTitle: "Mohenjo-daro",
+            alt: "Ruins of Mohenjo-daro",
+            caption: "Mohenjo-daro's grid streets and drains astonish to this day.",
+          },
+          paragraphs: [
+            "Around 2600 BCE, along the Indus River, one of the world's earliest urban civilisations arose alongside Mesopotamia and Egypt. Its great cities — Mohenjo-daro and Harappa — housed tens of thousands of people and were laid out on remarkably modern grid plans.",
+            "What sets them apart is their obsession with order and hygiene. Streets ran at right angles; houses were built of standardised baked bricks of uniform size; and nearly every home had a bathroom connected to covered municipal drains — sophisticated sanitation that would not be matched for thousands of years. Mohenjo-daro even boasted a 'Great Bath', perhaps for ritual bathing.",
+            "The Indus people traded as far as Mesopotamia, used precise standardised weights, and wrote in a script we still cannot read. Strikingly, archaeologists have found few signs of kings, temples or armies — suggesting a society organised quite unlike the god-king states elsewhere.",
+          ],
+          terms: [
+            { term: "Indus Valley Civilisation", definition: "An early Bronze Age urban culture famous for planned cities and advanced sanitation." },
+            { term: "Harappan", definition: "Another name for the Indus civilization, after the city of Harappa." },
+          ],
+        },
+        {
+          title: "Decline and the coming of the Vedas",
+          paragraphs: [
+            "Around 1900 BCE the Indus cities went into decline and were gradually abandoned. There was no single dramatic catastrophe; scholars point instead to climate change, shifting or drying rivers, and the collapse of trade. The script fell out of use and the civilisation was forgotten for nearly four thousand years, rediscovered only in the 1920s.",
+            "From around 1500 BCE a new culture took shape across northern India, associated with Indo-Aryan peoples and the Sanskrit language. This 'Vedic Age' is named for the Vedas, sacred hymns composed and memorised by priests and passed down orally for centuries before ever being written.",
+            "The Vedas are the foundation of Hinduism and the wellspring of Sanskrit literature. Out of this era came the gods, the great epics — the Mahabharata and Ramayana — and the philosophical ideas that would shape Indian society for millennia.",
+          ],
+          terms: [
+            { term: "Vedas", definition: "The ancient sacred hymns in Sanskrit that form the foundation of Hinduism." },
+            { term: "Sanskrit", definition: "The ancient sacred language of the Vedas and of classical Indian literature." },
+          ],
+        },
+        {
+          title: "Caste and the birth of new faiths",
+          paragraphs: [
+            "Vedic society came to be ordered into a hierarchy of hereditary classes, the varnas: priests (Brahmins), warriors and rulers, merchants and farmers, and labourers, with others outside the system entirely. Over time this hardened into the elaborate caste system that governed occupation, marriage and daily life.",
+            "Religious life centred on elaborate sacrifices performed by Brahmin priests. But by around 600 BCE, thinkers began to question this ritualism, exploring instead ideas of the soul, rebirth (reincarnation) and liberation gathered in philosophical texts called the Upanishads.",
+            "From this ferment emerged two great new religions that rejected priestly authority. Jainism preached radical non-violence toward all living things; and Buddhism, founded by Siddhartha Gautama, offered a path to escape suffering and the cycle of rebirth — a faith that would spread across all of Asia.",
+          ],
+          terms: [
+            { term: "Caste system", definition: "The hereditary social hierarchy that developed in ancient Indian society." },
+            { term: "Reincarnation", definition: "The belief in rebirth of the soul, central to Indian religious thought." },
+          ],
+        },
+      ],
       terms: [
         { term: "Indus Valley Civilisation", definition: "An early Bronze Age urban culture famous for planned cities and advanced sanitation." },
         { term: "Vedas", definition: "The ancient sacred hymns in Sanskrit that form the foundation of Hinduism." },
@@ -97,6 +140,49 @@ export const india: Civilization = {
         "In 321 BCE Chandragupta Maurya founded the first empire to unite most of the subcontinent. Aided by his shrewd adviser Kautilya (author of the Arthashastra, a frank manual of statecraft), the Mauryan Empire built a vast, centralised state.",
         "Its greatest ruler was Ashoka (c. 268–232 BCE). After a war of conquest in Kalinga so bloody that it horrified him, Ashoka renounced violence, embraced Buddhism, and devoted his reign to dharma — moral rule. He carved edicts of tolerance and compassion onto pillars across his empire and sent Buddhist missionaries as far as Sri Lanka and Greece. The lion capital of his pillars is today the emblem of the Republic of India.",
         "After the Mauryas declined, the Gupta Empire (c. 320–550 CE) presided over a golden age of peace, prosperity and dazzling achievement in mathematics, astronomy, literature and art — the era that gave the world the concept of zero.",
+      ],
+      subLessons: [
+        {
+          title: "Chandragupta and the Mauryan Empire",
+          paragraphs: [
+            "In the wake of Alexander the Great's incursion into northwestern India, a young adventurer named Chandragupta Maurya seized power in the kingdom of Magadha and, from 321 BCE, built the first empire to unite most of the subcontinent. He was guided, tradition says, by the cunning minister Kautilya, author of the Arthashastra, a famously frank manual of statecraft.",
+            "The Mauryan state was vast and tightly organised, with a large standing army, a network of spies, and a complex bureaucracy taxing agriculture and trade from its capital at Pataliputra, one of the largest cities in the world at the time.",
+            "Chandragupta's empire gave India something it had never had: political unity on a grand scale. It would reach its height under his grandson, one of the most remarkable rulers in all of history.",
+          ],
+          terms: [
+            { term: "Mauryan Empire", definition: "The first empire to unite most of the Indian subcontinent, founded by Chandragupta Maurya." },
+            { term: "Pataliputra", definition: "The Mauryan capital, among the largest cities in the ancient world." },
+          ],
+        },
+        {
+          title: "Ashoka: from conqueror to philosopher-king",
+          image: {
+            wikiTitle: "Lion Capital of Ashoka",
+            alt: "The Lion Capital of Ashoka",
+            caption: "Ashoka's lion capital is now India's national emblem.",
+          },
+          paragraphs: [
+            "Ashoka extended the empire by force, until around 261 BCE he conquered the kingdom of Kalinga in a campaign of horrific bloodshed — by his own account, hundreds of thousands were killed, deported or left to die. Confronted by the suffering he had caused, Ashoka was overcome with remorse.",
+            "He converted to Buddhism and underwent a profound change, renouncing war and devoting himself to ruling by dharma — moral law, compassion and tolerance. He had edicts carved on rocks and great polished pillars across the empire, urging kindness to people and animals, religious harmony, and just governance.",
+            "Ashoka built hospitals, planted shade trees along roads, and sent Buddhist missionaries as far as Sri Lanka and the Greek kingdoms of the west, helping transform Buddhism from a regional sect into a world religion. His lion capital is today the national emblem of India.",
+          ],
+          terms: [
+            { term: "Dharma", definition: "Moral and religious duty; the principle of righteous living and rule that Ashoka championed." },
+            { term: "Edicts of Ashoka", definition: "Inscriptions on rocks and pillars proclaiming Ashoka's principles of moral rule." },
+          ],
+        },
+        {
+          title: "The Gupta golden age",
+          paragraphs: [
+            "After the Mauryas declined, centuries of division followed until the Gupta Empire (c. 320–550 CE) ushered in what is remembered as India's classical golden age — an era of extraordinary flourishing in science, mathematics, art and literature.",
+            "Gupta mathematicians achieved breakthroughs that would change the world. They formalised the decimal place-value system and treated zero as a number in its own right; the astronomer Aryabhata calculated pi with great accuracy and proposed that the Earth rotates on its axis. These ideas would later pass through the Arab world to Europe.",
+            "Culture blossomed alongside science. The poet and playwright Kalidasa produced Sanskrit masterpieces; sculptors and painters created enduring religious art; and great centres of learning drew students from across Asia. Indian religion, art and learning radiated outward along the trade routes to Southeast Asia.",
+          ],
+          terms: [
+            { term: "Gupta Empire", definition: "India's classical golden age of science, mathematics and the arts." },
+            { term: "Aryabhata", definition: "The Gupta-era mathematician who computed pi and proposed Earth's rotation." },
+          ],
+        },
       ],
       terms: [
         { term: "Mauryan Empire", definition: "The first empire to unite most of the Indian subcontinent, founded by Chandragupta Maurya." },
